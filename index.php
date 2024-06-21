@@ -403,7 +403,7 @@
 				<div class="my-4 py-xl-5 py-lg-3">
 					<div class="feedback-info">
 						<div class="feedback-top">
-							<p class="text-justify">GRAM SCS fully believes in give & take principle. The more we take care of our employees, the better we get at managing their work. Hence at GRAM, employees are given equal growth opportunities irrespective of color, gender, religion etc.</p>
+							<p class="text-justify text-secondary">GRAM SCS fully believes in give & take principle. The more we take care of our employees, the better we get at managing their work. Hence at GRAM, employees are given equal growth opportunities irrespective of color, gender, religion etc.</p>
 							<h4 class="mt-4 text-wh font-weight-bold mb-4">&nbsp;</h4>
 						</div>
 					</div>
