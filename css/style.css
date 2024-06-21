@@ -739,6 +739,7 @@ a.login-button-2 {
 
 a.login-button-2:hover {
     color: white;
+    transform: scale(95%);
 }
 
 a.login-button-2 span {
