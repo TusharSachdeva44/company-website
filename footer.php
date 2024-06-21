@@ -1,4 +1,4 @@
-<div class="container py-xl-4" style="font-weight: 500; color: white !important;"> 
+<div class="container py-xl-4" style="font-size: 0.9rem; font-weight: 500 !important; color: white !important;"> 
     <div class="row footer-grids">
         <div class="col-2 footer-grid">
             <ul class="list-unstyled">
@@ -27,7 +27,7 @@
                 <li class="mt-2"><a href="product-installation.php">Product Installation</a></li>
             </ul>
         </div>
-        <div class="col-3 footer-grid footer-contact mt-lg-0 mt-4 align-self-center">
+        <div class="col-3 footer-grid footer-contact mt-lg-0 mt-4">
             <div class="address">
                 <div class="row address-grid">
                     <div class="col-md-2 col-sm-4 col-2 address-left text-center">
@@ -59,16 +59,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- New column for International Trade Office -->
-        <div class="col-3 footer-grid footer-contact mt-lg-0 mt-4">
             <div class="address">
                 <div class="row address-grid">
-                    <div class="col-12 address-right mt-5">
-                        <p><strong>International Trade Office :-</strong><br />Kanagawa Prefecture, Fujisawa City, Kugenuma Kaigan, 7-6-5, 102 Japan</p>
+                    <div class="col-2"></div>
+                    <div class="col-10 address-right mt-3">
+                        <p><strong>International Trade Office :-</strong><br /><span style="font-size: 0.8rem; !important; text-align: justify;">Kanagawa Prefecture, Fujisawa City, Kugenuma Kaigan, 7-6-5, 102 Japan</span></p>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- New column for International Trade Office -->
+        <div class="col-3 footer-grid footer-contact mt-lg-0 mt-4">
+            
         </div>
     </div>
 </div>
