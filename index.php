@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
 	<meta name="keywords" content="Gram SCS" />
+	<!--// Meta tag Keywords -->
+
 	<script>
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -16,6 +18,7 @@
 			window.scrollTo(0, 1);
 		}
 
+		//automatic change banner
 		document.addEventListener("DOMContentLoaded", function() {
             let currentSlide = 0;
             const slides = document.getElementsByName("slides");
@@ -29,13 +32,10 @@
 
             setInterval(showNextSlide, 15000); 
         });
-
-		
-
 	</script>
-	<!--// Meta tag Keywords -->
 
 	<!-- Custom-Files -->
+
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
 	<link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
@@ -44,29 +44,39 @@
 	<!-- Style-CSS -->
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
+
 	<!-- //Custom-Files -->
 
 	<!-- Web-Fonts -->
+
+		<!-- Lato family -->
 	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
-	 rel="stylesheet">
+	rel="stylesheet">
+    	<!-- Open Sans family -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
-	 rel="stylesheet">
+	rel="stylesheet">
+
 	<!-- //Web-Fonts -->
+
 </head>
 
 <body>
-	<!-- header -->
-	<header id="home"><?php include('header.php');?></header>
-	<!-- //top-bar -->
 
-	<!-- header 2 -->
+<!-- HEADER -->
+	
+	<!-- green margin -->
+	<header id="home"><?php include "header.php"; ?></header>
+	<!-- //green margin -->
+
+	<!-- navbar header -->
 	<!-- navigation -->
-	<div class="main-top"><?php include('menu.php');?></div>
+	<div class="main-top"><?php include "menu.php"; ?></div>
 	<!-- //navigation -->
 	<!-- //header 2 -->
 
-	<!-- 
-	 -->
+<!-- HERO -->
+
+	<!-- banner -->
     <div class="banner_w3lspvt">
         <div class="csslider infinity" id="slider1">
             <input type="radio" name="slides" checked="checked" id="slides_1" />
@@ -161,6 +171,9 @@
         </div>
     </section>
     <!-- //banner bottom grids -->
+
+<!-- //HERO -->
+<!-- HEADER -->
 
 	<!-- introduction -->
 	<div class="container introduction">
@@ -592,12 +605,12 @@
 	
 	<!-- footer -->
 	<footer class="bg-colors py-5">
-		<?php include('footer.php');?>
+		<?php include "footer.php"; ?>
 	</footer>
 	<!-- //footer -->
 	<!-- copyright -->
 	<div class="copyright-w3ls py-4">
-		<?php include('copy.php');?>
+		<?php include "copy.php"; ?>
 	</div>
 	<!-- //copyright -->
 	<!-- move top icon -->
