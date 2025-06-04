@@ -413,14 +413,32 @@ a.login-button-2 {
     letter-spacing: 2px;
     font-size: 14px;
     font-weight: 600;
-    background: #7eb540;
-    padding: 20px 7px;
+    background: linear-gradient(90deg, #7eb540 0%, #4caf50 100%);
+    padding: 18px 32px;
     display: inline-block;
-    transform: scale(0.87);
     color: var(--color-white);
+    border-radius: 2rem;
+    border: 4px double #2e7d32;
+    box-shadow: 0 4px 18px rgba(76, 175, 80, 0.15), 0 1.5px 0 #fff inset;
+    position: relative;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    outline: none;
 }
-a.login-button-2:hover { transform: scale(95%); }
-a.login-button-2 span { font-size: 22px; vertical-align: middle; }
+a.login-button-2::after {
+    content: '';
+    position: absolute;
+    top: 5px; left: 5px; right: 5px; bottom: 5px;
+    border-radius: 1.5rem;
+    border: 2px solid #a5d6a7;
+    pointer-events: none;
+}
+a.login-button-2:hover, a.login-button-2:focus {
+    background: linear-gradient(90deg, #4caf50 0%, #7eb540 100%);
+    box-shadow: 0 6px 24px rgba(76, 175, 80, 0.25), 0 1.5px 0 #fff inset;
+    transform: translateY(-2px) scale(1.03);
+    color: #fff;
+    opacity: 1;
+}
 
 /* Banner backgrounds */
 .banner1 { background: url(../images/3.jpg) no-repeat center; background-size: cover; }

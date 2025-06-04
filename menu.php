@@ -90,7 +90,7 @@ What we do <span class="fa fa-angle-down" aria-hidden="true"></span>
 			<!-- //nav -->
 			<!-- dwn -->
 			<div class="text-center" style="margin-left: 11px; margin-right: 0;">
-				<a href="https://gramscs.com/tracking/" target="_blank" class="login-button-2 text-uppercase text-wh" style="color: white;">Track Your Shipment</a>
-			</div>
+	<a href="https://gramscs.com/tracking/" target="_blank" class="login-button-2 text-uppercase text-wh">Track Your Shipment</a>
+</div>
 			<!-- //dwn -->
 		</div>
