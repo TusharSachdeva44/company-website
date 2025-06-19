@@ -71,8 +71,8 @@
     <!-- //HERO -->
 
     <!-- Services section -->
-    <section class="about-bottom" id="services" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
-        <div class="container pb-5">
+    <section class="about-bottom py-5" id="services" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
+        <div class="container">
             <div class="row justify-content-center gy-4">
                 <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
                     <div class="card border-0 shadow-sm w-100 h-100">
@@ -146,13 +146,13 @@
     <!-- //Services section -->
 
     <!-- introduction -->
-    <div class="container introduction" style="background: none !important;">
-        <h3 class="text-bl font-weight-bold text-white text-center">GRAM SCS</h3>
-        <p class="text-center text-secondary">At <strong>GRAM Supply Chain Solutions Private Limited</strong>, we pride ourselves on being a leading integrated logistics solution provider in India, with a strong presence in international markets such as Japan. Our rapid expansion is driven by our commitment to leveraging cutting-edge technology and scientific methods to minimize human intervention and maximize efficiency. We are dedicated to delivering innovative logistics solutions that streamline operations and enhance supply chain performance.</p>
+    <div class="container introduction text-center py-4" style="background: none !important;">
+        <h3 class="text-bl font-weight-bold text-white">GRAM SCS</h3>
+        <p class="text-secondary mx-auto" style="max-width: 700px;">At <strong>GRAM Supply Chain Solutions Private Limited</strong>, we pride ourselves on being a leading integrated logistics solution provider in India, with a strong presence in international markets such as Japan. Our rapid expansion is driven by our commitment to leveraging cutting-edge technology and scientific methods to minimize human intervention and maximize efficiency. We are dedicated to delivering innovative logistics solutions that streamline operations and enhance supply chain performance.</p>
     </div>
 
     <!-- about -->
-    <section class="w3ls-bnrbtm pt-4" id="about" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
+    <section class="w3ls-bnrbtm py-5" id="about" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
         <div class="container">
             <h2 class="font-weight-bold text-bl mb-4" style="text-align:left; border-left: 5px solid #82CF2B; padding-left: 16px; letter-spacing: 0.5px;">About GRAM SCS</h2>
             <!-- stats-->
@@ -218,7 +218,7 @@
     <!-- //about -->
 
     <!-- who we are -->
-    <section class="w3ls-bnrbtm" id="who" style="background: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db; padding: 3rem 0;">
+    <section class="w3ls-bnrbtm py-5" id="who" style="background: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
         <div class="container">
             <h2 class="font-weight-bold text-bl mb-4" style="text-align:left; border-left: 5px solid #82CF2B; padding-left: 16px; letter-spacing: 0.5px;">How We Function</h2>
             <div class="row align-items-center justify-content-center">
@@ -263,40 +263,40 @@
     <!-- //Mission statement -->
 
     <!-- gallery -->
-    <div class="gallery py-5" id="gallery" style="margin-top: 100px; margin-bottom: 100px;">
-        <div class="container py-xl-5 py-lg-3">
+    <div class="gallery py-5" id="gallery">
+        <div class="container">
             <h2 class="text-bl text-center font-weight-bold mb-4">Gallery</h2>
-            <div class="row no-gutters">
-                <div class="col-md-4 gallery-grid1">
+            <div class="row g-3">
+                <div class="col-12 col-md-4 gallery-grid1 mb-3 mb-md-0">
                     <a href="#gal1">
-                        <img src="images/g1.jpg" alt=" " class="img-fluid" />
+                        <img src="images/g1.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
                     </a>
                 </div>
-                <div class="col-md-4 gallery-grid1">
+                <div class="col-12 col-md-4 gallery-grid1 mb-3 mb-md-0">
                     <a href="#gal2">
-                        <img src="images/g2.jpg" alt=" " class="img-fluid" />
+                        <img src="images/g2.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
                     </a>
                 </div>
-                <div class="col-md-4 gallery-grid1">
+                <div class="col-12 col-md-4 gallery-grid1">
                     <a href="#gal3">
-                        <img src="images/g3.jpg" alt=" " class="img-fluid" />
+                        <img src="images/g3.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
                     </a>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-md-4 gallery-grid1">
+            <div class="row g-3 mt-2">
+                <div class="col-12 col-md-4 gallery-grid1 mb-3 mb-md-0">
                     <a href="#gal4">
-                        <img src="images/g4.jpg" alt=" " class="img-fluid" />
+                        <img src="images/g4.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
                     </a>
                 </div>
-                <div class="col-md-4 gallery-grid1">
+                <div class="col-12 col-md-4 gallery-grid1 mb-3 mb-md-0">
                     <a href="#gal5">
-                        <img src="images/g5.jpg" alt=" " class="img-fluid" />
+                        <img src="images/g5.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
                     </a>
                 </div>
-                <div class="col-md-4 gallery-grid1">
+                <div class="col-12 col-md-4 gallery-grid1">
                     <a href="#gal6">
-                        <img src="images/g6.jpg" alt=" " class="img-fluid" />
+                        <img src="images/g6.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
                     </a>
                 </div>
             </div>
@@ -361,47 +361,86 @@
     <!-- //gallery -->
 
     <!-- contact -->
-    <section class="contact pb-5" id="contact" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
-        <div class="container-fluid pb-3">
+    <section class="contact py-5" id="contact" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
+        <div class="container">
             <h2 class="font-weight-bold text-bl mb-4" style="text-align:left; border-left: 5px solid #82CF2B; padding-left: 16px; letter-spacing: 0.5px;">Contact Us</h2>
-            <div class="row mx-sm-0 mx-2 flex-column flex-md-row">
-                <!-- map -->
-                 <div class="col-1"></div>
-                <div class="col-5 map" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.044411352865!2d77.2127728142571!3d28.53838479508832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce398194e6799%3A0x40f2c7b780d291c!2sGRAM%20SCS%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1591499543546!5m2!1sen!2sin" frameborder="0" style="border: 0; height:400px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="row g-4 align-items-stretch justify-content-center">
+                <div class="col-12 col-md-10 col-lg-5 mb-4 mb-lg-0 d-flex align-items-stretch">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.044411352865!2d77.2127728142571!3d28.53838479508832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce398194e6799%3A0x40f2c7b780d291c!2sGRAM%20SCS%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1591499543546!5m2!1sen!2sin" frameborder="0" style="border: 0; height:400px; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <!-- //map -->
-                <!-- contact form -->
-                <div class="col-1"></div>
-                <div class="col-4 main_grid_contact" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="border: 2px solid lightgrey; border-radius: 5%;">
-                    <div class="form-w3ls p-4">
-                        <h4 class="mb-4 sec-title-w3 let-spa-1 text-bl">Send us a message</h4>
-                        <form action="#" method="post" class="container-fluid p-0">
-                            <div class="row">
-                                <div class="col-sm-12 form-group">
-                                    <input class="form-control" type="text" name="Name" placeholder="Name" required>
+                <div class="col-12 col-md-10 col-lg-6 offset-lg-1 main_grid_contact d-flex align-items-center justify-content-center" style="border: 2px solid lightgrey; border-radius: 18px; background: #fff; min-width: 320px; max-width: 600px; margin: 0 auto; float: none; box-shadow: 0 2px 16px rgba(0,0,0,0.04);">
+                    <div class="form-w3ls p-4 w-100">
+                        <h3 class="mb-4 sec-title-w3 let-spa-1 text-bl text-center">Send us a message</h3>
+                        <form id="contactForm" action="sendmail.php" method="post" class="container-fluid p-0">
+                            <div class="row gx-2 gy-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required maxlength="60">
+                                    </div>
                                 </div>
-                                <div class="col-sm-12 form-group">
-                                    <input class="form-control" type="email" name="Email" placeholder="Email" required>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input class="form-control" type="email" id="email" name="email" placeholder="Your Email" required maxlength="80">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input class="form-control" type="text" id="phone" name="phone" placeholder="Your Phone Number" required pattern="[0-9+\-() ]{7,20}" maxlength="20">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" required maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Type your message here..." rows="4" required maxlength="1000"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="Subject" placeholder="Subject" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="Phone Number" placeholder="Phone Number" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="input-group1 text-right">
-                                <button class="btn" type="submit">Submit</button>
+                            <div class="input-group1 text-center mt-3">
+                                <button class="btn btn-success px-4 py-2" type="submit" style="min-width:120px;">Submit</button>
                             </div>
                         </form>
+                        <script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData
+    });
+    const result = await response.json();
+    showToast(result.message || 'Saved locally.');
+    form.reset();
+});
+function showToast(msg) {
+    let toast = document.createElement('div');
+    toast.textContent = msg;
+    toast.style.position = 'fixed';
+    toast.style.bottom = '30px';
+    toast.style.left = '50%';
+    toast.style.transform = 'translateX(-50%)';
+    toast.style.background = '#333';
+    toast.style.color = '#fff';
+    toast.style.padding = '12px 28px';
+    toast.style.borderRadius = '6px';
+    toast.style.fontSize = '1.1rem';
+    toast.style.zIndex = 9999;
+    toast.style.boxShadow = '0 2px 12px rgba(0,0,0,0.15)';
+    document.body.appendChild(toast);
+    setTimeout(() => { toast.remove(); }, 5000); // Show for 5 seconds
+}
+</script>
                     </div>
                 </div>
-                <div class="col-1"></div>
-                <!-- //contact form -->
             </div>
         </div>
     </section>
@@ -421,6 +460,93 @@
     <a href="#home" class="move-top text-center"></a>
     <!-- //move top icon -->
     <script src="./js/index.js" type="module"></script>
+    <script>
+    // MENU BUTTON FUNCTIONALITY (hook or crook)
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuLabel = document.querySelector('label.toggle[for="drop"]');
+        var menuCheckbox = document.getElementById('drop');
+        var menuUl = document.querySelector('ul.menu');
+        if(menuLabel && menuCheckbox && menuUl) {
+            function updateAria() {
+                menuLabel.setAttribute('aria-expanded', menuCheckbox.checked ? 'true' : 'false');
+            }
+            menuLabel.addEventListener('click', function(e) {
+                if (!menuCheckbox.checked) {
+                    menuCheckbox.checked = true;
+                    menuUl.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                    updateAria();
+                }
+                // If already open, do nothing (do not close on button click)
+            });
+            document.addEventListener('click', function(e) {
+                if(menuCheckbox.checked && !menuUl.contains(e.target) && e.target !== menuLabel) {
+                    menuCheckbox.checked = false;
+                    menuUl.style.display = '';
+                    document.body.style.overflow = '';
+                    updateAria();
+                }
+            });
+            document.addEventListener('keydown', function(e) {
+                if(e.key === 'Escape' && menuCheckbox.checked) {
+                    menuCheckbox.checked = false;
+                    menuUl.style.display = '';
+                    document.body.style.overflow = '';
+                    updateAria();
+                }
+            });
+            updateAria();
+        }
+        // GALLERY POPUP ENHANCEMENTS
+        function isPopupOpen() {
+            return !!document.querySelector('.pop-overlay:target');
+        }
+        function closeAllPopups() {
+            window.location.hash = '#gallery';
+        }
+        // Prevent background scroll when popup is open
+        function toggleBodyScroll(disable) {
+            if(disable) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+        // Listen for hash changes to detect popup open/close
+        window.addEventListener('hashchange', function() {
+            toggleBodyScroll(isPopupOpen());
+        });
+        // On page load, in case popup is open
+        toggleBodyScroll(isPopupOpen());
+        // Allow closing popup by clicking overlay (not just close button)
+        document.querySelectorAll('.pop-overlay').forEach(function(overlay) {
+            overlay.addEventListener('click', function(e) {
+                if(e.target === overlay) {
+                    closeAllPopups();
+                }
+            });
+        });
+        // Accessibility: close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if(e.key === 'Escape' && isPopupOpen()) {
+                closeAllPopups();
+            }
+        });
+    });
+    // GALLERY POPUP IMAGE RESPONSIVE FIX
+    document.addEventListener('DOMContentLoaded', function() {
+        var popups = document.querySelectorAll('.popup img');
+        popups.forEach(function(img) {
+            img.style.maxWidth = '100%';
+            img.style.maxHeight = '60vh';
+            img.style.width = 'auto';
+            img.style.height = 'auto';
+            img.style.objectFit = 'contain';
+            img.style.display = 'block';
+            img.style.margin = '0 auto';
+        });
+    });
+    </script>
 </body>
 
 </html>

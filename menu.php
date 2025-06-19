@@ -1,96 +1,107 @@
-<div class="container-fluid d-lg-flex my-2">
-			<!-- logo -->
-			<h1 class="logo-style-res float-left">
-				<a class="navbar-brand" href="index.php">
-		<img src="images/logo.png" alt="" class="img-fluid logo-img">
-				</a>
-			</h1>
-			<!-- //logo -->
-			<!-- nav -->
-			<div class="nav_w3ls mx-lg-auto">
-				<nav>
-					<label for="drop" class="toggle">Menu</label>
-					<input type="checkbox" id="drop" />
-					<ul class="menu mx-lg-auto">
-					<li><a href="about-us.php" class="active">About Us</a></li>
-					    <li>
-							<!-- First Tier Drop Down -->
-							<label for="drop-2" class="toggle toggle-2">
-								Logistics<span class="fa fa-angle-down" aria-hidden="true"></span>
-							</label>
-							<a href="#">Logistics <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-							<input type="checkbox" id="drop-2" />
-							<ul>
-<li><a href="warehousing.php" class="drop-text">Warehousing</a></li>
-<li><a href="transportation.php" class="drop-text">Transportation</a></li>
-<li><a href="rail-freight.php" class="drop-text">Rail Freight</a></li>
-<li><a href="ocean-freight.php" class="drop-text">Ocean Freight</a></li>
-<li><a href="air-freight.php" class="drop-text">Air Freight</a></li>
-<li><a href="reverse-logistics.php" class="drop-text">Reverse Logistics</a></li>
-<li><a href="inplant-services.php" class="drop-text">Inplant Services</a></li>
-							</ul>
-						</li>
-                        <li>
-							<!-- First Tier Drop Down -->
-							<label for="drop-2" class="toggle toogle-2">
-IT &amp; Automation<span class="fa fa-angle-down" aria-hidden="true"></span>
-							</label>
-							<a href="#">IT &amp; Automation <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-							<input type="checkbox" id="drop-2" />
-							<ul>
-<li><a href="iot-product-solution.php" class="drop-text">Iot Product Solution</a></li>
-<li><a href="process-improvement-and-automation.php" class="drop-text">Process Improvement & Automation</a></li>
-							</ul>
-						</li>
-                        <li>
-							<!-- First Tier Drop Down -->
-							<label for="drop-2" class="toggle toogle-2">
-Freight Forwarding<span class="fa fa-angle-down" aria-hidden="true"></span>
-							</label>
-							<a href="#">Freight Forwarding <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-							<input type="checkbox" id="drop-2" />
-							<ul>
-<li><a href="import-services.php" class="drop-text">Import Services</a></li>
-<li><a href="export-services.php" class="drop-text">Export Services</a></li>
-<li><a href="custom-clearance-activity.php" class="drop-text">Custom Clearance Activity</a></li>
-<li><a href="post-shipment-services.php" class="drop-text">Post Shipment Services</a></li>
-<li><a href="documentation.php" class="drop-text">Documentation</a></li>
-							</ul>
-						</li>
-                        <li>
-							<!-- First Tier Drop Down -->
-							<label for="drop-2" class="toggle toogle-2">
-Value Added<span class="fa fa-angle-down" aria-hidden="true"></span>
-							</label>
-							<a href="#">Value Added <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-							<input type="checkbox" id="drop-2" />
-							<ul>
-<li><a href="labelling.php" class="drop-text">Labelling</a></li>
-<li><a href="packaging.php" class="drop-text">Packaging</a></li>
-<li><a href="kitting.php" class="drop-text">Kitting</a></li>
-<li><a href="product-installation.php" class="drop-text">Product Installation</a></li>
-<li><a href="management-information-system.php" class="drop-text">Management Information System</a></li>
-							</ul>
-						</li>
-						<li>
-							<!-- First Tier Drop Down -->
-							<label for="drop-2" class="toggle toogle-2">Home
-Project <span class="fa fa-angle-down" aria-hidden="true"></span>
-							</label>
-							<a href="#">Project <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-							<input type="checkbox" id="drop-2" />
-							<ul>
-<li><a href="project-logistics.php" class="drop-text">Project Logistics</a></li>
-<li><a href="chartering-services.php" class="drop-text">Chartering Services</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<!-- //nav -->
-			<!-- dwn -->
-			<div class="text-center" style="margin-left: 11px; margin-right: 0;">
-	<a href="https://gramscs.com/tracking/" target="_blank" class="login-button-2 text-uppercase text-wh">Track Your Shipment</a>
+<div class="container-fluid py-2 d-flex align-items-center justify-content-between" style="min-height:64px;">
+  <!-- logo -->
+  <div class="d-flex align-items-center" style="flex:0 0 auto; min-width:110px;">
+    <a class="navbar-brand" href="index.php">
+      <img src="images/logo.png" alt="Gram SCS Logo" class="img-fluid logo-img" style="height:48px; width:auto; display:block;">
+    </a>
+  </div>
+  <!-- menu button (always visible) -->
+  <button id="openMenuModal" class="toggle ms-2" style="min-width:44px; min-height:44px; font-size:1.2rem;" aria-haspopup="dialog" aria-controls="menuModal" aria-expanded="false">Menu</button>
+  <!-- Modal Menu -->
+  <div id="menuModal" class="menu-modal" role="dialog" aria-modal="true" aria-labelledby="menuModalTitle" tabindex="-1" style="display:none;">
+    <div class="menu-modal-content">
+      <button class="menu-modal-close" aria-label="Close Menu" tabindex="0">&times;</button>
+      <h2 id="menuModalTitle" class="menu-modal-title">Our Services</h2>
+      <div class="menu-modal-sections">
+        <div class="menu-section">
+          <h3 class="menu-section-title">About</h3>
+          <a href="about-us.php" class="menu-link">About Us</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Logistics</h3>
+          <a href="warehousing.php" class="menu-link">Warehousing</a>
+          <a href="transportation.php" class="menu-link">Transportation</a>
+          <a href="rail-freight.php" class="menu-link">Rail Freight</a>
+          <a href="ocean-freight.php" class="menu-link">Ocean Freight</a>
+          <a href="air-freight.php" class="menu-link">Air Freight</a>
+          <a href="reverse-logistics.php" class="menu-link">Reverse Logistics</a>
+          <a href="inplant-services.php" class="menu-link">Inplant Services</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">IT & Automation</h3>
+          <a href="iot-product-solution.php" class="menu-link">IoT Product Solution</a>
+          <a href="process-improvement-and-automation.php" class="menu-link">Process Improvement & Automation</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Freight Forwarding</h3>
+          <a href="import-services.php" class="menu-link">Import Services</a>
+          <a href="export-services.php" class="menu-link">Export Services</a>
+          <a href="custom-clearance-activity.php" class="menu-link">Custom Clearance Activity</a>
+          <a href="post-shipment-services.php" class="menu-link">Post Shipment Services</a>
+          <a href="documentation.php" class="menu-link">Documentation</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Value Added</h3>
+          <a href="labelling.php" class="menu-link">Labelling</a>
+          <a href="packaging.php" class="menu-link">Packaging</a>
+          <a href="kitting.php" class="menu-link">Kitting</a>
+          <a href="product-installation.php" class="menu-link">Product Installation</a>
+          <a href="management-information-system.php" class="menu-link">Management Information System</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Project</h3>
+          <a href="project-logistics.php" class="menu-link">Project Logistics</a>
+          <a href="chartering-services.php" class="menu-link">Chartering Services</a>
+        </div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Track Your Shipment</h3>
+          <a href="https://gramscs.com/tracking/" target="_blank" class="menu-link">Track Your Shipment</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-			<!-- //dwn -->
-		</div>
+<script>
+// Modal menu open/close logic
+(function() {
+    const openBtn = document.getElementById('openMenuModal');
+    const modal = document.getElementById('menuModal');
+    const closeBtn = modal.querySelector('.menu-modal-close');
+    function openModal() {
+        modal.style.display = 'flex';
+        openBtn.setAttribute('aria-expanded', 'true');
+        modal.focus();
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+        modal.style.display = 'none';
+        openBtn.setAttribute('aria-expanded', 'false');
+        openBtn.focus();
+        document.body.style.overflow = '';
+    }
+    openBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeModal();
+    });
+    // Trap focus inside modal
+    modal.addEventListener('keydown', function(e) {
+        if (e.key === 'Tab') {
+            const focusable = modal.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])');
+            const first = focusable[0];
+            const last = focusable[focusable.length-1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
+        }
+    });
+})();
+</script>
+<!-- Modal menu styles will be added in style.css -->
