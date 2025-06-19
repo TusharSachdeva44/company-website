@@ -38,38 +38,41 @@
     </div>
 
     <!-- About Section -->
-    <section class="w3ls-bnrbtm py-2" id="about">
-        <div class="container py-xl-1 py-lg-1">
-            <div class="row">
-                <div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
-                    <!-- Section title -->
-                    <h2 class="mb-3">Our Story</h2>
-
-                    <!-- Company inception -->
-                    <h5 class="mb-3"><em>How we incepted? 2017</em></h5>
-                    <p class="mb-4">
-                        GRAM Supply Chain Solutions started with an idea of providing automated &amp; technology
-                        driven Logistics Services in the Indian Supply Chain Market with less human intervention
-                        &amp; more technology based solutions.
-                    </p>
-
-                    <!-- Growth milestone -->
-                    <h5 class="mb-3"><em>Up scaled Growth over the Years 2019</em></h5>
-                    <p class="mb-4">
-                        GRAM expanded its business portfolio with over 15 International clients serving them at
-                        all India Locations.
-                    </p>
-
-                    <!-- Vision statement -->
-                    <h5 class="mb-3"><em>VISION</em></h5>
-                    <p>
-                        To emerge as a leading Technology Driven Service Partner &amp; Solution Provider
-                        in Indian Logistics Segment.
-                    </p>
+    <section class="about-modern-section py-5" id="about">
+        <div class="container-fluid py-xl-3 py-lg-3">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title-modern mb-4">
+                        <h2 class="mb-0 about-title-modern">Our Story</h2>
+                    </div>
+                    <ul class="about-timeline-modern list-unstyled ps-0 mb-0">
+                        <li class="timeline-item mb-4">
+                            <span class="timeline-year badge bg-success text-white mb-2">2017</span>
+                            <h5 class="fw-bold mb-2">How we incepted?</h5>
+                            <p class="mb-0">
+                                GRAM Supply Chain Solutions started with an idea of providing automated &amp; technology driven Logistics Services in the Indian Supply Chain Market with less human intervention &amp; more technology based solutions.
+                            </p>
+                        </li>
+                        <li class="timeline-item mb-4">
+                            <span class="timeline-year badge bg-success text-white mb-2">2019</span>
+                            <h5 class="fw-bold mb-2">Up scaled Growth over the Years</h5>
+                            <p class="mb-0">
+                                GRAM expanded its business portfolio with over 15 International clients serving them at all India Locations.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <span class="timeline-year badge bg-success text-white mb-2">Vision</span>
+                            <h5 class="fw-bold mb-2">Our Vision</h5>
+                            <p class="mb-0">
+                                To emerge as a leading Technology Driven Service Partner &amp; Solution Provider in Indian Logistics Segment.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End About Section -->
 
     <!-- Footer -->
     <footer class="bg-colors py-5">

@@ -16,7 +16,7 @@
 					    <li>
 							<!-- First Tier Drop Down -->
 							<label for="drop-2" class="toggle toggle-2">
-								Who we are<span class="fa fa-angle-down" aria-hidden="true"></span>
+								Logistics<span class="fa fa-angle-down" aria-hidden="true"></span>
 							</label>
 							<a href="#">Logistics <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 							<input type="checkbox" id="drop-2" />
@@ -33,7 +33,7 @@
                         <li>
 							<!-- First Tier Drop Down -->
 							<label for="drop-2" class="toggle toogle-2">
-Who we are<span class="fa fa-angle-down" aria-hidden="true"></span>
+IT &amp; Automation<span class="fa fa-angle-down" aria-hidden="true"></span>
 							</label>
 							<a href="#">IT &amp; Automation <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 							<input type="checkbox" id="drop-2" />
@@ -45,7 +45,7 @@ Who we are<span class="fa fa-angle-down" aria-hidden="true"></span>
                         <li>
 							<!-- First Tier Drop Down -->
 							<label for="drop-2" class="toggle toogle-2">
-Who we are<span class="fa fa-angle-down" aria-hidden="true"></span>
+Freight Forwarding<span class="fa fa-angle-down" aria-hidden="true"></span>
 							</label>
 							<a href="#">Freight Forwarding <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 							<input type="checkbox" id="drop-2" />
@@ -60,7 +60,7 @@ Who we are<span class="fa fa-angle-down" aria-hidden="true"></span>
                         <li>
 							<!-- First Tier Drop Down -->
 							<label for="drop-2" class="toggle toogle-2">
-Who we are<span class="fa fa-angle-down" aria-hidden="true"></span>
+Value Added<span class="fa fa-angle-down" aria-hidden="true"></span>
 							</label>
 							<a href="#">Value Added <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 							<input type="checkbox" id="drop-2" />
@@ -75,7 +75,7 @@ Who we are<span class="fa fa-angle-down" aria-hidden="true"></span>
 						<li>
 							<!-- First Tier Drop Down -->
 							<label for="drop-2" class="toggle toogle-2">Home
-What we do <span class="fa fa-angle-down" aria-hidden="true"></span>
+Project <span class="fa fa-angle-down" aria-hidden="true"></span>
 							</label>
 							<a href="#">Project <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 							<input type="checkbox" id="drop-2" />

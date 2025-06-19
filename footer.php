@@ -1,5 +1,5 @@
-<div class="container py-xl-4" style="font-size: 0.9rem; font-weight: 500 !important; color: white !important;"> 
-    <div class="row footer-grids">
+<div class="container-fluid py-xl-4" style="font-size: 0.9rem; font-weight: 500 !important; color: white !important;"> 
+    <div class="row footer-grids footer-row">
         <div class="col-2 footer-grid">
             <ul class="list-unstyled">
                 <li><a href="index.php">Home</a></li>
@@ -27,50 +27,24 @@
                 <li class="mt-2"><a href="product-installation.php">Product Installation</a></li>
             </ul>
         </div>
-        <div class="col-3 footer-grid footer-contact mt-lg-0 mt-4">
-            <div class="address">
-                <div class="row address-grid">
-                    <div class="col-md-2 col-sm-4 col-2 address-left text-center">
-                        <i class="fa fa-phone"></i>
-                    </div>
-                    <div class="col-md-10 col-sm-8 col-10 address-right">
-                        <p>+91-9999470620</p>
-                    </div>
-                </div>
-                <div class="row address-grid my-3">
-                    <div class="col-md-2 col-sm-4 col-2 address-left text-center">
-                        <i class="fa fa-envelope"></i>
-                    </div>
-                    <div class="col-md-10 col-sm-8 col-10 address-right">
-                        <p>
-                            <a href="mailto:support@gramscs.com"> support@gramscs.com</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-2 footer-grid">
+            <h3>Corporate Office</h3>
+            <address class="mb-3 mt-3">
+                <pre>Millenium Business Center
+Malviya Nagar, New Delhi
++011-40199854</pre>
+            </address>
         </div>
-        <!-- New column for Corporate Office -->
-        <div class="col-3 footer-grid footer-contact mt-lg-0 mt-4">
-            <div class="address">
-                <div class="row address-grid">
-                    <div class="col-2"></div>
-                    <div class="col-md-10 col-sm-8 col-10 address-right mb-2">
-                        <p><strong>Corporate Office :-</strong><br /><span style="font-size: 0.8rem; !important; text-align: justify;">Unit No. 607, 6th Floor, DLF Avenue Mall, DLF Courtyard, Saket District Centre, District Centre, Sector 6, Saket, New Delhi, Delhi 110017</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="address">
-                <div class="row address-grid">
-                    <div class="col-2"></div>
-                    <div class="col-10 address-right mt-3">
-                        <p><strong>International Trade Office :-</strong><br /><span style="font-size: 0.8rem; !important; text-align: justify;">Kanagawa Prefecture, Fujisawa City, Kugenuma Kaigan, 7-6-5, 102 Japan</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- New column for International Trade Office -->
-        <div class="col-3 footer-grid footer-contact mt-lg-0 mt-4">
-            
+        <div class="w-100 d-block d-md-none"></div>
+        <div class="col-2 footer-grid mt-4 mt-md-0">
+            <h3>International Trade Office</h3>
+            <address class="mb-3">
+                123, Main Street,<br>
+                Springfield, State 12345,<br>
+                India<br>
+                Phone: +91 12345 67890<br>
+                Email: info@company.com
+            </address>
         </div>
     </div>
 </div>

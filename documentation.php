@@ -49,34 +49,90 @@
 	<!-- //header 2 -->
 	<!-- about -->
 	<section class="w3ls-bnrbtm py-2" id="about">
-	    <div class="mb-4" style="height: 90vh; overflow: hidden;">
-<img src="images/rack.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh;"></div>
-<div class="container py-xl-1 py-lg-1">
-			<div class="row">
-				<div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
-<h1 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Documentation</h1>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
-   <li>Facility 1</li>
-   <li>Facility 2</li>
-   <li>Facility 3</li>
-   <li>Facility 4</li>
-</ul>
-<p class="px-2 pb-2 mb-5 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-				</div>
-	</div>
-	  </div>
-	</section>
+    <div class="mb-4" style="height: 60vh; overflow: hidden;">
+        <img src="images/Documentation.jpg" class="img-fluid mb-4 rounded" width="100%" style="height: 60vh; object-fit:cover;">
+    </div>
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2 class="text-center font-weight-bold mb-4" style="color: #222;">Documentation Services</h2>
+                <p class="lead text-secondary text-center mb-4" style="font-weight: 600;">Documentation Services – Precision in Paperwork for Seamless Logistics</p>
+                <p class="text-secondary mb-4" style="font-weight: 600; text-align: justify;">In global trade, accurate documentation is the backbone of smooth operations. Our end-to-end documentation services ensure compliance, reduce delays, and keep your cargo moving efficiently across borders.</p>
+                <h4 class="font-weight-bold mt-4 mb-3" style="color: #222;">Our Core Documentation Services</h4>
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">📄 Trade Compliance Documents</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>Commercial invoices & packing lists</li>
+                                    <li>Certificates of Origin (FTA/Preferential)</li>
+                                    <li>GST/E-way bill generation & management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">🌍 International Shipment Paperwork</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>Bill of Lading (OBL, HBL, Seaway) preparation</li>
+                                    <li>Export/Import declarations (DGFT/SHEC)</li>
+                                    <li>Letter of Credit documentation support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">🚛 Transport & Regulatory Documents</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>CMR consignment notes for road transport</li>
+                                    <li>Dangerous Goods declarations (IMO/ADR)</li>
+                                    <li>Carrier-specific airway bills & manifests</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">🛃 Customs Clearance Support</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>HS code classification assistance</li>
+                                    <li>Duty drawback documentation</li>
+                                    <li>Bond/warehouse filing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="font-weight-bold mt-5 mb-3" style="color: #222;">Why Clients Trust Our Documentation Services</h4>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item"><span class="text-success font-weight-bold mr-2">✔</span> Error-Free Processing: 99.7% first-time clearance rate</li>
+                    <li class="list-group-item"><span class="text-success font-weight-bold mr-2">✔</span> Real-Time Updates: Track documents through our portal</li>
+                    <li class="list-group-item"><span class="text-success font-weight-bold mr-2">✔</span> Regulatory Expertise: Updated with latest CBIC/DGFT changes</li>
+                    <li class="list-group-item"><span class="text-success font-weight-bold mr-2">✔</span> Single-Window Service: From purchase order to delivery receipt</li>
+                </ul>
+                <h4 class="font-weight-bold mt-5 mb-3" style="color: #222;">Industry-Specific Solutions</h4>
+                <ul class="mb-4 pl-3 text-secondary" style="font-weight: 700;">
+                    <li>Pharma: GDP compliance documentation</li>
+                    <li>Automotive: ROO certificates for FTAs</li>
+                    <li>Retail: Retailer-specific labeling/docs</li>
+                    <li>Project Cargo: Oversize load permits</li>
+                </ul>
+                <h4 class="font-weight-bold mt-5 mb-3" style="color: #222;">Technology Integration</h4>
+                <ul class="mb-4 pl-3 text-secondary" style="font-weight: 700;">
+                    <li>API connectivity with client ERPs</li>
+                    <li>Digital document archival (7-year retention)</li>
+                    <li>E-signature capabilities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 	<!-- //about -->
 	<!-- //middle section -->
 	<!-- footer -->

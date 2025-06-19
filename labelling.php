@@ -49,34 +49,39 @@
 	<!-- //header 2 -->
 	<!-- about -->
 	<section class="w3ls-bnrbtm py-2" id="about">
-	    <div class="mb-4" style="height: 90vh; overflow: hidden;">
-<img src="images/rack.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh;"></div>
-<div class="container py-xl-1 py-lg-1">
-			<div class="row">
-				<div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
-<h1 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Labelling</h1>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
-   <li>Facility 1</li>
-   <li>Facility 2</li>
-   <li>Facility 3</li>
-   <li>Facility 4</li>
-</ul>
-<p class="px-2 pb-2 mb-5 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-				</div>
-	</div>
-	  </div>
-	</section>
+    <div class="mb-4" style="height: 90vh; overflow: hidden;">
+        <img src="images/labelling.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh; object-fit:cover;">
+    </div>
+    <div class="container py-xl-1 py-lg-1">
+        <div class="row">
+            <div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
+                <h3 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Labeling Services</h3>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    In today's strict retail and compliance environment, proper labeling is no longer optional. We provide complete labeling solutions that meet both Indian and international standards, ensuring your goods move smoothly without rejections.
+                </p>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    <strong>Our Labeling Solutions Include:</strong>
+                </p>
+                <ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
+                    <li> Barcode/QR Code Labeling - As per customer requirements with high-quality printing</li>
+                    <li> Retail Compliance Labels - Ready for Amazon Flipkart, DMart and other big retailers</li>
+                    <li> Export Documentation Labels - Shipping marks, hazardous material labels, multilingual labels</li>
+                    <li> Last-minute Label Corrections - Mistakes happen, we fix wrong labels immediately</li>
+                    <li> White Label Solutions - Private labeling for your brand with customized designs</li>
+                </ul>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    <strong>Benefits for You:</strong>
+                </p>
+                <ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
+                    <li> No more shipment rejections due to labeling errors</li>
+                    <li> Faster warehouse scanning and tracking</li>
+                    <li> Complete compliance with GST/e-way bill requirements</li>
+                    <li> Special solutions for pharma, food and dangerous goods</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 	<!-- //about -->
 	<!-- //middle section -->
 	<!-- footer -->

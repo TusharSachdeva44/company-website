@@ -49,29 +49,142 @@
 	<!-- //header 2 -->
 	<!-- about -->
 	<section class="w3ls-bnrbtm py-2" id="about">
-	    <div class="mb-4" style="height: 90vh; overflow: hidden;">
-<img src="images/rack.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh;"></div>
-<div class="container py-xl-1 py-lg-1">
-			<div class="row">
-				<div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
-<h3 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Management Information System</h1>
-<ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
-   <li>Vendor Management system.</li>
-   <li>Bidding interface/payment gateway.</li>
-   <li>ERP interface.</li>
-   <li>Realtime tracking,Geofancing.</li>
-   <li>Documents management i.e.P&L,Invoice etc.</li>
-   <li>Vehicle placement status.</li>
-   <li>Real time delivery update.</li>
-   <li>Analytics.</li>
-</ul>
-<p class="px-2 pb-2 mb-5 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-				</div>
-	</div>
-	  </div>
-	</section>
+    <div class="mb-4" style="height: 60vh; overflow: hidden;">
+        <img src="images/project-logistics.jpg" class="img-fluid mb-4 rounded" width="100%" style="height: 60vh; object-fit:cover;">
+    </div>
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h2 class="text-center font-weight-bold mb-4" style="color: #222;">Project Logistics</h2>
+                <p class="lead text-secondary text-center mb-4" style="font-weight: 600;">As an asset-backed logistics specialist, we provide turnkey heavy-lift and project cargo solutions through our:</p>
+                <h4 class="font-weight-bold mt-4 mb-3" style="color: #222;">Integrated Capabilities</h4>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item"><strong>Heavy Transport Fleet:</strong> 200+ specialized trailers (up to 500MT capacity)</li>
+                    <li class="list-group-item"><strong>Lifting Assets:</strong> 750MT crawler cranes with certified operators</li>
+                    <li class="list-group-item"><strong>Technical Crew:</strong> 150+ trained riggers and project engineers</li>
+                    <li class="list-group-item"><strong>Network:</strong> 12 strategic hubs across India with bonded warehouses</li>
+                </ul>
+                <h4 class="font-weight-bold mt-5 mb-3" style="color: #222;">Our Differentiators</h4>
+                <div class="row mb-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">1. Single-Point Responsibility</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>End-to-end contract logistics</li>
+                                    <li>Unified project management</li>
+                                    <li>Consolidated billing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">2. Engineering-Led Approach</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>Route feasibility studies</li>
+                                    <li>Transportability analysis</li>
+                                    <li>CAD simulations for critical loads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">3. Regulatory Compliance</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>In-house permit processing team</li>
+                                    <li>State-specific escort coordination</li>
+                                    <li>Customs bonded movement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="font-weight-bold mt-5 mb-3" style="color: #222;">Sector Expertise</h4>
+                <div class="row mb-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Energy Logistics</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>Wind: Complete WTG component movement</li>
+                                    <li>Thermal: Boiler drum transportation</li>
+                                    <li>Solar: PV module mega-project experience</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Industrial Projects</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>Plant relocation management</li>
+                                    <li>Machinery installation</li>
+                                    <li>Turnaround logistics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">Infrastructure Support</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>Metro rail component logistics</li>
+                                    <li>Bridge construction material</li>
+                                    <li>Tunnel project cargo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="font-weight-bold mt-5 mb-3" style="color: #222;">Project Execution Framework</h4>
+                <div class="row mb-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">1. Pre-Mobilization</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>Site reconnaissance</li>
+                                    <li>Method statement development</li>
+                                    <li>Risk mitigation planning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">2. Operations</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>Real-time cargo monitoring</li>
+                                    <li>Daily progress reporting</li>
+                                    <li>Contingency management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">3. Completion</h5>
+                                <ul class="mb-0 pl-3">
+                                    <li>As-built documentation</li>
+                                    <li>Lessons learned analysis</li>
+                                    <li>Client handover protocols</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 	<!-- //about -->
 	<!-- //middle section -->
 	<!-- footer -->

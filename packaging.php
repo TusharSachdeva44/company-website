@@ -49,34 +49,46 @@
 	<!-- //header 2 -->
 	<!-- about -->
 	<section class="w3ls-bnrbtm py-2" id="about">
-	    <div class="mb-4" style="height: 90vh; overflow: hidden;">
-<img src="images/rack.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh;"></div>
-<div class="container py-xl-1 py-lg-1">
-			<div class="row">
-				<div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
-<h1 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Packaging</h1>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
-   <li>Facility 1</li>
-   <li>Facility 2</li>
-   <li>Facility 3</li>
-   <li>Facility 4</li>
-</ul>
-<p class="px-2 pb-2 mb-5 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-				</div>
-	</div>
-	  </div>
-	</section>
+    <div class="mb-4" style="height: 90vh; overflow: hidden;">
+        <img src="images/packaging.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh; object-fit:cover;">
+    </div>
+    <div class="container py-xl-1 py-lg-1">
+        <div class="row">
+            <div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
+                <h3 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Packaging Services</h3>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    In the era of e-commerce and delicate shipments, your packaging speaks before your product does. We provide <strong>smart, sturdy and cost-effective packaging solutions</strong> that ensure safe delivery while enhancing your brand image.
+                </p>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    <strong>Our Packaging Services Include:</strong>
+                </p>
+                <ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
+                    <li> <strong>E-commerce Ready Packaging</strong> - Custom designed boxes for Amazon, Flipkart, Meesho sellers; Tamper-proof and waterproof packaging solutions; Ready-to-ship packaging with integrated labels</li>
+                    <li> <strong>Industrial Packaging</strong> - Heavy-duty wooden crates for machinery; Shrink wrapping and palletization services; Special anti-rust packaging for metal components</li>
+                    <li> <strong>Retail Packaging</strong> - Attractive POS (Point of Sale) ready packaging; Gift wrapping and festive packaging solutions; Luxury packaging for premium products</li>
+                    <li> <strong>Sustainable Solutions</strong> - Eco-friendly corrugated boxes; Biodegradable bubble wraps and void fillers; Returnable and reusable packaging systems</li>
+                </ul>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    <strong>Why Choose Our Packaging Services?</strong>
+                </p>
+                <ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
+                    <li> <strong>Damage Protection</strong> - Less than 0.5% damage rate</li>
+                    <li> <strong>Cost Optimization</strong> - Right-sized packaging to save shipping costs</li>
+                    <li> <strong>Brand Building</strong> - Custom printed boxes with your logo</li>
+                    <li> <strong>Warehouse Space Saving</strong> - Flat-pack and foldable designs</li>
+                    <li> <strong>Regulatory Compliance</strong> - Meet all e-way bill and GST requirements</li>
+                </ul>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    <strong>Special Packaging for:</strong><br>
+                    • Electronics and fragile items<br>
+                    • Pharma and medical equipment<br>
+                    • Automotive and engineering goods<br>
+                    • FMCG and food products
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 	<!-- //about -->
 	<!-- //middle section -->
 	<!-- footer -->

@@ -49,34 +49,39 @@
 	<!-- //header 2 -->
 	<!-- about -->
 	<section class="w3ls-bnrbtm py-2" id="about">
-	    <div class="mb-4" style="height: 90vh; overflow: hidden;">
-<img src="images/rack.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh;"></div>
-<div class="container py-xl-1 py-lg-1">
-			<div class="row">
-				<div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
-<h1 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Kitting</h1>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-<ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
-   <li>Facility 1</li>
-   <li>Facility 2</li>
-   <li>Facility 3</li>
-   <li>Facility 4</li>
-</ul>
-<p class="px-2 pb-2 mb-5 text-secondary" style="font-weight: 600; text-align: justify;">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
-
-</p>
-				</div>
-	</div>
-	  </div>
-	</section>
+    <div class="mb-4" style="height: 90vh; overflow: hidden;">
+        <img src="images/kitting.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh; object-fit:cover;">
+    </div>
+    <div class="container py-xl-1 py-lg-1">
+        <div class="row">
+            <div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
+                <h3 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Kitting Services</h3>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    Why ship components separately when you can deliver ready-to-sell kits? Our kitting services help brands, manufacturers and e-commerce companies save costs and improve customer experience.
+                </p>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    <strong>Our Kitting Offerings:</strong>
+                </p>
+                <ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
+                    <li> Promotional Kitting - Festival offers, combo packs, trial kits assembled as per campaign needs</li>
+                    <li> Subscription Box Assembly - Monthly curated boxes packed and shipped directly</li>
+                    <li> Retail-Ready Kitting - Products packed with price tags, leaflets and security tags already attached</li>
+                    <li> OEM Component Kitting - Industrial parts bundled as per production line requirements</li>
+                    <li> Quality Checked Kits - Each kit undergoes 3-point verification before dispatch</li>
+                </ul>
+                <p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">
+                    <strong>Why Customers Prefer Us:</strong>
+                </p>
+                <ul class="px-4 pb-2 my-4 text-secondary" style="font-weight: 700; text-align: justify;">
+                    <li> Save 30-40% on fulfillment costs compared to self-kitting</li>
+                    <li> No need to maintain separate inventory for combo offers</li>
+                    <li> Faster order processing during peak sale seasons</li>
+                    <li> Custom packaging options available</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 	<!-- //about -->
 	<!-- //middle section -->
 	<!-- footer -->
