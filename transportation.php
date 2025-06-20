@@ -1,90 +1,78 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-	<title>Gram SCS</title>
-	<!-- Meta tag Keywords -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8" />
-	<meta name="keywords" content="Gram SCS" />
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	<!--// Meta tag Keywords -->
-
-	<!-- Custom-Files -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Bootstrap-Core-CSS -->
-	<link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
-	<!-- banner slider -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-	<!-- Style-CSS -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<!-- Font-Awesome-Icons-CSS -->
-	<!-- //Custom-Files -->
-
-	<!-- Web-Fonts -->
-	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
-	 rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
-	 rel="stylesheet">
-	<!-- //Web-Fonts -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Gram SCS" />
+    <title>Gram SCS - Transportation</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/css_slider.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
+        rel="stylesheet">
 </head>
 
 <body>
-	<!-- header -->
-	<header id="home"><?php include('header.php');?></header>
-	<!-- //top-bar -->
+    <!-- header -->
+    <header id="home"><?php include('header.php');?></header>
+    <!-- //top-bar -->
 
-	<!-- header 2 -->
-	<!-- navigation -->
-<div class="main-top"><?php include('menu.php');?></div>
-	<!-- //navigation -->
-	<!-- //header 2 -->
-	<!-- about -->
-	<section class="w3ls-bnrbtm py-2" id="about">
-<img src="images/Transportation.jpg" width="100%">
-<div class="container py-xl-1 py-lg-1">
-			<div class="row">
-				<div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
-<h3 style="padding:10px 0px;">Transportation</h3>
-<p style="padding-bottom:10px;">Our business division provides with primary and secondary transportation (including last mile and reverse logistics) services over long distances in a faster and more efficient manner. All kinds of cargo is transported over long distances with high-tech transportation facilities and unique reporting system for all our transportation solution.</p>
-<p style="padding-bottom:10px;">We are happy to provide innovative and technology-enabled transportation solutions and programs that will support your supply chain thus, ensuring a competitive advantage to our customers in the marketplace.</p>
-<p style="padding-bottom:10px;">Our services include multiple location delivery and pick up, open and containerized trucks, special transportation solutions for high value cargo, hazardous material handling, reefer services, transportation insurance, road transport and development of in-house service improvement analytical tools viz. Load Optimization, Truck Indenting, Fleet Optimization.</p>
-<p style="padding-bottom:10px;"><strong>We specialize in providing the following services to our clients:</strong></p>
-<ul style="padding-left:20px;">
-   <li>Primary & Secondary Distribution (Inter-city and Intra-city)</li>
-   <li>Last Mile Distribution</li>
-   <li>Express Distribution</li>
-   <li>Reverse Logistics</li>
-</ul>
-				</div>
-	</div>
-	  </div>
-	</section>
-	<!-- //about -->
-	<!-- //middle section -->
-	<!-- footer -->
-	<footer class="bg-colors py-5">
-		<?php include('footer.php');?>
-	</footer>
-	<!-- //footer -->
-	<!-- copyright -->
-	<div class="copyright-w3ls py-4">
-		<?php include('copy.php');?>
-	</div>
-	<!-- //copyright -->
-	<!-- move top icon -->
-	<a href="#home" class="move-top text-center"></a>
-	<!-- //move top icon -->
-<!-- WhatsHelp.io widget -->
-<script type="text/javascript">
+    <!-- header 2 -->
+    <!-- navigation -->
+    <div class="main-top"><?php include('menu.php');?></div>
+    <!-- //navigation -->
+    <!-- //header 2 -->
+    <!-- about -->
+    <main>
+        <section class="service-hero">
+            <img src="images/Transportation.jpg" class="img-fluid w-100 service-hero-img" alt="Transportation">
+        </section>
+        <section class="service-content py-5" id="about">
+            <div class="container">
+                <h1 class="service-title text-center mb-4">Transportation</h1>
+                <p class="service-desc mb-3">Our business division provides with primary and secondary transportation (including
+                    last mile and reverse logistics) services over long distances in a faster and more efficient manner. All
+                    kinds of cargo is transported over long distances with high-tech transportation facilities and unique
+                    reporting system for all our transportation solution.</p>
+                <p class="service-desc mb-3">We are happy to provide innovative and technology-enabled transportation
+                    solutions and programs that will support your supply chain thus, ensuring a competitive advantage to
+                    our customers in the marketplace.</p>
+                <p class="service-desc mb-3">Our services include multiple location delivery and pick up, open and
+                    containerized trucks, special transportation solutions for high value cargo, hazardous material
+                    handling, reefer services, transportation insurance, road transport and development of in-house
+                    service improvement analytical tools viz. Load Optimization, Truck Indenting, Fleet Optimization.</p>
+                <p class="service-desc mb-3"><strong>We specialize in providing the following services to our clients:</strong>
+                </p>
+                <ul class="service-list mb-3">
+                    <li>Primary & Secondary Distribution (Inter-city and Intra-city)</li>
+                    <li>Last Mile Distribution</li>
+                    <li>Express Distribution</li>
+                    <li>Reverse Logistics</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- //about -->
+    <!-- //middle section -->
+    <!-- footer -->
+    <footer class="bg-colors py-5">
+        <?php include('footer.php');?>
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="copyright-w3ls py-4">
+        <?php include('copy.php');?>
+    </div>
+    <!-- //copyright -->
+    <!-- move top icon -->
+    <a href="#home" class="move-top text-center"></a>
+    <!-- //move top icon -->
+    <!-- WhatsHelp.io widget -->
+    <script type="text/javascript">
     (function () {
         var options = {
         

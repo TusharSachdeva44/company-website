@@ -867,6 +867,94 @@ h2.text-bg-click a { color: var(--color-white); }
     .team-grid { width: 80%; }
 }
 
+/* === HEADER === */
+.site-header .top-bar {
+    background: linear-gradient(90deg, #8BC34A 0%, #7eb540 60%, #6daf3e 100%);
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    height: 2.4rem;
+}
+
+/* === MAIN MENU === */
+.main-menu {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+.main-menu .navbar-brand img {
+    height: 48px;
+    width: auto;
+}
+.menu-modal {
+    /* Add modal styles here if needed */
+}
+.menu-modal-content {
+    /* Add modal content styles here if needed */
+}
+.menu-modal-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* === FOOTER === */
+.site-footer {
+    background: #252525;
+    color: #fff;
+}
+.site-footer a {
+    color: var(--color-footer-link);
+}
+.site-footer a:hover {
+    color: var(--color-primary);
+}
+.footer-row {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.footer-contact h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.footer-contact address {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+/* === COPYRIGHT BAR === */
+.copyright-bar {
+    background: #222;
+    color: #fff;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+}
+.copyright-bar .social-link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 1.1rem;
+    margin: 0 2px;
+    background: #444;
+    color: #fff;
+    transition: background 0.2s;
+}
+.copyright-bar .social-link.facebook { background: #316FF6; }
+.copyright-bar .social-link.twitter { background: #1DA1F2; }
+.copyright-bar .social-link.linkedin { background: #0077b5; }
+.copyright-bar .social-link:hover { opacity: 0.8; }
+
+/* === GENERAL UTILITY === */
+.text-bl { color: #252525; }
+.text-colors { color: #8BC34A; }
+.bg-colors { background: #8BC34A; color: #fff; }
+
 /* Additional styles */
 .who-img {
     height: 80vh;

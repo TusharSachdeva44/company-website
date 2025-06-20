@@ -1,32 +1,22 @@
-<div class="container">
-			<div class="row">
-				<!-- copyright -->
-				<p class="col-lg-8 copy-right-grids text-bl text-lg-left text-center mt-lg-2">© 2020 Gram SCS. All
-					Rights Reserved </p>
-				<!-- //copyright -->
-				<!-- social icons -->
-				<div class="col-lg-4 w3social-icons text-lg-right text-center mt-lg-0 mt-3">
-					<ul>
-						<li>
-							<span style="margin-right: 10px; font-size: 1rem; position: relative; top: 2px;">Connect with us: </span>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/gramscspvt/" class="rounded-circle" style="background-color: #316FF6; color: white;">
-								<span class="fa fa-facebook-f"></span>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/gram_scs" class="rounded-circle" style="background-color: #1DA1F2; color: white;">
-								<span class="fa fa-twitter"></span>
-							</a>
-						</li>
-						<li>
-							<a href="https://linkedin.com/in/gramscs" class="rounded-circle" style="background-color: #0077b5; color: white;">
-								<span class="fa fa-linkedin"></span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- //social icons -->
-			</div>
-		</div>
+<div class="row align-items-center">
+  <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+    <p class="mb-0">&copy; <?php echo date("Y"); ?> Gram SCS. All Rights Reserved</p>
+  </div>
+  <div class="col-md-6 text-center text-md-right">
+    <div class="social-links">
+      <span class="me-2 d-inline-block">Connect with us:</span>
+      <a href="https://www.facebook.com/gramscspvt/" class="social-link" aria-label="Facebook">
+        <span class="fa fa-facebook-f"></span>
+      </a>
+      <a href="https://twitter.com/gram_scs" class="social-link" aria-label="Twitter">
+        <span class="fa fa-twitter"></span>
+      </a>
+      <a href="https://linkedin.com/in/gramscs" class="social-link" aria-label="LinkedIn">
+        <span class="fa fa-linkedin"></span>
+      </a>
+      <a href="https://instagram.com/gramscs" class="social-link" aria-label="Instagram">
+        <span class="fa fa-instagram"></span>
+      </a>
+    </div>
+  </div>
+</div>

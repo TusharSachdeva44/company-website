@@ -1,475 +1,1487 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <!-- title - GRAM SCS -->
-    <title>Gram SCS</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Gram SCS" />
-    <meta property="og:title" content="GRAM SCS">
-    <meta property="og:description" content="We have solutions for you">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Gram SCS, logistics, supply chain, warehousing, transportation" />
+    <meta property="og:title" content="GRAM SCS - Integrated Logistics Solutions">
+    <meta property="og:description" content="Leading supply chain solutions provider in India with advanced technology integration">
+    <meta name="theme-color" content="#82CF2B">
+    <title>Gram SCS - Integrated Logistics Solutions</title>
+    
+    <!-- Preload critical fonts for performance -->
+    <link rel="preload" href="//fonts.googleapis.com/css?family=Lato:400,700&display=swap" as="style">
+    <link rel="preload" href="css/font-awesome.min.css" as="style">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    <!-- Web-Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
-    <!-- //Web-Fonts -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css_slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            /* Color System - Extended with accessibility in mind */
+            --primary-color: #82CF2B;
+            --primary-dark: #69a823;
+            --primary-light: #a5e261;
+            --primary-lightest: #f2faeb;
+            --secondary-color: #343a40;
+            --secondary-light: #6c757d;
+            --secondary-lightest: #f8f9fa;
+            --light-bg: #f8f9fa;
+            --dark-bg: #343a40;
+            --border-color: #dee2e6;
+            --border-focus: #80bdff;
+            --text-primary: #212529;
+            --text-secondary: #505a64; /* Improved contrast from #6c757d */
+            --text-muted: #6c757d;
+            --text-white: #ffffff;
+            --success: #28a745;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            
+            /* Spacing System - Golden ratio based (1:1.618) */
+            --space-unit: 8px;
+            --space-xxxs: calc(var(--space-unit) * 0.25); /* 2px */
+            --space-xxs: calc(var(--space-unit) * 0.5);   /* 4px */
+            --space-xs: calc(var(--space-unit) * 1);      /* 8px */
+            --space-sm: calc(var(--space-unit) * 1.618);  /* ~13px */
+            --space-md: calc(var(--space-unit) * 2.618);  /* ~21px */
+            --space-lg: calc(var(--space-unit) * 4.236);  /* ~34px */
+            --space-xl: calc(var(--space-unit) * 6.854);  /* ~55px */
+            --space-xxl: calc(var(--space-unit) * 11.09); /* ~89px */
+            
+            /* Section padding - Mathematically balanced */
+            --section-padding-y: var(--space-xl);
+            --section-padding-x: 0;
+            --section-padding-y-mobile: var(--space-lg);
+            
+            /* Border Radius */
+            --border-radius-xs: 2px;
+            --border-radius-sm: 4px;
+            --border-radius: 8px;
+            --border-radius-lg: 16px;
+            --border-radius-xl: 24px;
+            
+            /* Box Shadow - Layered for depth */
+            --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
+            --shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            --shadow-lg: 0 1rem 3rem rgba(0,0,0,.15);
+            --shadow-inner: inset 0 2px 4px rgba(0,0,0,0.05);
+            
+            /* Transition speeds */
+            --transition-fast: 0.15s ease;
+            --transition-medium: 0.3s ease;
+            --transition-slow: 0.5s ease;
+            --border-radius-lg: 16px;
+            
+            /* Box Shadow */
+            --shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
+            --shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+            --shadow-lg: 0 1rem 3rem rgba(0,0,0,.15);
+              /* Typography Scale - Based on perfect fourth (1.333) */
+            --text-xs: 0.75rem;     /* 12px */
+            --text-sm: 0.875rem;    /* 14px */
+            --text-base: 1rem;      /* 16px */
+            --text-md: 1.125rem;    /* 18px */
+            --text-lg: 1.333rem;    /* ~21.33px */
+            --text-xl: 1.777rem;    /* ~28.43px */
+            --text-2xl: 2.369rem;   /* ~37.9px */
+            --text-3xl: 3.157rem;   /* ~50.52px */
+            --text-4xl: 4.209rem;   /* ~67.34px */
+            
+            /* Font weights - For better control */
+            --font-light: 300;
+            --font-regular: 400;
+            --font-medium: 500;
+            --font-semibold: 600;
+            --font-bold: 700;
+            
+            /* Line heights - For better readability */
+            --line-height-tight: 1.2;
+            --line-height-normal: 1.5;
+            --line-height-relaxed: 1.75;
+            
+            /* Section alternating colors */
+            --section-bg-1: #ffffff;
+            --section-bg-2: #f8f9fa;
+            
+            /* Z-index layers */
+            --z-index-dropdown: 1000;
+            --z-index-sticky: 1020;
+            --z-index-fixed: 1030;
+            --z-index-modal-backdrop: 1040;
+            --z-index-modal: 1050;
+            --z-index-popover: 1060;
+            --z-index-tooltip: 1070;
+        }
+        
+        /* Consistent section styling with vertical rhythm */
+        section {
+            padding: var(--section-padding-y) var(--section-padding-x);
+            position: relative;
+            overflow: hidden; /* Prevent margin collapse */
+        }
+        
+        section + section {
+            margin-top: var(--space-md); /* Consistent spacing between sections */
+        }
+        
+        /* Heading styles with better vertical rhythm */
+        .section-title {
+            position: relative;
+            margin-bottom: var(--space-lg);
+            font-size: var(--text-2xl);
+            font-weight: var(--font-bold);
+            line-height: var(--line-height-tight);
+            letter-spacing: -0.01em; /* Slight tightening for larger headings */
+        }
+          .section-title-left {
+            text-align: left;
+            border-left: 5px solid var(--primary-color);
+            padding-left: var(--space-sm);
+            letter-spacing: 0.5px;
+            position: relative;
+        }
+        
+        .section-title-left:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary-color);
+            opacity: 0.6;
+        }
+        
+        .section-title-center {
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title-center:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 0.7rem auto 0;
+        }
+        
+        /* Fix Bootstrap 4 row issues with consistent gutters */
+        .row-grid {
+            margin-right: -15px;
+            margin-left: -15px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .row-grid > [class*="col-"] {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-bottom: 30px;
+            display: flex;
+        }
+          /* Utility classes with extended options */
+        .bg-section-1 {
+            background-color: var(--section-bg-1);
+        }
+        
+        .bg-section-2 {
+            background-color: var(--section-bg-2);
+        }
+        
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .bg-primary-light {
+            background-color: var(--primary-light) !important;
+        }
+        
+        .bg-primary-lightest {
+            background-color: var(--primary-lightest) !important;
+        }
+        
+        .text-primary-color {
+            color: var(--primary-color) !important;
+        }
+        
+        .text-primary-dark {
+            color: var(--primary-dark) !important;
+        }
+        
+        .border-primary {
+            border-color: var(--primary-color) !important;
+        }
+        
+        /* Card with enhanced micro-interactions */
+        .card-custom {
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+            transition: transform var(--transition-medium), 
+                        box-shadow var(--transition-medium),
+                        border-color var(--transition-medium);
+            will-change: transform, box-shadow; /* Performance optimization */
+            position: relative;
+            z-index: 1;
+        }
+        
+        .card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--primary-light);
+            z-index: 2;
+        }
+          .card-custom:hover .icon-circle {
+            transform: scale(1.1);
+            background-color: rgba(130, 207, 43, 0.2);
+        }
+        
+        /* Stats cards with enhanced styling */
+        .stats-card {
+            transition: all var(--transition-medium);
+            position: relative;
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--primary-light) !important;
+        }
+        
+        .stats-number {
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        
+        /* Fix for visually-hidden class for accessibility */
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+        
+        /* Gallery improvements */
+        .gallery-img {
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-link:hover .gallery-img {
+            transform: scale(1.03);
+        }
+        
+        /* Improved popup styling */
+        .pop-overlay {
+            background: rgba(0, 0, 0, 0.8);
+        }        .popup {
+            background: #fff;
+            border-radius: var(--border-radius);
+            max-width: 800px;
+            width: 90%;
+        }
+          /* Button animation styles */
+        .btn-success {
+            transition: all 0.3s ease;
+        }
+          /* Back to top button */
+        .move-top {
+            width: 44px;
+            height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-medium);
+        }
+        
+        .move-top:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* Footer Styling */
+        .site-footer {
+            position: relative;
+            background: linear-gradient(to bottom, #343a40, #212529);
+        }
+        
+        .footer-heading {
+            font-size: 1rem;
+            font-weight: var(--font-bold);
+            letter-spacing: 0.5px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            height: 2px;
+            width: 50px;
+            background-color: var(--primary-color);
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: all var(--transition-fast);
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+            transform: translateX(3px);
+        }
+        
+        .footer-address {
+            font-style: normal;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+        
+        .footer-address a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+        }
+        
+        .footer-address a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-divider {
+            border-top-width: 1px;
+            opacity: 0.2;
+        }
+        
+        .footer-subscribe .form-control {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        
+        .footer-subscribe .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Copyright Section */
+        .copyright-section {
+            background-color: #0f1011;
+        }
+        
+        .social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            margin-left: 8px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all var(--transition-medium);
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 767px) {
+            .social-links {
+                justify-content: center;
+                margin-top: 1rem;
+            }
+            
+            .footer-heading::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .footer-links a:hover {
+                transform: none;
+            }
+        }
+        
+        .btn-success .btn-text {
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-success:hover .btn-text {
+            transform: translateX(-10px);
+        }
+        
+        .btn-success .btn-icon {
+            right: -30px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            opacity: 0; 
+            transition: all 0.3s ease;
+        }
+        
+        .btn-success:hover .btn-icon {
+            right: 15px;
+            opacity: 1;
+        }
+          /* Gallery card with refined hover effects */
+        .gallery-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            transition: transform var(--transition-medium);
+            backface-visibility: hidden; /* Prevent glitches during animations */
+        }
+        
+        .gallery-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+            opacity: 0;
+            transition: opacity var(--transition-medium);
+            z-index: 1;
+        }
+        
+        .gallery-card:hover::after {
+            opacity: 1;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+        }
+        
+        /* Refined popup styling with animations */
+        .pop-overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.85);
+            transition: all var(--transition-medium);
+            visibility: hidden;
+            opacity: 0;
+            z-index: var(--z-index-modal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            backdrop-filter: blur(3px); /* Subtle blur effect for depth */
+            -webkit-backdrop-filter: blur(3px);
+        }
+        
+        .pop-overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .popup {
+            background: #fff;
+            border-radius: var(--border-radius);
+            max-width: 800px;
+            width: 90%;
+            position: relative;
+            margin: 20px;
+            box-shadow: var(--shadow-lg);
+            transform: scale(0.95);
+            transition: transform var(--transition-medium);
+            overflow: hidden; /* Ensure border radius works with images */
+        }
+        
+        .pop-overlay:target .popup {
+            transform: scale(1);
+        }
+        
+        /* Add subtle animation for popup content */
+        .popup > div {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s;
+        }
+        
+        .pop-overlay:target .popup > div {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Close button styling */
+        .popup .close {
+            transition: all var(--transition-fast);
+        }
+        
+        .popup .close:hover {
+            color: var(--primary-color);
+            background-color: var(--light-bg);
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 576px) {
+            :root {
+                --section-padding-y: var(--space-md);
+            }
+            
+            .section-title {
+                font-size: calc(var(--text-2xl) * 0.7);
+            }
+        }
+        
+        /* Top Bar Styling */
+        .top-bar {
+            background-color: var(--secondary-color);
+            font-size: var(--text-xs);
+            z-index: var(--z-index-sticky) + 1;
+        }
+        
+        .top-bar a {
+            transition: color var(--transition-fast);
+            text-decoration: none;
+        }
+        
+        .top-bar a:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        .track-btn {
+            font-size: var(--text-xs);
+            border-radius: var(--border-radius-sm);
+            padding: 0.25rem 0.75rem;
+            transition: all var(--transition-fast);
+        }
+        
+        .track-btn:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        /* Main Navigation Styling */
+        .main-menu {
+            background-color: white;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-fast);
+            position: sticky;
+            top: 0;
+            z-index: var(--z-index-sticky);
+        }
+        
+        .main-menu.scrolled {
+            box-shadow: var(--shadow);
+        }
+        
+        .main-menu.nav-up {
+            transform: translateY(-100%);
+        }
+        
+        .navbar-inner {
+            padding: 0.5rem 0;
+        }
+        
+        .main-menu .navbar-brand {
+            display: flex;
+            align-items: center;
+            padding: 0;
+        }
+        
+        .main-menu .logo-img {
+            height: 48px;
+            width: auto;
+            transition: height var(--transition-fast);
+        }
+        
+        .main-menu.scrolled .logo-img {
+            height: 40px;
+        }
+        
+        /* Desktop Navigation */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-item {
+            position: relative;
+            margin: 0 0.25rem;
+        }
+        
+        .nav-link {
+            display: block;
+            padding: 0.75rem 1.25rem;
+            color: var(--text-primary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            position: relative;
+            font-size: var(--text-sm);
+        }
+        
+        .nav-link:hover, .nav-link:focus {
+            color: var(--primary-color);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: all var(--transition-medium);
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 80%;
+        }
+        
+        /* Dropdown menu styling */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-toggle {
+            position: relative;
+            padding-right: 1.5rem;
+        }
+        
+        .dropdown-toggle::after {
+            content: '▾';
+            position: absolute;
+            right: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform var(--transition-fast);
+        }
+        
+        .dropdown.show .dropdown-toggle::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        .mega-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: var(--shadow);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all var(--transition-medium);
+            z-index: var(--z-index-dropdown);
+            min-width: 700px;
+        }
+        
+        .dropdown.show .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .mega-menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .mega-menu-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .mega-menu-heading {
+            font-size: var(--text-sm);
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-weight: var(--font-bold);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .mega-menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .mega-menu-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .mega-menu-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            display: block;
+            padding: 0.25rem 0;
+            font-size: var(--text-sm);
+        }
+        
+        .mega-menu-list a:hover {
+            color: var(--primary-color);
+            transform: translateX(5px);
+        }
+        
+        /* Mobile menu button */
+        .mobile-menu-toggle {
+            display: flex;
+            align-items: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .menu-icon {
+            position: relative;
+            display: inline-block;
+            width: 24px;
+            height: 2px;
+            background-color: var(--text-primary);
+            transition: all var(--transition-fast);
+            margin-right: 8px;
+        }
+        
+        .menu-icon::before, 
+        .menu-icon::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: var(--text-primary);
+            transition: all var(--transition-fast);
+        }
+        
+        .menu-icon::before {
+            top: -8px;
+        }
+        
+        .menu-icon::after {
+            bottom: -8px;
+        }
+        
+        /* Modal menu styling */
+        .menu-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: var(--z-index-modal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-medium);
+        }
+        
+        .menu-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .menu-modal-content {
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            width: calc(100% - 2rem);
+            max-width: 1000px;
+            max-height: calc(100vh - 2rem);
+            overflow-y: auto;
+            transform: scale(0.9);
+            transition: all var(--transition-medium);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        
+        .menu-modal.active .menu-modal-content {
+            transform: scale(1);
+        }
+        
+        .menu-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .menu-modal-title {
+            font-size: var(--text-lg);
+            margin: 0;
+            color: var(--text-primary);
+            font-weight: var(--font-bold);
+        }
+        
+        .menu-modal-close {
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+        
+        .menu-modal-close:hover {
+            background-color: var(--light-bg);
+        }
+        
+        .close-icon {
+            position: relative;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .close-icon::before, 
+        .close-icon::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: var(--text-primary);
+            top: 50%;
+            left: 0;
+        }
+        
+        .close-icon::before {
+            transform: rotate(45deg);
+        }
+        
+        .close-icon::after {
+            transform: rotate(-45deg);
+        }
+        
+        .menu-modal-sections {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .menu-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .menu-section-title {
+            font-size: var(--text-md);
+            margin-bottom: 1rem;
+            font-weight: var(--font-bold);
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .menu-section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 40px;
+            background-color: var(--primary-color);
+        }
+        
+        .menu-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .menu-link:hover {
+            color: var(--primary-color);
+            transform: translateX(5px);
+        }
+        
+        @media (max-width: 991px) {
+            .mega-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                min-width: 100%;
+                padding: 0;
+            }
+            
+            .mega-menu-grid {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .mega-menu-column {
+                border-bottom: 1px solid var(--border-color);
+                padding-bottom: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header id="home"><?php include "header.php"; ?></header>
-    <div class="main-top"><?php include "menu.php"; ?></div>
-    <!-- //HEADER -->
-
-    <!-- HERO -->
-    <div class="banner_w3lspvt">
-        <div class="csslider infinity" id="slider1">
-            <input type="radio" name="slides" checked="checked" id="slides_1" />
-            <input type="radio" name="slides" id="slides_2" />
-            <input type="radio" name="slides" id="slides_3" />
-            <ul class="banner banner1">
-                <li class="banner-top1">
-                    <div class="container">
-                        <div class="banner-info_w3ls">
-                            <h3 class="text-wh font-weight-bold mt-2 mb-5 banner-title">Technology Based Logistics Solution</h3>
-                            <p class="banner-content">IT Integrated Supply Chain Solutions with Advanced Technology.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="banner banner2">
-                    <div class="container">
-                        <div class="banner-info_w3ls">
-                            <h3 class="text-wh font-weight-bold mt-2 mb-5 banner-title" style="background-color: rgba(0, 0, 0, 0.55); !important">Inventory Management</h3>
-                            <p class="banner-content">with Latest Warehousing Solutions</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="banner banner3">
-                    <div class="container">
-                        <div class="banner-info_w3ls">
-                            <h3 class="text-wh font-weight-bold mt-2 mb-5 banner-title">Delivering Excellence</h3>
-                            <p class="banner-content">in Freight Forwarding at all Indian Ports</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="navigation">
-                <div>
-                    <label for="slides_1"></label>
-                    <label for="slides_2"></label>
-                    <label for="slides_3"></label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //HERO -->
-
-    <!-- Services section -->
-    <section class="about-bottom py-5" id="services" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
-        <div class="container">
-            <div class="row justify-content-center gy-4">
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                    <div class="card border-0 shadow-sm w-100 h-100">
-                        <div class="card-body text-left">
-                            <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                                <span class="fa fa-users" style="color: #82CF2B; font-size: 2.2rem;"></span>
-                            </div>
-                            <h5 class="card-title font-weight-bold text-bl mb-2">Warehousing Services</h5>
-                            <p class="card-text text-secondary mb-0">Customized Warehouse & Inventory Management with solution-based & cost-effective approach.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                    <div class="card border-0 shadow-sm w-100 h-100">
-                        <div class="card-body text-left">
-                            <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                                <span class="fa fa-linode" style="color: #82CF2B; font-size: 2.2rem;"></span>
-                            </div>
-                            <h5 class="card-title font-weight-bold text-bl mb-2">IT & Automation</h5>
-                            <p class="card-text text-secondary mb-0">System integrated & technology-driven services, IoT product solutions, process improvement & consulting.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                    <div class="card border-0 shadow-sm w-100 h-100">
-                        <div class="card-body text-left">
-                            <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                                <span class="fa fa-book" style="color: #82CF2B; font-size: 2.2rem;"></span>
-                            </div>
-                            <h5 class="card-title font-weight-bold text-bl mb-2">Freight Forwarding</h5>
-                            <p class="card-text text-secondary mb-0">Digitised forwarding services, turnkey projects at all major Indian ports.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                    <div class="card border-0 shadow-sm w-100 h-100">
-                        <div class="card-body text-left">
-                            <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                                <span class="fa fa-laptop" style="color: #82CF2B; font-size: 2.2rem;"></span>
-                            </div>
-                            <h5 class="card-title font-weight-bold text-bl mb-2">Value Added Services</h5>
-                            <p class="card-text text-secondary mb-0">Customized documentation, kitting, stickering, GST/excise registration, and other value-added services.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                    <div class="card border-0 shadow-sm w-100 h-100">
-                        <div class="card-body text-left">
-                            <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                                <span class="fa fa-thumbs-o-up" style="color: #82CF2B; font-size: 2.2rem;"></span>
-                            </div>
-                            <h5 class="card-title font-weight-bold text-bl mb-2">Project Management</h5>
-                            <p class="card-text text-secondary mb-0">Logistics and materials handling system design, performance, and project execution.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                    <div class="card border-0 shadow-sm w-100 h-100">
-                        <div class="card-body text-left">
-                            <div class="mb-3 d-flex align-items-center justify-content-center" style="height:56px;">
-                                <span class="fa fa-magic" style="color: #82CF2B; font-size: 2.2rem;"></span>
-                            </div>
-                            <h5 class="card-title font-weight-bold text-bl mb-2">Distribution Logistics</h5>
-                            <p class="card-text text-secondary mb-0">Primary & secondary distribution, cross-border deliveries up to last mile with on-time performance.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //Services section -->
-
-    <!-- introduction -->
-    <div class="container introduction text-center py-4" style="background: none !important;">
-        <h3 class="text-bl font-weight-bold text-white">GRAM SCS</h3>
-        <p class="text-secondary mx-auto" style="max-width: 700px;">At <strong>GRAM Supply Chain Solutions Private Limited</strong>, we pride ourselves on being a leading integrated logistics solution provider in India, with a strong presence in international markets such as Japan. Our rapid expansion is driven by our commitment to leveraging cutting-edge technology and scientific methods to minimize human intervention and maximize efficiency. We are dedicated to delivering innovative logistics solutions that streamline operations and enhance supply chain performance.</p>
-    </div>
-
-    <!-- about -->
-    <section class="w3ls-bnrbtm py-5" id="about" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
-        <div class="container">
-            <h2 class="font-weight-bold text-bl mb-4" style="text-align:left; border-left: 5px solid #82CF2B; padding-left: 16px; letter-spacing: 0.5px;">About GRAM SCS</h2>
-            <!-- stats-->
-            <div class="stats-info pt-lg-4">
-                <div class="row justify-content-center stats-row">
-                    <div class="col-lg-3 col-sm-6 stats-grid-w3-w3pvt-am">
-                        <div class="row">
-                            <div class="col-4 icon-right-w3ls text-sm-left text-center">
-                                <div class="stats-icon-w3pvt">
-                                    <span class="fa fa-smile-o"></span>
+    <header id="home">
+        <?php include "header.php"; ?>
+    </header>
+    <nav class="main-navigation">
+        <?php include "menu.php"; ?>
+    </nav>
+    <main>
+        <!-- HERO SECTION: Carousel-based, professional, responsive -->
+        <div class="banner_w3lspvt position-relative">
+            <div class="csslider infinity" id="slider1">
+                <input type="radio" name="slides" checked="checked" id="slides_1" />
+                <input type="radio" name="slides" id="slides_2" />
+                <input type="radio" name="slides" id="slides_3" />
+                <ul class="banner banner1">
+                    <li class="banner-top1">
+                        <div class="container" style="height: 100%;">
+                            <div class="banner-info_w3ls text-center">
+                                <div class="py-3 px-4" style="background-color: rgba(0, 0, 0, 0.55); border-radius: var(--border-radius); display: inline-block;">
+                                    <h1 class="text-white font-weight-bold my-2 banner-title">Technology Based Logistics Solution</h1>
+                                    <p class="banner-content text-white mb-2">IT Integrated Supply Chain Solutions with Advanced Technology</p>
                                 </div>
                             </div>
-                            <div class="col-8">
-                                <p class="counter font-weight-bold text-bl">2017</p>
-                                <p class="text-colors mt-2">Founded Year</p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 stats-grid-w3-w3pvt-am mt-sm-0 mt-4">
-                        <div class="row">
-                            <div class="col-4 icon-right-w3ls text-sm-left text-center">
-                                <div class="stats-icon-w3pvt">
-                                    <span class="fa fa-shield"></span>
+                    </li>
+                    <li class="banner banner2">
+                        <div class="container" style="height: 100%;">
+                            <div class="banner-info_w3ls text-center">
+                                <div class="py-3 px-4" style="background-color: rgba(0, 0, 0, 0.55); border-radius: var(--border-radius); display: inline-block;">
+                                    <h2 class="text-white font-weight-bold my-2 banner-title">Inventory Management</h2>
+                                    <p class="banner-content text-white mb-2">with Latest Warehousing Solutions</p>
                                 </div>
                             </div>
-                            <div class="col-8">
-                                <p class="counter font-weight-bold text-bl">920</p>
-                                <p class="text-colors mt-2">Cross Border Deliveries</p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 stats-grid-w3-w3pvt-am mt-lg-0 mt-4">
-                        <div class="row">
-                            <div class="col-4 icon-right-w3ls text-sm-left text-center">
-                                <div class="stats-icon-w3pvt">
-                                    <span class="fa fa-user-o"></span>
+                    </li>
+                    <li class="banner banner3">
+                        <div class="container" style="height: 100%;">
+                            <div class="banner-info_w3ls text-center">
+                                <div class="py-3 px-4" style="background-color: rgba(0, 0, 0, 0.55); border-radius: var(--border-radius); display: inline-block;">
+                                    <h2 class="text-white font-weight-bold my-2 banner-title">Delivering Excellence</h2>
+                                    <p class="banner-content text-white mb-2">in Freight Forwarding at all Indian Ports</p>
                                 </div>
                             </div>
-                            <div class="col-8">
-                                <p class="counter font-weight-bold text-bl">70</p>
-                                <p class="text-colors mt-2">Japanese Manufacturers</p>
-                            </div>
                         </div>
+                    </li>
+                </ul>
+                <div class="navigation">
+                    <div>
+                        <label for="slides_1"></label>
+                        <label for="slides_2"></label>
+                        <label for="slides_3"></label>
                     </div>
-                    <div class="col-lg-3 col-sm-6 stats-grid-w3-w3pvt-am mt-lg-0 mt-4">
-                        <div class="row">
-                            <div class="col-4 icon-right-w3ls text-sm-left text-center">
-                                <div class="stats-icon-w3pvt">
-                                    <span class="fa fa-thumbs-o-up"></span>
+                </div>
+            </div>
+        </div>
+        <!-- //HERO SECTION -->
+
+        <!-- SERVICES SECTION: Professional cards, consistent spacing -->
+        <section class="services-section bg-section-2" id="services">
+            <div class="container">
+                <h2 class="section-title section-title-center">Our Services</h2>
+                <div class="row row-grid">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-custom">
+                            <div class="card-body text-center p-4">                                <div class="icon-circle mb-4 mx-auto d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-users" aria-hidden="true" style="color: var(--primary-color); font-size: var(--text-xl);"></span>
                                 </div>
+                                <h3 class="h5 font-weight-bold mb-3">Warehousing Services</h3>
+                                <p class="text-secondary mb-0">Customized Warehouse & Inventory Management with solution-based & cost-effective approach.</p>
                             </div>
-                            <div class="col-8">
-                                <p class="counter font-weight-bold text-bl">1080</p>
-                                <p class="text-colors mt-2">Average 1 million volume handled</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-custom">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-circle mb-4 mx-auto d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-linode" style="color: var(--primary-color); font-size: var(--text-2xl);"></span>
+                                </div>
+                                <h3 class="h5 font-weight-bold mb-3">IT & Automation</h3>
+                                <p class="text-secondary mb-0">System integrated & technology-driven services, IoT product solutions, process improvement & consulting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-custom">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-circle mb-4 mx-auto d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-book" style="color: var(--primary-color); font-size: var(--text-2xl);"></span>
+                                </div>
+                                <h3 class="h5 font-weight-bold mb-3">Freight Forwarding</h3>
+                                <p class="text-secondary mb-0">Digitised forwarding services, turnkey projects at all major Indian ports.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-custom">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-circle mb-4 mx-auto d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-laptop" style="color: var(--primary-color); font-size: var(--text-2xl);"></span>
+                                </div>
+                                <h3 class="h5 font-weight-bold mb-3">Value Added Services</h3>
+                                <p class="text-secondary mb-0">Customized documentation, kitting, stickering, GST/excise registration, and other value-added services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-custom">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-circle mb-4 mx-auto d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-thumbs-o-up" style="color: var(--primary-color); font-size: var(--text-2xl);"></span>
+                                </div>
+                                <h3 class="h5 font-weight-bold mb-3">Project Management</h3>
+                                <p class="text-secondary mb-0">Logistics and materials handling system design, performance, and project execution.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-custom">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-circle mb-4 mx-auto d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-magic" style="color: var(--primary-color); font-size: var(--text-2xl);"></span>
+                                </div>
+                                <h3 class="h5 font-weight-bold mb-3">Distribution Logistics</h3>
+                                <p class="text-secondary mb-0">Primary & secondary distribution, cross-border deliveries up to last mile with on-time performance.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- //stats -->
-        </div>
-    </section>
-    <!-- //about -->
+        </section>
+        <!-- //SERVICES SECTION -->
 
-    <!-- who we are -->
-    <section class="w3ls-bnrbtm py-5" id="who" style="background: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
-        <div class="container">
-            <h2 class="font-weight-bold text-bl mb-4" style="text-align:left; border-left: 5px solid #82CF2B; padding-left: 16px; letter-spacing: 0.5px;">How We Function</h2>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                    <div class="p-4 rounded shadow-sm bg-white h-100 d-flex flex-column justify-content-center" style="min-height: 350px; border: 1px solid #e0e0e0;">
-                        <h6 class="text-colors let-spa mb-2" style="color: #82CF2B;">Our Approach</h6>
-                        <p class="mb-4 text-secondary" style="font-size: 1.13rem; line-height: 1.7;">At GRAM SCS, we prioritize customer satisfaction by offering state-of-the-art logistics services. Our team utilizes the latest technological advancements to ensure that we meet and exceed our clients' expectations, fostering strong and enduring partnerships.</p>
-                        <ul class="list-unstyled who-lists mb-4" style="font-size: 1.05rem;">
-                            <li class="mb-2"><span class="fa fa-caret-right text-success mr-2"></span><strong>International Transport Delivery System</strong></li>
-                            <li class="mb-2"><span class="fa fa-caret-right text-success mr-2"></span><strong>Fast & Reliable Delivery Service</strong></li>
-                            <li class="mb-2"><span class="fa fa-caret-right text-success mr-2"></span><strong>Standardized Courier Value</strong></li>
-                            <li class="mb-2"><span class="fa fa-caret-right text-success mr-2"></span><strong>Automated Shipping Solutions</strong></li>
-                            <li class="mb-2"><span class="fa fa-caret-right text-success mr-2"></span><strong>Comprehensive Packaging & Storage</strong></li>
-                        </ul>
+        <!-- introduction section: clean, centered, professional -->
+        <section class="intro-section py-4 bg-section-1" id="intro">
+            <div class="container">
+                <div class="py-4 text-center">
+                    <h2 class="section-title section-title-center mb-3">GRAM SCS</h2>
+                    <div class="mx-auto" style="max-width: 800px;">
+                        <p class="text-secondary mb-0" style="font-size: var(--text-md); line-height: 1.7;">
+                            At <strong>GRAM Supply Chain Solutions Private Limited</strong>, we pride ourselves on being a leading integrated logistics solution provider in India, with a strong presence in international markets such as Japan. Our rapid expansion is driven by our commitment to leveraging cutting-edge technology and scientific methods to minimize human intervention and maximize efficiency. We are dedicated to delivering innovative logistics solutions that streamline operations and enhance supply chain performance.
+                        </p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 text-center">
-                    <img class="img-fluid rounded shadow-lg" src="images/warehouse.jpg" alt="Warehouse" style="width: 90%; max-width: 480px; height: auto; border: 2px solid #e0e0e0; background: #fff; margin: 0 auto;">
-                </div>
             </div>
-        </div>
-    </section>
-    <!-- //who we are -->
+        </section>
+        <!-- //introduction section -->
 
-    <!-- Mission statement -->
-    <section id="mission" class="py-5" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
-        <div class="container">
-            <h2 class="font-weight-bold text-bl mb-4" style="text-align:left; border-left: 5px solid #82CF2B; padding-left: 16px; letter-spacing: 0.5px;">Our Mission</h2>
-            <div class="mission-row justify-content-center">
-                <div class="col-12 col-lg-6 mission-content-col-custom">
-                    <div class="p-4 rounded shadow-sm bg-white h-100 d-flex flex-column justify-content-center" style="min-height: 350px; border: 1px solid #e0e0e0;">
-                        <h6 class="text-colors let-spa mb-2" style="color: #82CF2B;">Our Mission</h6>
-                        <p class="mb-0 text-secondary" style="font-size: 1.13rem; line-height: 1.7;">GRAM SCS fully believes in the give & take principle. The more we take care of our employees, the better we get at managing their work. Hence at GRAM, employees are given equal growth opportunities irrespective of color, gender, religion, etc.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center mission-img-col-custom">
-                    <img class="img-fluid rounded shadow-lg" src="images/warehouse2.png" alt="Warehouse operations" style="width: 90%; max-width: 480px; height: auto; border: 2px solid #e0e0e0; background: #fff; margin: 0 auto;">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //Mission statement -->
-
-    <!-- gallery -->
-    <div class="gallery py-5" id="gallery">
-        <div class="container">
-            <h2 class="text-bl text-center font-weight-bold mb-4">Gallery</h2>
-            <div class="row g-3">
-                <div class="col-12 col-md-4 gallery-grid1 mb-3 mb-md-0">
-                    <a href="#gal1">
-                        <img src="images/g1.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 gallery-grid1 mb-3 mb-md-0">
-                    <a href="#gal2">
-                        <img src="images/g2.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 gallery-grid1">
-                    <a href="#gal3">
-                        <img src="images/g3.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
-                    </a>
-                </div>
-            </div>
-            <div class="row g-3 mt-2">
-                <div class="col-12 col-md-4 gallery-grid1 mb-3 mb-md-0">
-                    <a href="#gal4">
-                        <img src="images/g4.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 gallery-grid1 mb-3 mb-md-0">
-                    <a href="#gal5">
-                        <img src="images/g5.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 gallery-grid1">
-                    <a href="#gal6">
-                        <img src="images/g6.jpg" alt=" " class="img-fluid rounded shadow-sm w-100" />
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- gallery popups -->
-        <!-- popup-->
-        <div id="gal1" class="pop-overlay animate">
-            <div class="popup">
-                <img src="images/g1.jpg" alt="Popup Image" class="img-fluid" />
-                <p class="mt-4 text-secondary">Efficient and seamless international shipping services at a bustling port, ensuring timely and secure delivery of your cargo.</p>
-                <a class="close" href="#gallery">&times;</a>
-            </div>
-        </div>
-        <!-- //popup -->
-        <!-- popup-->
-        <div id="gal2" class="pop-overlay animate">
-            <div class="popup">
-                <img src="images/g2.jpg" alt="Popup Image" class="img-fluid" />
-                <p class="mt-4 text-secondary text-secondary">Our fleet of cargo trucks on the move, dedicated to providing reliable and efficient ground transportation for your goods.</p>
-                <a class="close" href="#gallery">&times;</a>
-            </div>
-        </div>
-        <!-- //popup -->
-        <!-- popup-->
-        <div id="gal3" class="pop-overlay animate">
-            <div class="popup">
-                <img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
-                <p class="mt-4 text-secondary">Well-maintained fleet of delivery trucks ready to distribute your products nationwide with precision and care.</p>
-                <a class="close" href="#gallery">&times;</a>
-            </div>
-        </div>
-        <!-- //popup3 -->
-        <!-- popup-->
-        <div id="gal4" class="pop-overlay animate">
-            <div class="popup">
-                <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
-                <p class="mt-4 text-secondary">Experienced and dependable transportation services using traditional cargo trucks for all your logistical needs.</p>
-                <a class="close" href="#gallery">&times;</a>
-            </div>
-        </div>
-        <!-- //popup -->
-        <!-- popup-->
-        <div id="gal5" class="pop-overlay animate">
-            <div class="popup">
-                <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
-                <p class="mt-4 text-secondary">Coordinated and high-volume container truck operations at the port, ensuring quick and organized handling of your shipments.</p>
-                <a class="close" href="#gallery">&times;</a>
-            </div>
-        </div>
-        
-        <!-- popup-->
-        <div id="gal6" class="pop-overlay animate">
-            <div class="popup">
-                <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
-                <p class="mt-4 text-secondary">Comprehensive maritime transport solutions, featuring a cargo ship navigating through waterways to deliver your containers globally.</p>
-                <a class="close" href="#gallery">&times;</a>
-            </div>
-        </div>
-        <!-- //popup -->
-        <!-- //gallery popups -->
-    </div>
-    <!-- //gallery -->
-
-    <!-- contact -->
-    <section class="contact py-5" id="contact" style="background-color: #f7f9fa; border-top: 1.5px solid #d1d5db; border-bottom: 1.5px solid #d1d5db;">
-        <div class="container">
-            <h2 class="font-weight-bold text-bl mb-4" style="text-align:left; border-left: 5px solid #82CF2B; padding-left: 16px; letter-spacing: 0.5px;">Contact Us</h2>
-            <div class="row g-4 align-items-stretch justify-content-center">
-                <div class="col-12 col-md-10 col-lg-5 mb-4 mb-lg-0 d-flex align-items-stretch">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.044411352865!2d77.2127728142571!3d28.53838479508832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce398194e6799%3A0x40f2c7b780d291c!2sGRAM%20SCS%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1591499543546!5m2!1sen!2sin" frameborder="0" style="border: 0; height:400px; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <div class="col-12 col-md-10 col-lg-6 offset-lg-1 main_grid_contact d-flex align-items-center justify-content-center" style="border: 2px solid lightgrey; border-radius: 18px; background: #fff; min-width: 320px; max-width: 600px; margin: 0 auto; float: none; box-shadow: 0 2px 16px rgba(0,0,0,0.04);">
-                    <div class="form-w3ls p-4 w-100">
-                        <h3 class="mb-4 sec-title-w3 let-spa-1 text-bl text-center">Send us a message</h3>
-                        <form id="contactForm" action="sendmail.php" method="post" class="container-fluid p-0">
-                            <div class="row gx-2 gy-3">
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group mb-3">
-                                        <label for="name" class="form-label">Name</label>
-                                        <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required maxlength="60">
+        <!-- about section: stats, modern layout -->
+        <section class="about-section py-5 bg-section-2" id="about">
+            <div class="container">
+                <h2 class="section-title section-title-left mb-5">About GRAM SCS</h2>
+                <div class="stats-section">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-6 col-md-3 mb-4 mb-md-0">
+                            <div class="stats-card p-3 rounded shadow-sm border border-light">
+                                <div class="stats-icon-wrapper mb-3">
+                                    <div class="icon-circle mb-0 mx-auto">
+                                        <span class="fa fa-smile-o text-primary-color" style="font-size: var(--text-xl);"></span>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input class="form-control" type="email" id="email" name="email" placeholder="Your Email" required maxlength="80">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group mb-3">
-                                        <label for="phone" class="form-label">Phone Number</label>
-                                        <input class="form-control" type="text" id="phone" name="phone" placeholder="Your Phone Number" required pattern="[0-9+\-() ]{7,20}" maxlength="20">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group mb-3">
-                                        <label for="subject" class="form-label">Subject</label>
-                                        <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject" required maxlength="100">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group mb-3">
-                                        <label for="message" class="form-label">Message</label>
-                                        <textarea class="form-control" id="message" name="message" placeholder="Type your message here..." rows="4" required maxlength="1000"></textarea>
-                                    </div>
-                                </div>
+                                <h3 class="stats-number font-weight-bold mb-1" style="font-size: var(--text-2xl); letter-spacing: -0.02em;">2017</h3>
+                                <p class="stats-label text-secondary mb-0" style="font-size: var(--text-sm); letter-spacing: 0.5px;">Founded Year</p>
                             </div>
-                            <div class="input-group1 text-center mt-3">
-                                <button class="btn btn-success px-4 py-2" type="submit" style="min-width:120px;">Submit</button>
+                        </div>                        <div class="col-6 col-md-3 mb-4 mb-md-0">
+                            <div class="stats-card p-3 rounded shadow-sm border border-light">
+                                <div class="stats-icon-wrapper mb-3">
+                                    <div class="icon-circle mb-0 mx-auto">
+                                        <span class="fa fa-shield text-primary-color" style="font-size: var(--text-xl);"></span>
+                                    </div>
+                                </div>
+                                <h3 class="stats-number font-weight-bold mb-1" style="font-size: var(--text-2xl);">920</h3>
+                                <p class="stats-label text-secondary mb-0">Cross Border Deliveries</p>
                             </div>
-                        </form>
-                        <script>
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-    const response = await fetch(form.action, {
-        method: 'POST',
-        body: formData
-    });
-    const result = await response.json();
-    showToast(result.message || 'Saved locally.');
-    form.reset();
-});
-function showToast(msg) {
-    let toast = document.createElement('div');
-    toast.textContent = msg;
-    toast.style.position = 'fixed';
-    toast.style.bottom = '30px';
-    toast.style.left = '50%';
-    toast.style.transform = 'translateX(-50%)';
-    toast.style.background = '#333';
-    toast.style.color = '#fff';
-    toast.style.padding = '12px 28px';
-    toast.style.borderRadius = '6px';
-    toast.style.fontSize = '1.1rem';
-    toast.style.zIndex = 9999;
-    toast.style.boxShadow = '0 2px 12px rgba(0,0,0,0.15)';
-    document.body.appendChild(toast);
-    setTimeout(() => { toast.remove(); }, 5000); // Show for 5 seconds
-}
-</script>
+                        </div>                        <div class="col-6 col-md-3 mb-4 mb-md-0">
+                            <div class="stats-card p-3 rounded shadow-sm border border-light">
+                                <div class="stats-icon-wrapper mb-3">
+                                    <div class="icon-circle mb-0 mx-auto">
+                                        <span class="fa fa-user-o text-primary-color" style="font-size: var(--text-xl);"></span>
+                                    </div>
+                                </div>
+                                <h3 class="stats-number font-weight-bold mb-1" style="font-size: var(--text-2xl);">70</h3>
+                                <p class="stats-label text-secondary mb-0">Japanese Manufacturers</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stats-card p-3 rounded shadow-sm border border-light">
+                                <div class="stats-icon-wrapper mb-3">
+                                    <div class="icon-circle mb-0 mx-auto">
+                                        <span class="fa fa-thumbs-o-up text-primary-color" style="font-size: var(--text-xl);"></span>
+                                    </div>
+                                </div>
+                                <h3 class="stats-number font-weight-bold mb-1" style="font-size: var(--text-2xl);">1080</h3>
+                                <p class="stats-label text-secondary mb-0">Average 1M Volume Handled</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- //contact -->
+        </section>
+        <!-- //about section -->
 
-    <!-- footer -->
-    <footer class="bg-colors py-5">
-        <?php include "footer.php"; ?>
+        <!-- who we are section: modern, two-column -->
+        <section class="who-section py-5 bg-section-1" id="who">
+            <div class="container">
+                <h2 class="section-title section-title-left mb-5">How We Function</h2>
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                        <div class="content-card bg-section-2 p-4 rounded shadow-sm h-100">
+                            <h3 class="text-primary-color h5 mb-3">Our Approach</h3>
+                            <p class="mb-4 text-secondary" style="font-size: var(--text-md); line-height: 1.7;">
+                                At GRAM SCS, we prioritize customer satisfaction by offering state-of-the-art logistics services. Our team utilizes the latest technological advancements to ensure that we meet and exceed our clients' expectations, fostering strong and enduring partnerships.
+                            </p>
+                            <ul class="list-unstyled who-lists mb-0">
+                                <li class="mb-3 d-flex">
+                                    <span class="fa fa-check-circle text-primary-color mr-2 mt-1"></span>
+                                    <span class="font-weight-medium">International Transport Delivery System</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <span class="fa fa-check-circle text-primary-color mr-2 mt-1"></span>
+                                    <span class="font-weight-medium">Fast & Reliable Delivery Service</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <span class="fa fa-check-circle text-primary-color mr-2 mt-1"></span>
+                                    <span class="font-weight-medium">Standardized Courier Value</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <span class="fa fa-check-circle text-primary-color mr-2 mt-1"></span>
+                                    <span class="font-weight-medium">Automated Shipping Solutions</span>
+                                </li>
+                                <li class="d-flex">
+                                    <span class="fa fa-check-circle text-primary-color mr-2 mt-1"></span>
+                                    <span class="font-weight-medium">Comprehensive Packaging & Storage</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="image-wrapper text-center">
+                            <img class="img-fluid rounded shadow" src="images/warehouse.jpg" alt="Warehouse" style="max-width: 100%; width: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //who we are section -->
+
+        <!-- mission statement section: modern, two-column -->
+        <section class="mission-section py-5 bg-section-2" id="mission">
+            <div class="container">
+                <h2 class="section-title section-title-left mb-5">Our Mission</h2>
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                        <div class="content-card bg-section-1 p-4 rounded shadow-sm h-100">
+                            <h3 class="text-primary-color h5 mb-3">Our Mission</h3>
+                            <p class="mb-0 text-secondary" style="font-size: var(--text-md); line-height: 1.7;">
+                                GRAM SCS fully believes in the give & take principle. The more we take care of our employees, the better we get at managing their work. Hence at GRAM, employees are given equal growth opportunities irrespective of color, gender, religion, etc. We strive to create a working environment that fosters innovation, collaboration, and personal development, knowing that our team's success directly translates to exceptional service quality for our clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <div class="image-wrapper text-center">
+                            <img class="img-fluid rounded shadow" src="images/warehouse2.png" alt="Warehouse operations" style="max-width: 100%; width: 500px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //mission statement section -->
+
+        <!-- gallery section: modern, responsive, professional -->
+        <section class="gallery-section py-5 bg-section-1" id="gallery">
+            <div class="container">
+                <h2 class="section-title section-title-center mb-5">Gallery</h2>
+                <div class="row row-grid">
+                    <div class="col-12 col-md-4">
+                        <a href="#gal1" class="d-block gallery-link">
+                            <div class="gallery-card overflow-hidden rounded shadow">
+                                <img src="images/g1.jpg" alt="International shipping at port" class="img-fluid w-100 gallery-img" />
+                                <div class="gallery-overlay">
+                                    <span class="fa fa-search-plus"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="#gal2" class="d-block gallery-link">
+                            <div class="gallery-card overflow-hidden rounded shadow">
+                                <img src="images/g2.jpg" alt="Cargo trucks on the move" class="img-fluid w-100 gallery-img" />
+                                <div class="gallery-overlay">
+                                    <span class="fa fa-search-plus"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="#gal3" class="d-block gallery-link">
+                            <div class="gallery-card overflow-hidden rounded shadow">
+                                <img src="images/g3.jpg" alt="Fleet of delivery trucks" class="img-fluid w-100 gallery-img" />
+                                <div class="gallery-overlay">
+                                    <span class="fa fa-search-plus"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="#gal4" class="d-block gallery-link">
+                            <div class="gallery-card overflow-hidden rounded shadow">
+                                <img src="images/g4.jpg" alt="Traditional cargo trucks" class="img-fluid w-100 gallery-img" />
+                                <div class="gallery-overlay">
+                                    <span class="fa fa-search-plus"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="#gal5" class="d-block gallery-link">
+                            <div class="gallery-card overflow-hidden rounded shadow">
+                                <img src="images/g5.jpg" alt="Container truck operations at port" class="img-fluid w-100 gallery-img" />
+                                <div class="gallery-overlay">
+                                    <span class="fa fa-search-plus"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="#gal6" class="d-block gallery-link">
+                            <div class="gallery-card overflow-hidden rounded shadow">
+                                <img src="images/g6.jpg" alt="Maritime transport solutions" class="img-fluid w-100 gallery-img" />
+                                <div class="gallery-overlay">
+                                    <span class="fa fa-search-plus"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- gallery popups -->
+            <div id="gal1" class="pop-overlay animate">
+                <div class="popup">
+                    <div class="p-4">
+                        <img src="images/g1.jpg" alt="International shipping at port" class="img-fluid rounded mb-3" />
+                        <p class="text-secondary mb-3">Efficient and seamless international shipping services at a bustling port, ensuring timely and secure delivery of your cargo.</p>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="gal2" class="pop-overlay animate">
+                <div class="popup">
+                    <div class="p-4">
+                        <img src="images/g2.jpg" alt="Cargo trucks on the move" class="img-fluid rounded mb-3" />
+                        <p class="text-secondary mb-3">Our fleet of cargo trucks on the move, dedicated to providing reliable and efficient ground transportation for your goods.</p>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="gal3" class="pop-overlay animate">
+                <div class="popup">
+                    <div class="p-4">
+                        <img src="images/g3.jpg" alt="Fleet of delivery trucks" class="img-fluid rounded mb-3" />
+                        <p class="text-secondary mb-3">Well-maintained fleet of delivery trucks ready to distribute your products nationwide with precision and care.</p>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="gal4" class="pop-overlay animate">
+                <div class="popup">
+                    <div class="p-4">
+                        <img src="images/g4.jpg" alt="Traditional cargo trucks" class="img-fluid rounded mb-3" />
+                        <p class="text-secondary mb-3">Experienced and dependable transportation services using traditional cargo trucks for all your logistical needs.</p>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="gal5" class="pop-overlay animate">
+                <div class="popup">
+                    <div class="p-4">
+                        <img src="images/g5.jpg" alt="Container truck operations at port" class="img-fluid rounded mb-3" />
+                        <p class="text-secondary mb-3">Coordinated and high-volume container truck operations at the port, ensuring quick and organized handling of your shipments.</p>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="gal6" class="pop-overlay animate">
+                <div class="popup">
+                    <div class="p-4">
+                        <img src="images/g6.jpg" alt="Maritime transport solutions" class="img-fluid rounded mb-3" />
+                        <p class="text-secondary mb-3">Comprehensive maritime transport solutions, featuring a cargo ship navigating through waterways to deliver your containers globally.</p>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                    </div>
+                </div>
+            </div>
+            <!-- //gallery popups -->
+        </section>
+        <!-- //gallery section -->
+
+        <!-- contact section: professional, accessible form -->
+        <section class="contact-section py-5 bg-section-2" id="contact">
+            <div class="container">
+                <h2 class="section-title section-title-left mb-5">Contact Us</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+                        <div class="map-wrapper rounded shadow overflow-hidden h-100" style="min-height: 350px;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.044411352865!2d77.2127728142571!3d28.53838479508832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce398194e6799%3A0x40f2c7b780d291c!2sGRAM%20SCS%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1591499543546!5m2!1sen!2sin"
+                                frameborder="0" style="border: 0; height:100%; width:100%;" allowfullscreen="" aria-hidden="false" tabindex="0" title="GRAM SCS Location"></iframe>
+                        </div>
+                    </div>                    <div class="col-12 col-lg-7">
+                        <div class="contact-form-card bg-section-1 p-4 rounded shadow" style="border: 2px solid var(--primary-color);">                            <h3 class="h4 text-center mb-4 font-weight-bold position-relative">
+                                <span class="position-relative">
+                                    Send Us a Message
+                                    <span class="d-block position-absolute" style="height: 3px; width: 40%; background-color: var(--primary-color); bottom: -8px; left: 50%; transform: translateX(-50%);"></span>
+                                </span>
+                            </h3>
+                            <form id="contactForm" action="sendmail.php" method="post" class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="contact-name">Name</label>
+                                            <input class="form-control" type="text" id="contact-name" name="name" placeholder="Your name" required maxlength="60" data-pristine-required-message="Please enter your name">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="contact-email">Email</label>
+                                            <input class="form-control" type="email" id="contact-email" name="email" placeholder="Your email" required maxlength="80">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="contact-phone">Phone Number</label>
+                                            <input class="form-control" type="text" id="contact-phone" name="phone" placeholder="Your phone number" required maxlength="20" pattern="[0-9+\-() ]{7,20}">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="contact-subject">Subject</label>
+                                            <input class="form-control" type="text" id="contact-subject" name="subject" placeholder="Subject" required maxlength="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="contact-message">Message</label>
+                                    <textarea class="form-control" id="contact-message" name="message" placeholder="Your message" rows="5" required maxlength="1000"></textarea>
+                                </div>                                <div class="text-center">
+                                    <button class="btn btn-success px-5 py-2 position-relative overflow-hidden" type="submit">
+                                        <span class="btn-text">Submit Message</span>
+                                        <span class="btn-icon position-absolute d-flex align-items-center justify-content-center">
+                                            <i class="fa fa-paper-plane ml-2" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //contact section -->    </main>
+    
+    <!-- Footer Section -->
+    <footer class="site-footer py-5 bg-dark text-white">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <?php include "footer.php"; ?>
+            
+            <!-- Footer Divider -->
+            <hr class="footer-divider my-4 bg-light opacity-25">
+            
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="newsletter-subscribe mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-3 footer-heading">Subscribe to Our Newsletter</h5>
+                    <form class="d-flex footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter" required>
+                        <button class="btn btn-primary ml-2" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+                <a href="#home" class="move-top btn btn-outline-light rounded-circle" aria-label="Back to top">
+                    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
     </footer>
-    <!-- //footer -->
-    <!-- copyright -->
-    <div class="copyright-w3ls py-4">
-        <?php include "copy.php"; ?>
+    
+    <!-- Copyright Section -->
+    <div class="copyright-section py-3 bg-black text-white">
+        <div class="container">
+            <?php include "copy.php"; ?>
+        </div>
     </div>
-    <!-- //copyright -->
-    <!-- move top icon -->
-    <a href="#home" class="move-top text-center"></a>
-    <!-- //move top icon -->
+    
     <script src="./js/index.js" type="module"></script>
     <script>
-    // MENU BUTTON FUNCTIONALITY (hook or crook)
+    // MENU BUTTON FUNCTIONALITY
     document.addEventListener('DOMContentLoaded', function() {
         var menuLabel = document.querySelector('label.toggle[for="drop"]');
         var menuCheckbox = document.getElementById('drop');
         var menuUl = document.querySelector('ul.menu');
-        if(menuLabel && menuCheckbox && menuUl) {
+        
+        if (menuLabel && menuCheckbox && menuUl) {
             function updateAria() {
                 menuLabel.setAttribute('aria-expanded', menuCheckbox.checked ? 'true' : 'false');
             }
+            
             menuLabel.addEventListener('click', function(e) {
                 if (!menuCheckbox.checked) {
                     menuCheckbox.checked = true;
@@ -477,75 +1489,159 @@ function showToast(msg) {
                     document.body.style.overflow = 'hidden';
                     updateAria();
                 }
-                // If already open, do nothing (do not close on button click)
             });
+            
             document.addEventListener('click', function(e) {
-                if(menuCheckbox.checked && !menuUl.contains(e.target) && e.target !== menuLabel) {
+                if (menuCheckbox.checked && !menuUl.contains(e.target) && e.target !== menuLabel) {
                     menuCheckbox.checked = false;
                     menuUl.style.display = '';
                     document.body.style.overflow = '';
                     updateAria();
                 }
             });
+            
             document.addEventListener('keydown', function(e) {
-                if(e.key === 'Escape' && menuCheckbox.checked) {
+                if (e.key === 'Escape' && menuCheckbox.checked) {
                     menuCheckbox.checked = false;
                     menuUl.style.display = '';
                     document.body.style.overflow = '';
                     updateAria();
                 }
             });
+            
             updateAria();
         }
-        // GALLERY POPUP ENHANCEMENTS
+        
+        // GALLERY POPUP MANAGEMENT
         function isPopupOpen() {
             return !!document.querySelector('.pop-overlay:target');
         }
+
         function closeAllPopups() {
             window.location.hash = '#gallery';
         }
+
         // Prevent background scroll when popup is open
         function toggleBodyScroll(disable) {
-            if(disable) {
+            if (disable) {
                 document.body.style.overflow = 'hidden';
             } else {
                 document.body.style.overflow = '';
             }
         }
+
         // Listen for hash changes to detect popup open/close
         window.addEventListener('hashchange', function() {
             toggleBodyScroll(isPopupOpen());
         });
+        
         // On page load, in case popup is open
         toggleBodyScroll(isPopupOpen());
+        
         // Allow closing popup by clicking overlay (not just close button)
         document.querySelectorAll('.pop-overlay').forEach(function(overlay) {
             overlay.addEventListener('click', function(e) {
-                if(e.target === overlay) {
+                if (e.target === overlay) {
                     closeAllPopups();
                 }
             });
         });
-        // Accessibility: close popup with Escape key
-        document.addEventListener('keydown', function(e) {
-            if(e.key === 'Escape' && isPopupOpen()) {
+        
+        // Accessibility: close popup with Escape key        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && isPopupOpen()) {
                 closeAllPopups();
             }
         });
     });
-    // GALLERY POPUP IMAGE RESPONSIVE FIX
-    document.addEventListener('DOMContentLoaded', function() {
-        var popups = document.querySelectorAll('.popup img');
-        popups.forEach(function(img) {
-            img.style.maxWidth = '100%';
-            img.style.maxHeight = '60vh';
-            img.style.width = 'auto';
-            img.style.height = 'auto';
-            img.style.objectFit = 'contain';
-            img.style.display = 'block';
-            img.style.margin = '0 auto';
+    </script>
+    <script>
+        // Form validation enhancement
+        document.addEventListener('DOMContentLoaded', function() {
+            var forms = document.querySelectorAll('.needs-validation');
+            
+            Array.prototype.slice.call(forms).forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    
+                    form.classList.add('was-validated');
+                }, false);
+            });
+            
+            // Add subtle animation to stats numbers
+            const statsNumbers = document.querySelectorAll('.stats-number');
+            
+            if (statsNumbers.length) {
+                const observerOptions = {
+                    threshold: 0.5,
+                    rootMargin: '0px'
+                };
+                
+                const statsObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                            statsObserver.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+                
+                statsNumbers.forEach(number => {
+                    number.style.opacity = '0';
+                    number.style.transform = 'translateY(20px)';
+                    number.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    statsObserver.observe(number);
+                });
+            }
+            
+            // Enhance focus states for better accessibility
+            const focusableElements = document.querySelectorAll('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])');
+            
+            focusableElements.forEach(element => {
+                element.addEventListener('focus', function() {
+                    this.style.outline = '2px solid rgba(130, 207, 43, 0.4)';
+                    this.style.outlineOffset = '2px';
+                });
+                
+                element.addEventListener('blur', function() {
+                    this.style.outline = '';
+                    this.style.outlineOffset = '';                });
+            });
         });
-    });
+    </script>
+    
+    <!-- Essential JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Modal menu script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openMenuBtn = document.getElementById('openMenuModal');
+            const menuModal = document.getElementById('menuModal');
+            const closeMenuBtn = document.querySelector('.menu-modal-close');
+            
+            if(openMenuBtn && menuModal && closeMenuBtn) {
+                openMenuBtn.addEventListener('click', function() {
+                    menuModal.style.display = 'block';
+                    openMenuBtn.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                    setTimeout(function() {
+                        closeMenuBtn.focus();
+                    }, 100);
+                });
+                
+                closeMenuBtn.addEventListener('click', function() {
+                    menuModal.style.display = 'none';
+                    openMenuBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                    openMenuBtn.focus();
+                });
+            }
+        });
     </script>
 </body>
 
