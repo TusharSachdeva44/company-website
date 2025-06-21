@@ -28,6 +28,7 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
 	<!-- //Custom-Files -->
+	<link rel="stylesheet" href="assets/css/pages/custom-clearance-activity/custom-clearance-activity.css">
 
 	<!-- Web-Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
@@ -49,19 +50,19 @@
 	<!-- //header 2 -->
 	<!-- about -->
 	<section class="w3ls-bnrbtm py-2" id="about">
-	    <div class="mb-4" style="height: 90vh; overflow: hidden;">
-<img src="images/rack.jpg" class="img-fluid mb-5" width="100%" style="height: 90vh;"></div>
+	    <div class="mb-4 height-90vh overflow-hidden">
+<img src="images/rack.jpg" class="img-fluid mb-5 width-100 height-90vh"></div>
 <div class="container py-xl-1 py-lg-1">
 			<div class="row">
 				<div class="col-lg-12 pl-xl-1 mt-lg-0 mt-1">
-<h1 class="px-2 py-0 mb-4" style="color: black; font-weight: 800; text-align: center;">Custom Clearance Activity</h1>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">GRAM Supply Chain Solutions offers complete Import and Export customs clearance services at all major air and sea ports in India.
+<h1 class="px-2 py-0 mb-4 font-weight-bold text-center">Custom Clearance Activity</h1>
+<p class="px-2 pb-2 mb-2 text-secondary font-weight-bold text-justify">GRAM Supply Chain Solutions offers complete Import and Export customs clearance services at all major air and sea ports in India.
 
 </p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">We combine extensive customs clearing and forwarding experience with the latest trends in information technology. We adhere to strict customs compliance and quality policy for all our operations; thereby eliminating delays and providing reliable service to our customers worldwide.
+<p class="px-2 pb-2 mb-2 text-secondary font-weight-bold text-justify">We combine extensive customs clearing and forwarding experience with the latest trends in information technology. We adhere to strict customs compliance and quality policy for all our operations; thereby eliminating delays and providing reliable service to our customers worldwide.
 
 </p>
-<p class="px-2 pb-2 mb-2 text-secondary" style="font-weight: 600; text-align: justify;">We are hands-on with the latest in customs compliances, regulations and procedures and offer clearance of import and export consignments by sea, air and road.
+<p class="px-2 pb-2 mb-2 text-secondary font-weight-bold text-justify">We are hands-on with the latest in customs compliances, regulations and procedures and offer clearance of import and export consignments by sea, air and road.
 
 </p>
 <h5>Our Services in Customs Clearing Include</h5>
