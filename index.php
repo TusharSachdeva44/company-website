@@ -766,8 +766,7 @@
             color: var(--primary-color);
             transform: translateX(5px);
         }
-        
-        /* Mobile menu button */
+          /* Mobile menu button */
         .mobile-menu-toggle {
             display: flex;
             align-items: center;
@@ -775,6 +774,7 @@
             border: none;
             cursor: pointer;
             padding: 0.5rem;
+            z-index: 10;
         }
         
         .menu-icon {
@@ -785,6 +785,54 @@
             background-color: var(--text-primary);
             transition: all var(--transition-fast);
             margin-right: 8px;
+        }
+          /* Track Shipment Button */
+        .track-shipment-btn {
+            background-color: transparent;
+            border: 1.5px solid var(--secondary-color);
+            color: var(--secondary-color);
+            font-size: var(--text-sm);
+            font-weight: var(--font-medium);
+            padding: 0.5rem 1.25rem;
+            border-radius: var(--border-radius-sm);
+            text-decoration: none;
+            transition: all var(--transition-medium);
+            white-space: nowrap;
+            letter-spacing: 0.3px;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: none;
+            text-transform: uppercase;
+        }
+        
+        .track-shipment-btn::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.05);
+            transition: width var(--transition-medium);
+            z-index: -1;
+        }
+        
+        .track-shipment-btn:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .track-shipment-btn:hover::after {
+            width: 100%;
+        }
+        
+        .track-shipment-btn .fa {
+            font-size: 16px;
         }
         
         .menu-icon::before, 
@@ -805,8 +853,7 @@
             bottom: -8px;
         }
         
-        /* Modal menu styling */
-        .menu-modal {
+        /* Modal menu styling */        .menu-modal {
             position: fixed;
             top: 0;
             left: 0;
@@ -820,6 +867,8 @@
             opacity: 0;
             visibility: hidden;
             transition: all var(--transition-medium);
+            padding: 1rem;
+            overflow-y: auto;
         }
         
         .menu-modal.active {
@@ -830,7 +879,7 @@
         .menu-modal-content {
             background-color: white;
             border-radius: var(--border-radius-lg);
-            width: calc(100% - 2rem);
+            width: 100%;
             max-width: 1000px;
             max-height: calc(100vh - 2rem);
             overflow-y: auto;
@@ -838,6 +887,7 @@
             transition: all var(--transition-medium);
             box-shadow: var(--shadow-lg);
             position: relative;
+            margin: auto;
         }
         
         .menu-modal.active .menu-modal-content {
@@ -901,16 +951,24 @@
         .close-icon::after {
             transform: rotate(-45deg);
         }
-        
-        .menu-modal-sections {
+          .menu-modal-sections {
             padding: 2rem;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
         }
         
         .menu-section {
             margin-bottom: 1.5rem;
+            padding: 0.5rem;
+            border-radius: var(--border-radius-sm);
+            transition: background-color var(--transition-fast);
+        }
+        
+        .menu-section:hover {
+            background-color: rgba(0,0,0,0.02);
         }
         
         .menu-section-title {
@@ -945,8 +1003,7 @@
             color: var(--primary-color);
             transform: translateX(5px);
         }
-        
-        @media (max-width: 991px) {
+          @media (max-width: 991px) {
             .mega-menu {
                 position: static;
                 opacity: 1;
@@ -965,6 +1022,18 @@
             .mega-menu-column {
                 border-bottom: 1px solid var(--border-color);
                 padding-bottom: 1rem;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .menu-modal-sections {
+                grid-template-columns: 1fr;
+                padding: 1.5rem;
+                gap: 1rem;
+            }
+            
+            .menu-modal-header {
+                padding: 1rem 1.5rem;
             }
         }
     </style>

@@ -6,62 +6,18 @@
         <img src="images/logo.png" alt="Gram SCS Logo" class="img-fluid logo-img">
       </a>
 
-      <!-- Desktop Navigation (hidden on mobile) -->
-      <div class="desktop-menu d-none d-lg-flex">
-        <ul class="nav-links">
-          <li class="nav-item">
-            <a href="index.php" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle">Services</a>
-            <div class="mega-menu">
-              <div class="mega-menu-container">
-                <div class="mega-menu-grid">
-                  <div class="mega-menu-column">
-                    <h3 class="mega-menu-heading">Logistics</h3>
-                    <ul class="mega-menu-list">
-                      <li><a href="warehousing.php">Warehousing</a></li>
-                      <li><a href="transportation.php">Transportation</a></li>
-                      <li><a href="rail-freight.php">Rail Freight</a></li>
-                      <li><a href="ocean-freight.php">Ocean Freight</a></li>
-                      <li><a href="air-freight.php">Air Freight</a></li>
-                    </ul>
-                  </div>
-                  <div class="mega-menu-column">
-                    <h3 class="mega-menu-heading">Freight Forwarding</h3>
-                    <ul class="mega-menu-list">
-                      <li><a href="import-services.php">Import Services</a></li>
-                      <li><a href="export-services.php">Export Services</a></li>
-                      <li><a href="custom-clearance-activity.php">Custom Clearance</a></li>
-                      <li><a href="documentation.php">Documentation</a></li>
-                    </ul>
-                  </div>
-                  <div class="mega-menu-column">
-                    <h3 class="mega-menu-heading">Value Added</h3>
-                    <ul class="mega-menu-list">
-                      <li><a href="labelling.php">Labelling</a></li>
-                      <li><a href="packaging.php">Packaging</a></li>
-                      <li><a href="kitting.php">Kitting</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="about-us.php" class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact-us.php" class="nav-link">Contact</a>
-          </li>
-        </ul>
+      <!-- Right side actions container -->      <div class="d-flex align-items-center">
+        <!-- Track Shipment Button (visible on medium screens and above) -->
+        <a href="https://gramscs.com/tracking/" class="track-shipment-btn d-none d-md-flex align-items-center me-4">
+          <i class="fa fa-map-marker me-2"></i> Track Shipment
+        </a>
+        
+        <!-- Menu Button (always visible) -->
+        <button id="openMenuModal" class="mobile-menu-toggle" aria-haspopup="dialog" aria-controls="menuModal" aria-expanded="false">
+          <span class="menu-icon"></span>
+          <span class="menu-icon-text">Menu</span>
+        </button>
       </div>
-
-      <!-- Mobile Menu Button -->
-      <button id="openMenuModal" class="mobile-menu-toggle d-lg-none" aria-haspopup="dialog" aria-controls="menuModal" aria-expanded="false">
-        <span class="menu-icon"></span>
-        <span class="menu-icon-text">Menu</span>
-      </button>
     </div>
   </div>
 
