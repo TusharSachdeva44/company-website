@@ -49,8 +49,7 @@
       </div>
     </address>
   </div>
-  
-  <div class="col-12 col-lg-3">
+    <div class="col-12 col-lg-3">
     <h5 class="text-uppercase mb-3 footer-heading">International Office</h5>
     <address class="footer-address mb-3">
       <div class="d-flex mb-2">
@@ -60,8 +59,7 @@
       <div class="d-flex mb-2">
         <span class="fa fa-phone text-primary-color mr-2 mt-1"></span>
         <span>+91 12345 67890</span>
-      </div>
-      <div class="d-flex">
+      </div>      <div class="d-flex mb-3">
         <span class="fa fa-envelope text-primary-color mr-2 mt-1"></span>
         <a href="mailto:info@gramscs.com">info@gramscs.com</a>
       </div>

@@ -374,15 +374,38 @@
             border-top-width: 1px;
             opacity: 0.2;
         }
-        
-        .footer-subscribe .form-control {
+          .footer-subscribe .form-control {
             background-color: rgba(255, 255, 255, 0.1);
             border-color: rgba(255, 255, 255, 0.1);
             color: white;
+            height: 40px;
+            padding: 0.5rem 1rem;
+            font-size: 14px;
         }
         
         .footer-subscribe .form-control::placeholder {
             color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .footer-subscribe .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: var(--primary-color);
+            box-shadow: none;
+        }
+        
+        .footer-subscribe .btn {
+            height: 40px;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            font-size: 14px;
+            transition: all var(--transition-fast);
+        }
+        
+        .footer-subscribe .btn:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
         }
         
         /* Copyright Section */
@@ -1515,10 +1538,9 @@
             <hr class="footer-divider my-4 bg-light opacity-25">
             
             <!-- Bottom Footer -->
-            <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <div class="newsletter-subscribe mb-4 mb-md-0">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">                <div class="newsletter-subscribe mb-4 mb-md-0">
                     <h5 class="text-uppercase mb-3 footer-heading">Subscribe to Our Newsletter</h5>
-                    <form class="d-flex footer-subscribe">
+                    <form id="newsletterForm" class="d-flex footer-subscribe">
                         <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter" required>
                         <button class="btn btn-primary ml-2" type="submit">Subscribe</button>
                     </form>
@@ -1707,8 +1729,72 @@
                     menuModal.style.display = 'none';
                     openMenuBtn.setAttribute('aria-expanded', 'false');
                     document.body.style.overflow = '';
-                    openMenuBtn.focus();
+                    openMenuBtn.focus();                });
+            }
+        });
+    </script>
+    
+    <!-- Toast notification container -->
+    <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 1060;"></div>
+
+    <!-- Newsletter JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Newsletter form submission
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = this.querySelector('input[type="email"]').value;
+                    
+                    // You would typically send this to your server
+                    // For demo purposes, we'll just show a success toast
+                    if (email) {
+                        showToast('Success! You\'ve been subscribed to our newsletter.', 'success');
+                        this.reset();
+                    }
                 });
+            }
+            
+            // Toast notification function
+            window.showToast = function(message, type = 'success') {
+                const toastContainer = document.getElementById('toast-container');
+                
+                // Create toast element
+                const toast = document.createElement('div');
+                toast.className = `toast toast-${type}`;
+                toast.style.minWidth = '250px';
+                toast.style.backgroundColor = type === 'success' ? '#82CF2B' : '#dc3545';
+                toast.style.color = 'white';
+                toast.style.padding = '15px 20px';
+                toast.style.marginBottom = '10px';
+                toast.style.borderRadius = '4px';
+                toast.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.3s ease-in-out';
+                toast.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <span class="fa fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'} mr-2"></span>
+                        <div>${message}</div>
+                    </div>
+                `;
+                
+                // Add to container
+                toastContainer.appendChild(toast);
+                
+                // Trigger animation
+                setTimeout(() => {
+                    toast.style.opacity = '1';
+                }, 10);
+                
+                // Auto-dismiss after 3 seconds
+                setTimeout(() => {
+                    toast.style.opacity = '0';
+                    setTimeout(() => {
+                        toastContainer.removeChild(toast);
+                    }, 300);
+                }, 3000);
             }
         });
     </script>
