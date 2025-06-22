@@ -30,178 +30,175 @@
     </header>
     <nav class="main-navigation">
         <?php include "menu.php"; ?>
-    </nav>
-    <main>    <main>
+    </nav>    <main>
         <!-- HERO SECTION -->
         <section class="warehousing-hero-section">
-            <div class="container">
-                <div class="warehousing-hero-content text-center">
-                    <h1 class="warehousing-hero-title">Advanced Warehousing Solutions</h1>
-                    <p class="warehousing-hero-subtitle">
-                        Discover unparalleled warehousing systems designed to streamline your supply chain and elevate your business. 
-                        Leveraging advanced IoT technology and managed by our experienced team, we offer innovative, affordable solutions 
-                        that give you a competitive edge in the marketplace.
-                    </p>
-                    
-                    <div class="hero-features">
-                        <div class="hero-feature">
-                            <i class="fa fa-microchip"></i>
-                            <span>IoT Technology</span>
-                        </div>
-                        <div class="hero-feature">
-                            <i class="fa fa-shield-alt"></i>
-                            <span>24/7 Security</span>
-                        </div>
-                        <div class="hero-feature">
-                            <i class="fa fa-thermometer-half"></i>
-                            <span>Climate Control</span>
-                        </div>
-                        <div class="hero-feature">
-                            <i class="fa fa-chart-line"></i>
-                            <span>Real-time Tracking</span>
-                        </div>
+            <div class="warehousing-hero-content">
+                <h1 class="warehousing-hero-title">Warehousing Solutions</h1>
+                <p class="warehousing-hero-subtitle">
+                    Professional warehousing services with modern technology and reliable inventory management. 
+                    Our facilities provide secure storage, climate control, and efficient distribution solutions 
+                    tailored to your business requirements.
+                </p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fa fa-warehouse"></i>
+                        <span>Modern Facilities</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fa fa-shield-alt"></i>
+                        <span>Secure Storage</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fa fa-temperature-high"></i>
+                        <span>Climate Control</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fa fa-chart-line"></i>
+                        <span>Inventory Tracking</span>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- //HERO SECTION -->
-
-        <!-- OVERVIEW SECTION -->
-        <section class="overview-section" id="overview">
-            <div class="container">
+        <!-- //HERO SECTION -->        <!-- OVERVIEW SECTION -->
+        <section class="warehousing-overview-section" id="overview">
+            <div class="warehousing-overview-container">
                 <div class="text-center mb-5">
-                    <h2 class="section-title section-title-center">Why Choose Our Warehousing</h2>
-                    <p class="text-muted">Professional storage solutions tailored to your business needs</p>
+                    <h2 class="warehousing-overview-title">Professional Warehousing Services</h2>
+                    <p class="text-muted">Reliable storage solutions with quality management and security</p>
                 </div>
                 
-                <div class="overview-content">
-                    <p class="overview-text">
-                        Our expert team ensures the highest quality standards, safeguarding your products with precision and care over extended periods. 
-                        Enjoy seamless inventory management with ongoing cycle counts and regular stock audits.
-                    </p>
+                <div class="warehousing-overview-content">
+                    <div class="warehousing-overview-text">
+                        <p>
+                            Our warehousing services provide secure storage with quality management systems and regular inventory monitoring. 
+                            We maintain professional standards for product safety and offer flexible storage solutions for various business needs.
+                        </p>
+                        <p>
+                            With state-of-the-art facilities equipped with modern technology, we ensure your products are stored in optimal conditions 
+                            while providing real-time visibility into your inventory levels and movements.
+                        </p>
+                    </div>
                     
-                    <div class="overview-highlight">
-                        <h4 class="text-primary-color mb-3">
-                            <i class="fa fa-star mr-2"></i>
-                            Complete Storage Ecosystem
-                        </h4>
-                        <p class="mb-0">
-                            Benefit from climate control systems for sensitive products, state-of-the-art inventory control software, 
-                            robust security measures, and cost-effective transportation options tailored to your needs.
+                    <div class="warehousing-overview-image">
+                        <img src="images/warehouse.jpg" alt="Modern Warehouse Facility" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->        <!-- SERVICES SECTION -->
+        <section class="warehousing-services-section" id="services">
+            <div class="warehousing-services-pattern"></div>
+            <div class="warehousing-services-container">
+                <div class="text-center mb-5">
+                    <h2 class="warehousing-services-title">Our Warehousing Services</h2>
+                    <p class="text-muted">Flexible storage solutions for different business requirements</p>
+                </div>
+                
+                <div class="warehousing-services-grid">
+                    <div class="warehousing-service-card">
+                        <div class="warehousing-service-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3 class="warehousing-service-title">Shared Warehousing</h3>
+                        <p class="warehousing-service-description">
+                            Cost-effective shared storage facilities with flexible space allocation and professional management services.
+                        </p>
+                    </div>
+                    
+                    <div class="warehousing-service-card">
+                        <div class="warehousing-service-icon">
+                            <i class="fa fa-building"></i>
+                        </div>
+                        <h3 class="warehousing-service-title">Dedicated Facilities</h3>
+                        <p class="warehousing-service-description">
+                            Private warehousing facilities for businesses requiring dedicated space and customized storage solutions.
+                        </p>
+                    </div>
+                    
+                    <div class="warehousing-service-card">
+                        <div class="warehousing-service-icon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <h3 class="warehousing-service-title">Bonded Warehouses</h3>
+                        <p class="warehousing-service-description">
+                            Customs-compliant bonded storage facilities for imported goods with proper documentation and duty management.
+                        </p>
+                    </div>
+                    
+                    <div class="warehousing-service-card">
+                        <div class="warehousing-service-icon">
+                            <i class="fa fa-industry"></i>
+                        </div>
+                        <h3 class="warehousing-service-title">In-Plant Services</h3>
+                        <p class="warehousing-service-description">
+                            On-site warehousing and logistics support within manufacturing facilities for improved operational efficiency.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- //OVERVIEW SECTION -->
-
-        <!-- SERVICES SECTION -->
-        <section class="services-section" id="services">
-            <div class="container">
+        <!-- //SERVICES SECTION -->        <!-- FEATURES SECTION -->
+        <section class="warehousing-features-section" id="features">
+            <div class="warehousing-features-blob"></div>
+            <div class="warehousing-features-container">
                 <div class="text-center mb-5">
-                    <h2 class="section-title section-title-center">Our Warehousing Solutions</h2>
-                    <p class="text-muted">Scalable and customized storage solutions for every business requirement</p>
+                    <h2 class="warehousing-features-title">Advanced Features & Capabilities</h2>
+                    <p class="warehousing-features-subtitle">Cutting-edge technology and processes that set us apart</p>
                 </div>
                 
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <h3 class="service-title">Multi User Facility</h3>
-                            <p class="service-description">
-                                Shared warehousing spaces that offer cost-effective solutions for businesses of all sizes with flexible storage options.
-                            </p>
+                <div class="warehousing-features-grid">
+                    <div class="warehousing-feature-item">
+                        <div class="warehousing-feature-icon">
+                            <i class="fa fa-chart-bar"></i>
                         </div>
+                        <h4 class="warehousing-feature-title">Real-time Inventory Management</h4>
+                        <p class="warehousing-feature-description">Advanced WMS with real-time tracking, automated alerts, and comprehensive reporting for complete visibility.</p>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-building"></i>
-                            </div>
-                            <h3 class="service-title">Stand Alone Facilities</h3>
-                            <p class="service-description">
-                                Dedicated warehousing facilities exclusively for your business, providing complete control and customization options.
-                            </p>
+                    <div class="warehousing-feature-item">
+                        <div class="warehousing-feature-icon">
+                            <i class="fa fa-thermometer-three-quarters"></i>
                         </div>
+                        <h4 class="warehousing-feature-title">Climate Controlled Environment</h4>
+                        <p class="warehousing-feature-description">Temperature and humidity controlled storage areas for pharmaceuticals, electronics, and sensitive products.</p>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-lock"></i>
-                            </div>
-                            <h3 class="service-title">Custom Bonded Warehouses</h3>
-                            <p class="service-description">
-                                Secure bonded storage facilities for imported goods with customs compliance and duty deferment benefits.
-                            </p>
+                    <div class="warehousing-feature-item">
+                        <div class="warehousing-feature-icon">
+                            <i class="fa fa-shield-alt"></i>
                         </div>
+                        <h4 class="warehousing-feature-title">24/7 Security & Monitoring</h4>
+                        <p class="warehousing-feature-description">Multi-layer security with CCTV surveillance, access control, fire safety, and round-the-clock monitoring.</p>
                     </div>
                     
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-industry"></i>
-                            </div>
-                            <h3 class="service-title">In-Plant Logistics</h3>
-                            <p class="service-description">
-                                On-site warehousing and logistics management within your manufacturing facility for streamlined operations.
-                            </p>
+                    <div class="warehousing-feature-item">
+                        <div class="warehousing-feature-icon">
+                            <i class="fa fa-truck"></i>
                         </div>
+                        <h4 class="warehousing-feature-title">Integrated Transportation</h4>
+                        <p class="warehousing-feature-description">Seamless connection with our transportation network for efficient inbound and outbound logistics.</p>
+                    </div>
+                    
+                    <div class="warehousing-feature-item">
+                        <div class="warehousing-feature-icon">
+                            <i class="fa fa-boxes"></i>
+                        </div>
+                        <h4 class="warehousing-feature-title">Flexible Storage Systems</h4>
+                        <p class="warehousing-feature-description">Both shelving and racking systems with short and long-term storage options adapted to your needs.</p>
+                    </div>
+                    
+                    <div class="warehousing-feature-item">
+                        <div class="warehousing-feature-icon">
+                            <i class="fa fa-clipboard-check"></i>
+                        </div>
+                        <h4 class="warehousing-feature-title">Quality Assurance</h4>
+                        <p class="warehousing-feature-description">Regular cycle counts, stock audits, and quality checks to maintain the highest standards.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- //SERVICES SECTION -->
-
-        <!-- FEATURES SECTION -->
-        <section class="features-section" id="features">
-            <div class="container">
-                <div class="features-content">
-                    <div class="text-center mb-5">
-                        <h2 class="section-title section-title-center text-white">Advanced Features & Capabilities</h2>
-                        <p class="text-white opacity-75">Cutting-edge technology and processes that set us apart</p>
-                    </div>
-                    
-                    <div class="feature-grid">
-                        <div class="feature-item">
-                            <h4><i class="fa fa-chart-bar"></i>Real-time Inventory Management</h4>
-                            <p>Advanced WMS with real-time tracking, automated alerts, and comprehensive reporting for complete visibility.</p>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <h4><i class="fa fa-thermometer-three-quarters"></i>Climate Controlled Environment</h4>
-                            <p>Temperature and humidity controlled storage areas for pharmaceuticals, electronics, and sensitive products.</p>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <h4><i class="fa fa-shield-alt"></i>24/7 Security & Monitoring</h4>
-                            <p>Multi-layer security with CCTV surveillance, access control, fire safety, and round-the-clock monitoring.</p>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <h4><i class="fa fa-truck"></i>Integrated Transportation</h4>
-                            <p>Seamless connection with our transportation network for efficient inbound and outbound logistics.</p>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <h4><i class="fa fa-boxes"></i>Flexible Storage Systems</h4>
-                            <p>Both shelving and racking systems with short and long-term storage options adapted to your needs.</p>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <h4><i class="fa fa-clipboard-check"></i>Quality Assurance</h4>
-                            <p>Regular cycle counts, stock audits, and quality checks to maintain the highest standards.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //FEATURES SECTION -->
-
-        <!-- TECHNOLOGY SECTION -->
+        <!-- //FEATURES SECTION -->        <!-- TECHNOLOGY SECTION -->
         <section class="technology-section" id="technology">
             <div class="container">
                 <div class="text-center mb-5">
@@ -253,7 +250,163 @@
         </section>
         <!-- //TECHNOLOGY SECTION -->
 
-        <!-- CTA SECTION -->
+        <!-- ADVANCED FEATURES SECTION -->
+        <section class="advanced-features" id="advanced-features">
+            <div class="animated-bg">
+                <div class="animated-shape"></div>
+                <div class="animated-shape"></div>
+                <div class="animated-shape"></div>
+            </div>
+            <div class="advanced-features-container">
+                <div class="text-center mb-5">
+                    <h2 class="advanced-features-title">Advanced Capabilities</h2>
+                    <p class="advanced-features-subtitle">
+                        Discover our cutting-edge features that deliver exceptional warehousing performance and reliability for your business operations.
+                    </p>
+                </div>
+                
+                <div class="advanced-features-grid">
+                    <div class="advanced-feature-card">
+                        <div class="advanced-feature-img">
+                            <img src="images/warehouse.jpg" alt="Automated Storage Systems" loading="lazy">
+                            <div class="advanced-feature-overlay"></div>
+                        </div>
+                        <div class="advanced-feature-content">
+                            <div class="advanced-feature-icon">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+                            <h3 class="advanced-feature-title">Automated Storage Systems</h3>
+                            <p class="advanced-feature-description">
+                                State-of-the-art automated storage and retrieval systems that maximize space utilization 
+                                and increase picking accuracy while reducing operational costs.
+                            </p>
+                            <div class="advanced-feature-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">99.8%</div>
+                                    <div class="stat-label">Accuracy</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">40%</div>
+                                    <div class="stat-label">Cost Savings</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="advanced-feature-card">
+                        <div class="advanced-feature-img">
+                            <img src="images/rack.jpg" alt="Smart Inventory Analytics" loading="lazy">
+                            <div class="advanced-feature-overlay"></div>
+                        </div>
+                        <div class="advanced-feature-content">
+                            <div class="advanced-feature-icon">
+                                <i class="fa fa-chart-line"></i>
+                            </div>
+                            <h3 class="advanced-feature-title">Smart Inventory Analytics</h3>
+                            <p class="advanced-feature-description">
+                                AI-powered analytics provide predictive insights for demand forecasting, 
+                                inventory optimization, and proactive replenishment strategies.
+                            </p>
+                            <div class="advanced-feature-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">25%</div>
+                                    <div class="stat-label">Stock Reduction</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">95%</div>
+                                    <div class="stat-label">Forecast Accuracy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //ADVANCED FEATURES SECTION -->
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="testimonials-container">
+                <div class="text-center mb-5">
+                    <h2 class="testimonials-title">What Our Clients Say</h2>
+                    <p class="testimonials-subtitle">
+                        Hear from businesses that have transformed their operations with our warehousing solutions.
+                    </p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="images/te1.jpg" alt="Client Testimonial" loading="lazy">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    Gram SCS has transformed our inventory management with their advanced warehousing solutions. 
+                                    The real-time tracking and automated systems have significantly improved our operational efficiency.
+                                </p>
+                                <div class="testimonial-name">Sarah Johnson</div>
+                                <div class="testimonial-position">Supply Chain Director</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="images/te2.jpg" alt="Client Testimonial" loading="lazy">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    Their climate-controlled facilities and security systems give us complete peace of mind. 
+                                    Our pharmaceutical products are stored under perfect conditions with full compliance.
+                                </p>
+                                <div class="testimonial-name">Dr. Michael Chen</div>
+                                <div class="testimonial-position">Operations Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-avatar">
+                                <img src="images/te3.jpg" alt="Client Testimonial" loading="lazy">
+                            </div>
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                    <span class="testimonial-star">★</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    The integration with their transportation network has streamlined our entire supply chain. 
+                                    We've reduced costs while improving delivery times to our customers.
+                                </p>
+                                <div class="testimonial-name">Robert Williams</div>
+                                <div class="testimonial-position">Logistics Coordinator</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //TESTIMONIALS SECTION -->        <!-- CTA SECTION -->
         <section class="cta-section" id="cta">
             <div class="container">
                 <h2 class="cta-title">Ready to Optimize Your Storage?</h2>
@@ -263,7 +416,7 @@
                 </p>
                 
                 <div class="cta-buttons">
-                    <a href="contact.php" class="cta-btn cta-btn-primary">
+                    <a href="#contact" class="interactive-btn">
                         Get Quote <i class="fa fa-arrow-right"></i>
                     </a>
                     <a href="#features" class="cta-btn cta-btn-secondary">
