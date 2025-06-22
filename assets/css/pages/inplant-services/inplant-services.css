@@ -1,0 +1,275 @@
+/* Inplant Services Page Styles - Simple & Clean */
+
+/* Hero Section */
+.reverse-logistics-hero-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 80px 0 60px;
+    color: #2c3e50;
+}
+
+.reverse-logistics-hero-bg {
+    display: none; /* Remove animated shapes */
+}
+
+.reverse-logistics-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.reverse-logistics-hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.reverse-logistics-hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.reverse-logistics-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.reverse-logistics-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+}
+
+.reverse-logistics-feature i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #82CF2B;
+}
+
+.reverse-logistics-feature span {
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Overview Section */
+.reverse-logistics-overview-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.reverse-logistics-overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.reverse-logistics-overview-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.reverse-logistics-overview-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 3rem;
+}
+
+.reverse-logistics-overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.reverse-logistics-overview-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #495057;
+}
+
+.reverse-logistics-overview-text p {
+    margin-bottom: 1.5rem;
+}
+
+.reverse-logistics-overview-highlight {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #82CF2B;
+}
+
+.highlight-icon {
+    width: 60px;
+    height: 60px;
+    background: #82CF2B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.highlight-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.highlight-description {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.reverse-logistics-services-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.reverse-logistics-services-pattern {
+    display: none; /* Remove pattern background */
+}
+
+.reverse-logistics-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.reverse-logistics-services-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.reverse-logistics-services-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 3rem;
+}
+
+.reverse-logistics-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.reverse-logistics-service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease;
+}
+
+.reverse-logistics-service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reverse-logistics-service-icon {
+    width: 60px;
+    height: 60px;
+    background: #82CF2B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.reverse-logistics-service-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.reverse-logistics-service-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.reverse-logistics-service-description {
+    color: #6c757d;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .reverse-logistics-hero-title {
+        font-size: 2rem;
+    }
+    
+    .reverse-logistics-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .reverse-logistics-overview-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .reverse-logistics-services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .reverse-logistics-hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .reverse-logistics-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .reverse-logistics-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .reverse-logistics-overview-title,
+    .reverse-logistics-services-title {
+        font-size: 1.75rem;
+    }
+    
+    .reverse-logistics-services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reverse-logistics-service-card,
+    .reverse-logistics-overview-highlight {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .reverse-logistics-hero-content,
+    .reverse-logistics-overview-container,
+    .reverse-logistics-services-container {
+        padding: 0 15px;
+    }
+}
