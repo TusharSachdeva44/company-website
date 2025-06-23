@@ -360,63 +360,52 @@
                 </div>
             </div>
             
-            <!-- gallery popups -->
-            <div id="gal1" class="pop-overlay animate">
+            <!-- gallery popups -->            <div id="gal1" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g1.jpg" alt="International shipping at port" class="img-fluid rounded mb-3" />
+                        <img src="images/g1.jpg" alt="International shipping at port" class="img-fluid" />
                         <p class="text-secondary mb-3">Efficient and seamless international shipping services at a bustling port, ensuring timely and secure delivery of your cargo.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal2" class="pop-overlay animate">
+            </div>            <div id="gal2" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g2.jpg" alt="Cargo trucks on the move" class="img-fluid rounded mb-3" />
+                        <img src="images/g2.jpg" alt="Cargo trucks on the move" class="img-fluid" />
                         <p class="text-secondary mb-3">Our fleet of cargo trucks on the move, dedicated to providing reliable and efficient ground transportation for your goods.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal3" class="pop-overlay animate">
+            </div>            <div id="gal3" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g3.jpg" alt="Fleet of delivery trucks" class="img-fluid rounded mb-3" />
+                        <img src="images/g3.jpg" alt="Fleet of delivery trucks" class="img-fluid" />
                         <p class="text-secondary mb-3">Well-maintained fleet of delivery trucks ready to distribute your products nationwide with precision and care.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal4" class="pop-overlay animate">
+            </div>            <div id="gal4" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g4.jpg" alt="Traditional cargo trucks" class="img-fluid rounded mb-3" />
+                        <img src="images/g4.jpg" alt="Traditional cargo trucks" class="img-fluid" />
                         <p class="text-secondary mb-3">Experienced and dependable transportation services using traditional cargo trucks for all your logistical needs.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal5" class="pop-overlay animate">
+            </div>            <div id="gal5" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g5.jpg" alt="Container truck operations at port" class="img-fluid rounded mb-3" />
+                        <img src="images/g5.jpg" alt="Container truck operations at port" class="img-fluid" />
                         <p class="text-secondary mb-3">Coordinated and high-volume container truck operations at the port, ensuring quick and organized handling of your shipments.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal6" class="pop-overlay animate">
+            </div>            <div id="gal6" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g6.jpg" alt="Maritime transport solutions" class="img-fluid rounded mb-3" />
+                        <img src="images/g6.jpg" alt="Maritime transport solutions" class="img-fluid" />
                         <p class="text-secondary mb-3">Comprehensive maritime transport solutions, featuring a cargo ship navigating through waterways to deliver your containers globally.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
             </div>
