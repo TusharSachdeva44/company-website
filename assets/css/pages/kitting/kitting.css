@@ -1,8 +1,8 @@
-/* Packaging Page Styles */
+/* Kitting Page Styles */
 
 /* Hero Section */
 .transportation-hero-section {
-    background: linear-gradient(135deg, rgba(0, 47, 75, 0.95), rgba(130, 207, 43, 0.85)), url('../../../../images/rack.jpg');
+    background: linear-gradient(135deg, rgba(0, 47, 75, 0.95), rgba(130, 207, 43, 0.85)), url('../../../../images/kitting.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -230,6 +230,138 @@
     font-size: 0.95rem;
 }
 
+/* CTA Section */
+.cta-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Kitting Specific Styles */
+.kitting-showcase {
+    padding: 5rem 0;
+    background: var(--bg-section-2);
+}
+
+.kitting-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.kitting-example {
+    background: var(--bg-section-1);
+    border-radius: var(--border-radius);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(130, 207, 43, 0.1);
+    overflow: hidden;
+}
+
+.kitting-example::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.kitting-example:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.kitting-type-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.kitting-type-icon.promotional {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.kitting-type-icon.subscription {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.kitting-type-icon.retail {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.kitting-type-icon.oem {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.kitting-example:hover .kitting-type-icon {
+    transform: scale(1.1);
+}
+
+.kitting-info h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.kitting-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .transportation-hero-title {
@@ -256,6 +388,19 @@
     
     .feature-list {
         grid-template-columns: 1fr;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .kitting-showcase-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
     }
 }
 
@@ -286,5 +431,13 @@
         padding: 1rem;
         flex-direction: column;
         text-align: center;
+    }
+    
+    .kitting-showcase-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .kitting-example {
+        max-width: 100%;
     }
 }
