@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/css_slider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700&display=swap">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages/home/index-custom.css">
     <link rel="stylesheet" href="assets/css/pages/chartering-services/chartering-services.css">
 </head>
 
@@ -40,7 +40,7 @@
                     <p class="transportation-hero-subtitle">
                         Complete charter solutions for all your freight needs. Our extensive experience in chartering 
                         air cargo, sea and barge freight enables us to provide the fastest, most reliable and 
-                        cost-effective transport solutions for your logistics requirements.
+                        cost-effective transport solutions for your urgent logistics requirements.
                     </p>
                     
                     <div class="hero-features">
@@ -60,11 +60,6 @@
                             <i class="fa fa-clock-o"></i>
                             <span>24/7 Availability</span>
                         </div>
-                    </div>
-                    
-                    <div class="hero-cta mt-4">
-                        <a href="#services" class="btn-cta-primary">Explore Services</a>
-                        <a href="#" class="btn-track-shipment">Track Shipment</a>
                     </div>
                 </div>
             </div>
@@ -252,348 +247,188 @@
                 </div>
             </div>
         </section>
-        <!-- //FEATURES SECTION -->
-
-        <!-- CTA SECTION -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content-wrapper">
-                    <div class="cta-content">
-                        <h2 class="cta-title">Need Urgent Charter Services?</h2>
-                        <p class="cta-description">
-                            Our charter specialists are available 24/7 to arrange dedicated transport solutions 
-                            for your urgent cargo requirements. Get a quote within hours.
-                        </p>
-                    </div>
-                    <div class="cta-buttons">
-                        <a href="contact.php" class="btn-cta-primary">Get Charter Quote</a>
-                        <a href="tel:+91-9910417643" class="btn-cta-secondary">Emergency Hotline</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //CTA SECTION -->
+        
     </main>
-
-    <footer class="footer-section">
+    
+    <!-- Footer Section -->
+    <footer class="site-footer py-5 bg-dark text-white">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="footer-widget">
-                        <img src="images/logo.png" alt="Gram SCS" class="footer-logo mb-3">
-                        <p class="footer-description">
-                            Your trusted partner for comprehensive logistics and supply chain solutions across India and globally.
-                        </p>
-                        <div class="footer-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
-                    </div>
+            <!-- Main Footer Content -->
+            <?php include "footer.php"; ?>
+            
+            <!-- Footer Divider -->
+            <hr class="footer-divider my-4 bg-light opacity-25">
+            
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="newsletter-subscribe mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-3 footer-heading">Subscribe to Our Newsletter</h5>
+                    <form id="newsletterForm" class="d-flex footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter" required>
+                        <button class="btn btn-primary ml-2" type="submit">Subscribe</button>
+                    </form>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="footer-widget">
-                        <h4 class="footer-title">Quick Links</h4>
-                        <ul class="footer-links">
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="about-us.php">About Us</a></li>
-                            <li><a href="warehousing.php">Warehousing</a></li>
-                            <li><a href="transportation.php">Transportation</a></li>
-                            <li><a href="chartering-services.php">Chartering</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="footer-widget">
-                        <h4 class="footer-title">Services</h4>
-                        <ul class="footer-links">
-                            <li><a href="air-freight.php">Air Freight</a></li>
-                            <li><a href="ocean-freight.php">Ocean Freight</a></li>
-                            <li><a href="rail-freight.php">Rail Freight</a></li>
-                            <li><a href="custom-clearance-activity.php">Custom Clearance</a></li>
-                            <li><a href="documentation.php">Documentation</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="footer-widget">
-                        <h4 class="footer-title">Contact Info</h4>
-                        <div class="footer-contact">
-                            <div class="contact-item">
-                                <i class="fa fa-phone"></i>
-                                <span>+91-9910417643</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fa fa-envelope"></i>
-                                <span>info@gramscs.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fa fa-map-marker"></i>
-                                <span>New Delhi, India</span>
-                            </div>
-                        </div>
-                        <div class="newsletter-signup">
-                            <h5>Newsletter</h5>
-                            <form class="newsletter-form">
-                                <input type="email" placeholder="Your email" required>
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Gram SCS. All rights reserved.</p>
-                    <div class="footer-bottom-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                    </div>
-                </div>
+                
+                <a href="#home" class="move-top btn btn-outline-light rounded-circle" aria-label="Back to top">
+                    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                </a>
             </div>
         </div>
     </footer>
     
-    <a href="#home" class="move-top text-center"></a>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/newsletter.js"></script>
-
-    <!-- WhatsHelp.io widget -->
-    <script type="text/javascript">
-        (function () {
-            var options = {
-                whatsapp: "+91-9910417643",
-                email: "info@gramsec.com",
-                sms: "+91-9910417643",
-                call: "+91-9910417643",
-                company_logo_url: "https://www.gramscs.com/images/logo.jpg",
-                greeting_message: "Connect with Gram Experts. Connect with us for any assistance.",
-                call_to_action: "Connect with us",
-                button_color: "#E74339",
-                position: "left",
-                order: "whatsapp,sms,call,email"
-            };
-            var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-        })();
-    </script>
-</body>
-
-</html>
-                        <div class="overview-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">24/7</div>
-                                <div class="stat-label">Charter Availability</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">98%</div>
-                                <div class="stat-label">On-Time Performance</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">Global</div>
-                                <div class="stat-label">Coverage</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="overview-image">
-                        <img src="images/Chartering-Services.jpg" alt="Chartering Services" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section">
+    <!-- Copyright Section -->
+    <div class="copyright-section py-3 bg-black text-white">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Our Charter Services</h2>
-                <p class="section-subtitle">Complete charter solutions for every type of freight requirement</p>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa fa-plane"></i>
-                        </div>
-                        <h4>Air Cargo Charter</h4>
-                        <ul>
-                            <li>Dedicated aircraft for urgent shipments</li>
-                            <li>Temperature-controlled cargo holds</li>
-                            <li>Oversized and heavy cargo capability</li>
-                            <li>Express door-to-door delivery</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa fa-ship"></i>
-                        </div>
-                        <h4>Sea Freight Charter</h4>
-                        <ul>
-                            <li>Full vessel charter services</li>
-                            <li>Break-bulk and project cargo</li>
-                            <li>Container vessel chartering</li>
-                            <li>Port-to-port specialized handling</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fa fa-anchor"></i>
-                        </div>
-                        <h4>Barge Charter</h4>
-                        <ul>
-                            <li>Inland waterway transportation</li>
-                            <li>Heavy machinery and equipment</li>
-                            <li>Bulk cargo movement</li>
-                            <li>Cost-effective river transport</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <?php include "copy.php"; ?>
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="features-image">
-                        <img src="images/rack.jpg" alt="Charter Operations" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="features-content">
-                        <h2 class="section-title">Why Choose Our Charter Services</h2>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Door-to-Door Service</h4>
-                                <p>Complete pickup and delivery anywhere in the world with full tracking</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa fa-lock"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Secure Transport</h4>
-                                <p>No intermediate off-loading or cargo transfers during the entire journey</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa fa-cubes"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Consolidated Delivery</h4>
-                                <p>Your cargo departs and arrives together as a single lot</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa fa-file-text"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Simplified Documentation</h4>
-                                <p>Reduced paperwork and faster customs clearance processes</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits-section">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Charter Service Benefits</h2>
-                <p class="section-subtitle">Maximizing efficiency and minimizing costs for your logistics operations</p>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fa fa-clock-o"></i>
-                        </div>
-                        <h4>Time Savings</h4>
-                        <p>Faster transit times with dedicated charter services</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fa fa-dollar"></i>
-                        </div>
-                        <h4>Cost Efficiency</h4>
-                        <p>Optimized costs for large shipments and project cargo</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fa fa-shield"></i>
-                        </div>
-                        <h4>Cargo Security</h4>
-                        <p>Enhanced security with dedicated vessel/aircraft</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <h4>Schedule Control</h4>
-                        <p>Complete control over departure and arrival schedules</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer-section">
-        <?php include "footer.php"; ?>
-    </footer>
-
-    <!-- Copyright -->
-    <div class="copyright-section">
-        <?php include "copy.php"; ?>
     </div>
+    
+    <script src="./js/index.js" type="module"></script>
+    <script>
+    // MENU BUTTON FUNCTIONALITY
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuLabel = document.querySelector('label.toggle[for="drop"]');
+        var menuCheckbox = document.getElementById('drop');
+        var menuUl = document.querySelector('ul.menu');
+        
+        if (menuLabel && menuCheckbox && menuUl) {
+            menuLabel.addEventListener('click', function() {
+                setTimeout(function() {
+                    if (menuCheckbox.checked) {
+                        menuUl.style.display = 'block';
+                    } else {
+                        menuUl.style.display = 'none';
+                    }
+                }, 50);
+            });
+        }
+        
+        // SMOOTH SCROLLING FOR CTA BUTTONS
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // ANIMATE CARDS ON SCROLL
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe service cards and tech cards
+        document.querySelectorAll('.service-card, .tech-card, .feature-item').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    });
+    </script>
+    <script>
+        // Form validation enhancement
+        document.addEventListener('DOMContentLoaded', function() {
+            const forms = document.querySelectorAll('form');
+            forms.forEach(function(form) {
+                form.addEventListener('submit', function(e) {
+                    const requiredFields = form.querySelectorAll('[required]');
+                    let hasError = false;
+                    
+                    requiredFields.forEach(function(field) {
+                        if (!field.value.trim()) {
+                            field.classList.add('is-invalid');
+                            hasError = true;
+                        } else {
+                            field.classList.remove('is-invalid');
+                        }
+                    });
+                    
+                    if (hasError) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- Essential JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Toast notification container -->
+    <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 1060;"></div>
 
-    <!-- Move to Top -->
-    <a href="#home" class="move-top">
-        <i class="fa fa-angle-up"></i>
-    </a>
+    <!-- Newsletter JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Newsletter form submission
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = this.querySelector('input[type="email"]').value;
+                    
+                    if (email) {
+                        showToast('Success! You\'ve been subscribed to our newsletter.', 'success');
+                        this.reset();
+                    }
+                });
+            }
+            
+            // Toast notification function
+            window.showToast = function(message, type = 'success') {
+                const toastContainer = document.getElementById('toast-container');
+                
+                const toast = document.createElement('div');
+                toast.className = `toast toast-${type}`;
+                toast.style.minWidth = '250px';
+                toast.style.backgroundColor = type === 'success' ? '#82CF2B' : '#dc3545';
+                toast.style.color = 'white';
+                toast.style.padding = '15px 20px';
+                toast.style.marginBottom = '10px';
+                toast.style.borderRadius = '4px';
+                toast.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.3s ease-in-out';
+                toast.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <span class="fa fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'} mr-2"></span>
+                        <div>${message}</div>
+                    </div>
+                `;
+                
+                toastContainer.appendChild(toast);
+                
+                setTimeout(() => {
+                    toast.style.opacity = '1';
+                }, 10);
+                
+                setTimeout(() => {
+                    toast.style.opacity = '0';
+                    setTimeout(() => {
+                        toastContainer.removeChild(toast);
+                    }, 300);
+                }, 3000);
+            }
+        });
+    </script>
 
     <!-- WhatsHelp.io widget -->
     <script type="text/javascript">
@@ -611,10 +446,15 @@
                 order: "whatsapp,sms,call,email"
             };
             var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
             s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
         })();
     </script>
 </body>
+
 </html>
