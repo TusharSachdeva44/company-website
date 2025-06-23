@@ -127,13 +127,42 @@
                 </div>
             </div>
         </section>
-        <!-- //VISION & MISSION SECTION -->    </main>    
+        <!-- //VISION & MISSION SECTION -->
+
+        
+    </main>
+    
     <!-- Footer Section -->
-    <?php include "footer.php"; ?>
+    <footer class="site-footer py-5 bg-dark text-white">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <?php include "footer.php"; ?>
+            
+            <!-- Footer Divider -->
+            <hr class="footer-divider my-4 bg-light opacity-25">
+            
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="newsletter-subscribe mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-3 footer-heading">Subscribe to Our Newsletter</h5>
+                    <form id="newsletterForm" class="d-flex footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter" required>
+                        <button class="btn btn-primary ml-2" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+                <a href="#home" class="move-top btn btn-outline-light rounded-circle" aria-label="Back to top">
+                    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </footer>
     
     <!-- Copyright Section -->
-    <div class="copyright-bar">
-        <?php include "copy.php"; ?>
+    <div class="copyright-section py-3 bg-black text-white">
+        <div class="container">
+            <?php include "copy.php"; ?>
+        </div>
     </div>
     
     <script src="./js/index.js" type="module"></script>

@@ -759,6 +759,43 @@
             }
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Auto-transition carousel every 7 seconds
+            let currentSlide = 1;
+            const totalSlides = 3;
+            const slideInterval = 7000; // 7 seconds
+            function nextSlide() {
+                currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+                const slideInput = document.getElementById('slides_' + currentSlide);
+                if (slideInput) {
+                    slideInput.checked = true;
+                }
+            }
+            let autoSlider = setInterval(nextSlide, slideInterval);
+            // Pause auto-transition when user interacts with navigation
+            const navigationLabels = document.querySelectorAll('.navigation label');
+            navigationLabels.forEach((label, index) => {
+                label.addEventListener('click', function() {
+                    clearInterval(autoSlider);
+                    currentSlide = index + 1;
+                    setTimeout(() => {
+                        autoSlider = setInterval(nextSlide, slideInterval);
+                    }, slideInterval);
+                });
+            });
+            // Pause on hover, resume on mouse leave
+            const carousel = document.getElementById('slider1');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', function() {
+                    clearInterval(autoSlider);
+                });
+                carousel.addEventListener('mouseleave', function() {
+                    autoSlider = setInterval(nextSlide, slideInterval);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

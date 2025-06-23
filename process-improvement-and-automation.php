@@ -4,74 +4,285 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Gram SCS" />
-    <title>Gram SCS - Process Improvement and Automation</title>
+    <meta name="keywords" content="Gram SCS, process improvement, automation, logistics, efficiency, technology" />
+    <meta property="og:title" content="Process Improvement & Automation - GRAM SCS">
+    <meta property="og:description" content="Modern automation solutions and process improvement services for optimized logistics operations.">
+    <meta name="theme-color" content="#82CF2B">
+    <title>Process Improvement & Automation - Gram SCS</title>
+    
+    <!-- Preload critical fonts for performance -->
+    <link rel="preload" href="//fonts.googleapis.com/css?family=Lato:400,700&display=swap" as="style">
+    <link rel="preload" href="css/font-awesome.min.css" as="style">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/css_slider.css" media="all">
-    <link rel="stylesheet" href="css/style.css" media="all" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
-        rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
-        rel="stylesheet">
+    <link rel="stylesheet" href="css/css_slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" href="assets/css/pages/home/index-custom.css">
+    <link rel="stylesheet" href="assets/css/pages/process-improvement/process-improvement.css">
 </head>
 
 <body>
-    <?php include "header.php"; ?>
-    <?php include "menu.php"; ?>
+    <header id="home">
+        <?php include "header.php"; ?>
+    </header>
+    <nav class="main-navigation">
+        <?php include "menu.php"; ?>
+    </nav>
     <main>
-        <!-- about -->
-        <section class="service-hero">
-            <img src="images/rack.jpg" class="img-fluid w-100 service-hero-img" alt="Process Improvement and Automation">
-        </section>
-        <section class="service-content py-5">
+        <!-- HERO SECTION -->
+        <section class="transportation-hero-section">
             <div class="container">
-                <h1 class="service-title text-center mb-4">Process Improvement and Automation</h1>
-                <p class="service-desc mb-3">With modern technological services, our process improvement and automation services play a key role.</p>
-                <p class="service-desc mb-3">Now, let us see what actually automation is.</p>
-                <p class="service-desc mb-3">When we talk about logistics automation, we are speaking about all of the automation features available in the technology to manage your transportation and freight departments. Logistics automation is the decrease in manual entry of processing freight shipments and the automatic retrieval of options in the procurement of transportation for your freight. Furthermore, logistics automation will provide automatic notifications and real-time updates of freight information.</p>
-                <p class="service-desc mb-5">These services can help our customers drastically improve their services in the following ways:</p>
-                <p class="service-desc mb-5">1. Decrease in Costly Errors Logistics automation features such as integration to your commodities via your ERP system and access to your address book, as well as automatic storage and entry of fuel surcharges and accessorial, will have you never again worrying about keying in the wrong information. These kinds of manual data entry errors will lead to increased shipping costs such as having to pay for shipping twice or paying a higher freight rate due to entering an incorrect commodity freight classification.</p>
-                <p class="service-desc mb-5">2. Availability of Transportation Mode Choice and Real Time Freight Rates To combat rising transportation costs the logistics automation makes it easy for users around the country to execute policies that deliver immediate freight savings. No more theoretical savings, but hard ROI based on live, vendor neutral access to real-time market rates. When you have multiple carriers to choose from based on cost, transit time, and insurance, it empowers you to make the best choice for your specific shipment, thus saving you money over the long haul.</p>
-                <p class="service-desc mb-5">3. Increased Customer Service With logistics automation such as real time freight tracking, auto pick-up, proper insurance and freight accounting built to your custom specifications, you and your customer are empowered to know exactly how much the freight will cost and when the freight will arrive at its destination through automatic notifications.</p>
-                <p class="service-desc mb-5">4. Access to Real Time Freight Data and Analysis When you have access to real time freight data and the ability to run reports, you are better served at making better business decisions based on your trends and history. Access to valuable data at your fingertips with the push of a button empowers you to see the total cost of your decisions and mitigate future expensive bad decisions.</p>
+                <div class="transportation-hero-content text-center">
+                    <h1 class="transportation-hero-title">Process Improvement & Automation</h1>
+                    <p class="transportation-hero-subtitle">
+                        Streamline your logistics operations with cutting-edge automation technologies and 
+                        process optimization strategies. Reduce manual errors, increase efficiency, and 
+                        gain real-time visibility across your entire supply chain.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fa fa-cogs"></i>
+                            <span>Automation</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-chart-line"></i>
+                            <span>Optimization</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-clock-o"></i>
+                            <span>Real-Time Updates</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-shield"></i>
+                            <span>Error Reduction</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- //about -->
+        <!-- //HERO SECTION -->
+        
+        <!-- OVERVIEW SECTION -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Comprehensive Process Enhancement</h2>
+                    <p class="text-muted">Technology-driven solutions for operational excellence</p>
+                </div>
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        Our process improvement and automation services leverage modern technology to eliminate 
+                        inefficiencies, reduce manual errors, and provide real-time visibility across your 
+                        logistics operations. Experience enhanced productivity and cost savings through our 
+                        systematic approach to operational optimization.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-robot mr-2"></i>
+                            Intelligent Automation Solutions
+                        </h4>
+                        <p class="mb-0">
+                            We implement advanced automation features including ERP integration, automated 
+                            data entry, real-time tracking, and smart notifications to transform your 
+                            logistics operations and deliver measurable ROI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //OVERVIEW SECTION -->
+        
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Automation Services</h2>
+                    <p class="text-muted">Comprehensive solutions for process enhancement</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Error Reduction</h3>
+                        <p>
+                            Automated data entry and ERP integration eliminate manual errors, 
+                            reducing costly mistakes and improving accuracy across operations.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h3>Transportation Optimization</h3>
+                        <p>
+                            Real-time access to market rates, carrier options, and transit times 
+                            for optimal shipping decisions and immediate cost savings.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3>Enhanced Customer Service</h3>
+                        <p>
+                            Automated tracking, pickup scheduling, and notifications provide 
+                            superior customer experience with complete shipment visibility.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-bar"></i>
+                        </div>
+                        <h3>Data Analytics & Reporting</h3>
+                        <p>
+                            Real-time freight data analysis and custom reporting enable 
+                            data-driven decisions and strategic business insights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //SERVICES SECTION -->
+        
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Key Automation Features</h2>
+                    <p class="text-muted">Advanced capabilities that drive operational excellence</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-link"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>ERP Integration</h4>
+                            <p>Seamless integration with existing systems for automated data flow</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Automated Notifications</h4>
+                            <p>Real-time alerts and updates throughout the shipping process</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-calculator"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Auto Rate Calculation</h4>
+                            <p>Automatic freight rate calculations with fuel surcharges included</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Carrier Comparison</h4>
+                            <p>Multiple carrier options with cost and transit time comparisons</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Insurance Management</h4>
+                            <p>Automated insurance selection and claims processing</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-file-invoice"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Custom Accounting</h4>
+                            <p>Freight accounting built to your specific business requirements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //FEATURES SECTION -->
     </main>
-    <?php include "footer.php"; ?>
-    <div class="copyright-bar">
-        <?php include "copy.php"; ?>
+    
+    <!-- Footer Section -->
+    <footer class="site-footer py-5 bg-dark text-white">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <?php include "footer.php"; ?>
+            
+            <!-- Footer Divider -->
+            <hr class="footer-divider my-4 bg-light opacity-25">
+            
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="newsletter-subscribe mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-3 footer-heading">Subscribe to Our Newsletter</h5>
+                    <form id="newsletterForm" class="d-flex footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter" required>
+                        <button class="btn btn-primary ml-2" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+                <a href="#home" class="move-top btn btn-outline-light rounded-circle" aria-label="Back to top">
+                    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Copyright Section -->
+    <div class="copyright-section py-3 bg-black text-white">
+        <div class="container">
+            <?php include "copy.php"; ?>
+        </div>
     </div>
-    <!-- move top icon -->
-    <a href="#home" class="move-top text-center"></a>
-    <!-- //move top icon -->
+    
     <!-- WhatsHelp.io widget -->
     <script type="text/javascript">
         (function () {
             var options = {
-
-                whatsapp: "+91-9910417643", // WhatsApp number
-                email: "info@gramsec.com", // Email
-                sms: "+91-9910417643", // Sms phone number
-                call: "+91-9910417643", // Call phone number
-                company_logo_url: "https://www.gramscs.com/images/logo.jpg", // URL of company logo (png, jpg, gif)
-                greeting_message: "Connect with Gram Experts. Connect with us for any assistance.", // Text of greeting message
-                call_to_action: "Connect with us", // Call to action
-                button_color: "#E74339", // Color of button
-                position: "left", // Position may be 'right' or 'left'
-                order: "whatsapp,sms,call,email" // Order of buttons
+                whatsapp: "+91-9910417643",
+                email: "info@gramsec.com",
+                sms: "+91-9910417643",
+                call: "+91-9910417643",
+                company_logo_url: "https://www.gramscs.com/images/logo.jpg",
+                greeting_message: "Connect with Gram Experts. Connect with us for any assistance.",
+                call_to_action: "Connect with us",
+                button_color: "#E74339",
+                position: "left",
+                order: "whatsapp,sms,call,email"
             };
-            var proto = document.location.protocol,
-                host = "whatshelp.io",
-                url = proto + "//static." + host;
+            var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
             var s = document.createElement('script');
             s.type = 'text/javascript';
             s.async = true;
             s.src = url + '/widget-send-button/js/init.js';
-            s.onload = function () {
-                WhWidgetSendButton.init(host, proto, options);
-            };
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
             var x = document.getElementsByTagName('script')[0];
             x.parentNode.insertBefore(s, x);
         })();

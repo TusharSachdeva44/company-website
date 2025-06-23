@@ -235,29 +235,6 @@
             </div>
         </section>
         <!-- //FEATURES SECTION -->
-
-        <!-- CTA SECTION -->
-        <section class="reverse-logistics-cta-section" id="cta">
-            <div class="reverse-logistics-cta-container">
-                <div class="reverse-logistics-cta-content">
-                    <h2 class="reverse-logistics-cta-title">Ready to Optimize Your Returns?</h2>
-                    <p class="reverse-logistics-cta-description">
-                        Contact us today to discuss your reverse logistics requirements and discover how our proven solutions 
-                        can transform your returns into valuable opportunities for your business.
-                    </p>
-                    
-                    <div class="reverse-logistics-cta-buttons">
-                        <a href="#contact" class="reverse-logistics-cta-btn primary">
-                            Get Started <i class="fa fa-arrow-right"></i>
-                        </a>
-                        <a href="#features" class="reverse-logistics-cta-btn secondary">
-                            Learn More <i class="fa fa-info-circle"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //CTA SECTION -->
     </main>
     <!-- Footer Section -->
     <footer class="site-footer py-5 bg-dark text-white">

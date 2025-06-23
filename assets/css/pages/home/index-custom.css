@@ -203,10 +203,31 @@ section + section {
     height: 100%;
     transition: transform var(--transition-medium), 
                 box-shadow var(--transition-medium),
-                border-color var(--transition-medium);
+                border-color var(--transition-medium),
+                background-color 0.3s, outline 0.3s;
     will-change: transform, box-shadow; /* Performance optimization */
     position: relative;
     z-index: 1;
+}
+
+.card-custom:hover {
+    /* Remove background color on hover */
+    background-color: transparent !important;
+    /* ...existing code... */
+}
+
+/* Remove any background color on hover for .card-custom */
+.card-custom:hover, .card-custom:focus {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: var(--shadow);
+    outline: 2px solid var(--primary-lightest);
+    outline-offset: 2px;
+}
+
+.card-custom {
+    background: none !important;
+    background-color: transparent !important;
 }
 
 .card-custom:hover {
@@ -214,6 +235,11 @@ section + section {
     box-shadow: var(--shadow);
     border-color: var(--primary-light);
     z-index: 2;
+    /* Minimalist effect: add subtle outline and scale */
+    outline: 2px solid var(--primary-lightest);
+    outline-offset: 2px;
+    /* Optionally, add a slight scale for feedback */
+    /* transform: translateY(-5px) scale(1.02); */
 }
 
 .card-custom:hover .icon-circle {

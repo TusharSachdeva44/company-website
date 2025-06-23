@@ -214,62 +214,6 @@
             </div>
         </section>
         <!-- //BENEFITS SECTION -->
-
-        <!-- NETWORK SECTION -->
-        <section class="network-section" id="network">
-            <div class="container">
-                <div class="network-content text-center">
-                    <h2 class="section-title section-title-center text-white mb-4">Our Rail Network Reach</h2>
-                    <p class="text-white-50 mb-5" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
-                        Extensive connectivity across major industrial corridors and freight routes
-                    </p>
-                    
-                    <div class="network-stats">
-                        <div class="network-stat">
-                            <i class="fa fa-map-marker"></i>
-                            <h4>250+</h4>
-                            <p>Railway Stations Connected</p>
-                        </div>
-                        
-                        <div class="network-stat">
-                            <i class="fa fa-road"></i>
-                            <h4>15,000+</h4>
-                            <p>Kilometers Rail Network</p>
-                        </div>
-                        
-                        <div class="network-stat">
-                            <i class="fa fa-industry"></i>
-                            <h4>50+</h4>
-                            <p>Industrial Corridors</p>
-                        </div>
-                        
-                        <div class="network-stat">
-                            <i class="fa fa-ship"></i>
-                            <h4>25+</h4>
-                            <p>Port Connections</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //NETWORK SECTION -->
-
-        <!-- CTA SECTION -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-title">Ready for Efficient Rail Transport?</h2>
-                    <p class="cta-subtitle">
-                        Experience reliable, cost-effective rail freight services with real-time tracking 
-                        and professional cargo handling for your business needs.
-                    </p>
-                    <a href="contact_submissions.json" class="cta-button">
-                        <i class="fa fa-train"></i>
-                        Get Rail Freight Quote
-                    </a>
-                </div>
-            </div>
-        </section>        <!-- //CTA SECTION -->
     </main>
     
     <!-- Footer Section -->
