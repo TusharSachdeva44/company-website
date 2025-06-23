@@ -273,7 +273,7 @@
                 company_logo_url: "https://www.gramscs.com/images/logo.jpg",
                 greeting_message: "Connect with Gram Experts. Connect with us for any assistance.",
                 call_to_action: "Connect with us",
-                button_color: "#E74339",
+                button_color: "#82CF2B",
                 position: "left",
                 order: "whatsapp,sms,call,email"
             };

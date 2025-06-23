@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/css_slider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" href="assets/css/pages/home/index-custom.css">
     <link rel="stylesheet" href="assets/css/pages/import-services/import-services.css">
 </head>
 
@@ -30,309 +31,278 @@
     <nav class="main-navigation">
         <?php include "menu.php"; ?>
     </nav>
-    
     <main>
         <!-- HERO SECTION -->
-        <section class="import-hero">
-            <div class="hero-overlay"></div>
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <div class="hero-content">
-                            <h1 class="hero-title">Professional Import Services</h1>
-                            <p class="hero-subtitle">Comprehensive customs clearance and import management solutions for seamless international trade</p>
-                            <div class="hero-stats">
-                                <div class="stat-item">
-                                    <span class="stat-number">500+</span>
-                                    <span class="stat-label">Imports Cleared</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number">99%</span>
-                                    <span class="stat-label">On-Time Delivery</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number">24/7</span>
-                                    <span class="stat-label">Support</span>
-                                </div>
-                            </div>
+        <section class="transportation-hero-section">
+            <div class="container">
+                <div class="transportation-hero-content text-center">
+                    <h1 class="transportation-hero-title">Professional Import Services</h1>
+                    <p class="transportation-hero-subtitle">
+                        Comprehensive customs clearance and import management solutions for seamless international trade. 
+                        Our expert team handles all aspects of import procedures, ensuring compliance and timely delivery 
+                        of your goods through efficient documentation and regulatory management.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fa fa-check-circle"></i>
+                            <span>Regulatory Compliance</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-clock-o"></i>
+                            <span>Fast Processing</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-shield"></i>
+                            <span>Risk Management</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fa fa-file-text"></i>
+                            <span>Complete Documentation</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- //HERO SECTION -->
 
         <!-- OVERVIEW SECTION -->
-        <section class="import-overview">
+        <section class="overview-section" id="overview">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="overview-content">
-                            <h2 class="section-title">Streamlined Import Operations</h2>
-                            <p class="section-description">
-                                Navigate complex import regulations with confidence. Our experienced team handles all aspects 
-                                of import clearance, ensuring your goods reach you quickly and compliantly.
-                            </p>
-                            <div class="feature-list">
-                                <div class="feature-item">
-                                    <i class="fa fa-check-circle"></i>
-                                    <span>Regulatory Compliance</span>
-                                </div>
-                                <div class="feature-item">
-                                    <i class="fa fa-clock-o"></i>
-                                    <span>Fast Processing</span>
-                                </div>
-                                <div class="feature-item">
-                                    <i class="fa fa-shield"></i>
-                                    <span>Risk Management</span>
-                                </div>
-                                <div class="feature-item">
-                                    <i class="fa fa-file-text"></i>
-                                    <span>Complete Documentation</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="overview-image">
-                            <img src="images/rack.jpg" alt="Import Services Warehouse" class="img-fluid rounded-lg">
-                        </div>
-                    </div>
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Streamlined Import Operations</h2>
+                    <p class="text-muted">Expert customs clearance and import management for international trade</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- SERVICES SECTION -->
-        <section class="import-services bg-section-1">
-            <div class="container">
-                <h2 class="section-title section-title-center">Our Import Services</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <h3 class="service-title">Home Consumption</h3>
-                            <p class="service-description">Routine shipment clearance for home consumption with duty-paid procedures</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-exchange"></i>
-                            </div>
-                            <h3 class="service-title">In-Bond/Ex-Bond</h3>
-                            <p class="service-description">Specialized handling for in-bond and ex-bond shipment clearances</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-certificate"></i>
-                            </div>
-                            <h3 class="service-title">License Shipments</h3>
-                            <p class="service-description">DEPB, EPCG, DFCEC, and advance license shipment processing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-building"></i>
-                            </div>
-                            <h3 class="service-title">Special Zones</h3>
-                            <p class="service-description">100% EOU, STPI, SEZ clearances for spare parts and R&D certificates</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-cogs"></i>
-                            </div>
-                            <h3 class="service-title">Project Imports</h3>
-                            <p class="service-description">Specialized clearance for project import and capital goods</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fa fa-truck"></i>
-                            </div>
-                            <h3 class="service-title">Direct Delivery</h3>
-                            <p class="service-description">Fast-track clearance for perishable and time-sensitive cargo</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SPECIALIZED SERVICES SECTION -->
-        <section class="specialized-services">
-            <div class="container">
-                <h2 class="section-title section-title-center">Specialized Import Solutions</h2>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="specialized-list">
-                            <h3>Advanced Import Services</h3>
-                            <ul class="custom-list">
-                                <li>
-                                    <i class="fa fa-arrow-right"></i>
-                                    <span>Re-import after repairs and exhibition</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-arrow-right"></i>
-                                    <span>Third country export clearance</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-arrow-right"></i>
-                                    <span>High seas sale shipment clearance</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-arrow-right"></i>
-                                    <span>ATA carnet clearance procedures</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-arrow-right"></i>
-                                    <span>Second hand capital goods import</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-arrow-right"></i>
-                                    <span>Free-of-charges shipment handling</span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-arrow-right"></i>
-                                    <span>Express courier clearance services</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="process-steps">
-                            <h3>Our Import Process</h3>
-                            <div class="step-item">
-                                <div class="step-number">1</div>
-                                <div class="step-content">
-                                    <h4>Documentation Review</h4>
-                                    <p>Thorough review of all import documents and compliance requirements</p>
-                                </div>
-                            </div>
-                            <div class="step-item">
-                                <div class="step-number">2</div>
-                                <div class="step-content">
-                                    <h4>Customs Clearance</h4>
-                                    <p>Professional handling of customs procedures and duty calculations</p>
-                                </div>
-                            </div>
-                            <div class="step-item">
-                                <div class="step-number">3</div>
-                                <div class="step-content">
-                                    <h4>Quality Inspection</h4>
-                                    <p>Coordination with inspection agencies and quality certifications</p>
-                                </div>
-                            </div>
-                            <div class="step-item">
-                                <div class="step-number">4</div>
-                                <div class="step-content">
-                                    <h4>Final Delivery</h4>
-                                    <p>Safe and timely delivery to your designated destination</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- BENEFITS SECTION -->
-        <section class="import-benefits bg-section-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h2 class="section-title">Why Choose Our Import Services?</h2>
-                        <p class="section-description">
-                            Expert knowledge of customs regulations combined with efficient processes ensures 
-                            your imports are cleared quickly and cost-effectively.
+                
+                <div class="overview-content">
+                    <p class="overview-text">
+                        Navigate complex import regulations with confidence. Our experienced team handles all aspects 
+                        of import clearance, ensuring your goods reach you quickly and compliantly. From documentation 
+                        to customs procedures, we provide end-to-end import solutions tailored to your business needs.
+                    </p>
+                    
+                    <div class="overview-highlight">
+                        <h4 class="text-primary-color mb-3">
+                            <i class="fa fa-globe mr-2"></i>
+                            Comprehensive Import Solutions
+                        </h4>
+                        <p class="mb-0">
+                            We provide complete import services including customs clearance, documentation management, 
+                            compliance verification, duty calculations, and coordination with various government agencies 
+                            for seamless import operations across all major ports and entry points.
                         </p>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">
-                                        <i class="fa fa-users"></i>
-                                    </div>
-                                    <div class="benefit-content">
-                                        <h4>Expert Team</h4>
-                                        <p>Licensed customs brokers with years of experience</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">
-                                        <i class="fa fa-clock-o"></i>
-                                    </div>
-                                    <div class="benefit-content">
-                                        <h4>Fast Processing</h4>
-                                        <p>Quick turnaround times for all import clearances</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">
-                                        <i class="fa fa-shield"></i>
-                                    </div>
-                                    <div class="benefit-content">
-                                        <h4>Compliance Assurance</h4>
-                                        <p>100% compliance with all regulatory requirements</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">
-                                        <i class="fa fa-money"></i>
-                                    </div>
-                                    <div class="benefit-content">
-                                        <h4>Cost Effective</h4>
-                                        <p>Competitive rates with transparent pricing</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
+        <!-- //OVERVIEW SECTION -->
 
-        <!-- CTA SECTION -->
-        <section class="import-cta">
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <div class="cta-content">
-                            <h2>Need Import Clearance Services?</h2>
-                            <p>Get expert assistance with your import requirements. Our team is ready to handle your customs clearance needs.</p>
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Our Import Services</h2>
+                    <p class="text-muted">Comprehensive import solutions for all your business needs</p>
+                </div>
+                
+                <div class="service-cards">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-home"></i>
                         </div>
+                        <h3>Home Consumption</h3>
+                        <p>
+                            Routine shipment clearance for home consumption with duty-paid procedures 
+                            and complete regulatory compliance.
+                        </p>
                     </div>
-                    <div class="col-lg-4 text-lg-right">
-                        <a href="contact.php" class="btn btn-primary btn-lg">Get Quote</a>
-                        <a href="tel:+91-9910417643" class="btn btn-outline-light btn-lg ml-2">Call Now</a>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-exchange"></i>
+                        </div>
+                        <h3>In-Bond/Ex-Bond</h3>
+                        <p>
+                            Specialized handling for in-bond and ex-bond shipment clearances with 
+                            proper documentation and warehouse coordination.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <h3>License Shipments</h3>
+                        <p>
+                            DEPB, EPCG, DFCEC, and advance license shipment processing with 
+                            expert compliance and documentation management.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-building"></i>
+                        </div>
+                        <h3>Special Zones</h3>
+                        <p>
+                            100% EOU, STPI, SEZ clearances for spare parts and R&D certificates 
+                            with specialized zone compliance procedures.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <h3>Project Imports</h3>
+                        <p>
+                            Specialized clearance for project import and capital goods with 
+                            complex documentation and regulatory requirements.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h3>Direct Delivery</h3>
+                        <p>
+                            Fast-track clearance for perishable and time-sensitive cargo with 
+                            priority processing and immediate delivery coordination.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+        <!-- //SERVICES SECTION -->
 
-    <footer class="bg-colors py-5">
-        <?php include "footer.php"; ?>
+        <!-- FEATURES SECTION -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title section-title-center">Advanced Import Features</h2>
+                    <p class="text-muted">Specialized capabilities for efficient import operations</p>
+                </div>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-refresh"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Re-import Services</h4>
+                            <p>Re-import after repairs and exhibition with proper documentation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Third Country Export</h4>
+                            <p>Third country export clearance with international coordination</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-ship"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>High Seas Sale</h4>
+                            <p>High seas sale shipment clearance with specialized procedures</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-id-card"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>ATA Carnet</h4>
+                            <p>ATA carnet clearance procedures for temporary imports</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-industry"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Second Hand Goods</h4>
+                            <p>Second hand capital goods import with valuation expertise</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-gift"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Free of Charges</h4>
+                            <p>Free-of-charges shipment handling with proper classification</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-plane"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Express Courier</h4>
+                            <p>Express courier clearance services for urgent shipments</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Expert Team</h4>
+                            <p>Licensed customs brokers with years of experience and expertise</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //FEATURES SECTION -->
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="site-footer py-5 bg-dark text-white">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <?php include "footer.php"; ?>
+            
+            <!-- Footer Divider -->
+            <hr class="footer-divider my-4 bg-light opacity-25">
+            
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="newsletter-subscribe mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-3 footer-heading">Subscribe to Our Newsletter</h5>
+                    <form id="newsletterForm" class="d-flex footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter" required>
+                        <button class="btn btn-primary ml-2" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                
+                <a href="#home" class="move-top btn btn-outline-light rounded-circle" aria-label="Back to top">
+                    <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
     </footer>
     
-    <div class="copyright-w3ls py-4">
-        <?php include "copy.php"; ?>
+    <!-- Copyright Section -->
+    <div class="copyright-section py-3 bg-black text-white">
+        <div class="container">
+            <?php include "copy.php"; ?>
+        </div>
     </div>
     
-    <a href="#home" class="move-top text-center"></a>
-
     <!-- WhatsHelp.io widget -->
     <script type="text/javascript">
         (function () {
@@ -344,7 +314,7 @@
                 company_logo_url: "https://www.gramscs.com/images/logo.jpg",
                 greeting_message: "Connect with Gram Experts. Connect with us for any assistance.",
                 call_to_action: "Connect with us",
-                button_color: "#E74339",
+                button_color: "#82CF2B",
                 position: "left",
                 order: "whatsapp,sms,call,email"
             };
@@ -357,3 +327,4 @@
 </body>
 
 </html>
+           

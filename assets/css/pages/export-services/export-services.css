@@ -1,8 +1,8 @@
-/* Custom Clearance Activity Page Styles */
+/* Export Services Page Styles */
 
 /* Hero Section */
 .transportation-hero-section {
-    background: linear-gradient(135deg, rgba(0, 47, 75, 0.95), rgba(130, 207, 43, 0.85)), url('../../../../images/Custom-Clearance-Activity.jpg');
+    background: linear-gradient(135deg, rgba(0, 47, 75, 0.95), rgba(130, 207, 43, 0.85)), url('../../../../images/Export-Services.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -249,16 +249,16 @@
     background-color: rgba(130, 207, 43, 0.1) !important;
 }
 
-/* Green scheme for customs-related elements */
+/* Green scheme for export-related elements */
 .track-shipment-green,
-.customs-green {
+.export-green {
     background-color: #82CF2B !important;
     border-color: #82CF2B !important;
     color: white !important;
 }
 
 .track-shipment-green:hover,
-.customs-green:hover {
+.export-green:hover {
     background-color: #69a823 !important;
     border-color: #69a823 !important;
     color: white !important;
@@ -266,7 +266,7 @@
     box-shadow: 0 4px 12px rgba(130, 207, 43, 0.3);
 }
 
-/* Green scheme for buttons in customs context */
+/* Green scheme for buttons in export context */
 .btn-track-green {
     background: linear-gradient(135deg, #82CF2B, #69a823);
     border: none;
@@ -289,16 +289,16 @@
     text-decoration: none;
 }
 
-/* Green scheme for service cards in customs context */
-.service-card.customs-green .service-icon {
+/* Green scheme for service cards in export context */
+.service-card.export-green .service-icon {
     background: linear-gradient(135deg, #82CF2B, #69a823);
 }
 
-.service-card.customs-green:hover {
+.service-card.export-green:hover {
     border-color: #82CF2B;
 }
 
-.service-card.customs-green::before {
+.service-card.export-green::before {
     background: linear-gradient(90deg, #82CF2B, #69a823);
 }
 
