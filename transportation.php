@@ -247,23 +247,6 @@
             </div>
         </section>
         <!-- //FEATURES SECTION -->
-
-        <!-- CTA SECTION -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-title">Ready to Optimize Your Transportation?</h2>
-                    <p class="cta-subtitle">
-                        Let our transportation experts help you streamline your logistics operations with 
-                        our advanced technology and reliable service network.
-                    </p>
-                    <a href="contact_submissions.json" class="cta-button">
-                        <i class="fa fa-phone"></i>
-                        Get Transportation Quote
-                    </a>
-                </div>
-            </div>
-        </section>        <!-- //CTA SECTION -->
     </main>
     
     <!-- Footer Section -->

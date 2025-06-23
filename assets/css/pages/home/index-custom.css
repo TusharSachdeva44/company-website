@@ -203,10 +203,31 @@ section + section {
     height: 100%;
     transition: transform var(--transition-medium), 
                 box-shadow var(--transition-medium),
-                border-color var(--transition-medium);
+                border-color var(--transition-medium),
+                background-color 0.3s, outline 0.3s;
     will-change: transform, box-shadow; /* Performance optimization */
     position: relative;
     z-index: 1;
+}
+
+.card-custom:hover {
+    /* Remove background color on hover */
+    background-color: transparent !important;
+    /* ...existing code... */
+}
+
+/* Remove any background color on hover for .card-custom */
+.card-custom:hover, .card-custom:focus {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: var(--shadow);
+    outline: 2px solid var(--primary-lightest);
+    outline-offset: 2px;
+}
+
+.card-custom {
+    background: none !important;
+    background-color: transparent !important;
 }
 
 .card-custom:hover {
@@ -214,6 +235,11 @@ section + section {
     box-shadow: var(--shadow);
     border-color: var(--primary-light);
     z-index: 2;
+    /* Minimalist effect: add subtle outline and scale */
+    outline: 2px solid var(--primary-lightest);
+    outline-offset: 2px;
+    /* Optionally, add a slight scale for feedback */
+    /* transform: translateY(-5px) scale(1.02); */
 }
 
 .card-custom:hover .icon-circle {
@@ -559,6 +585,59 @@ section + section {
     color: var(--primary-color);
     background-color: var(--light-bg);
     transform: scale(1.05);
+}
+
+/* Gallery Modal Image Improvements */
+.popup img {
+    max-height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-medium);
+}
+
+.popup .p-4 {
+    text-align: center;
+}
+
+.popup .p-4 img {
+    display: block;
+    margin: 0 auto var(--space-md);
+}
+
+.popup .p-4 p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Make modal more responsive */
+@media (max-width: 768px) {
+    .popup {
+        width: 95%;
+        margin: 10px;
+    }
+    
+    .popup img {
+        max-height: 50vh;
+    }
+    
+    .popup .p-4 {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup img {
+        max-height: 40vh;
+    }
+    
+    .popup .p-4 {
+        padding: 1rem !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1043,4 +1122,118 @@ section + section {
     .menu-modal-header {
         padding: 1rem 1.5rem;
     }
+}
+
+/* Toast Notification System */
+.toast-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    max-width: 350px;
+    min-width: 300px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.toast-notification.toast-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    background: white;
+    border-left: 4px solid var(--primary-color);
+    gap: 12px;
+}
+
+.toast-success .toast-content {
+    border-left-color: var(--success);
+}
+
+.toast-error .toast-content {
+    border-left-color: var(--danger);
+}
+
+.toast-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.toast-success .toast-icon {
+    background: var(--success);
+}
+
+.toast-error .toast-icon {
+    background: var(--danger);
+}
+
+.toast-message {
+    flex: 1;
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--text-muted);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.toast-close:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--text-primary);
+}
+
+/* Mobile responsive toast */
+@media (max-width: 480px) {
+    .toast-notification {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        min-width: auto;
+    }
+}
+
+/* Improved form button loading state */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn:disabled .btn-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

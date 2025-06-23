@@ -129,40 +129,7 @@
         </section>
         <!-- //VISION & MISSION SECTION -->
 
-        <!-- STATS SECTION -->
-        <section class="stats-section" id="stats">
-            <div class="container">
-                <div class="stats-content">
-                    <div class="row">
-                        <div class="col-6 col-md-3">
-                            <div class="stat-item">
-                                <span class="stat-number">15+</span>
-                                <span class="stat-label">International Clients</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="stat-item">
-                                <span class="stat-number">7+</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="stat-item">
-                                <span class="stat-number">100%</span>
-                                <span class="stat-label">Technology Driven</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <div class="stat-item">
-                                <span class="stat-number">24/7</span>
-                                <span class="stat-label">Support Available</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //STATS SECTION -->
+        
     </main>
     
     <!-- Footer Section -->

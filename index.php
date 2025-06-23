@@ -360,63 +360,52 @@
                 </div>
             </div>
             
-            <!-- gallery popups -->
-            <div id="gal1" class="pop-overlay animate">
+            <!-- gallery popups -->            <div id="gal1" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g1.jpg" alt="International shipping at port" class="img-fluid rounded mb-3" />
+                        <img src="images/g1.jpg" alt="International shipping at port" class="img-fluid" />
                         <p class="text-secondary mb-3">Efficient and seamless international shipping services at a bustling port, ensuring timely and secure delivery of your cargo.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal2" class="pop-overlay animate">
+            </div>            <div id="gal2" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g2.jpg" alt="Cargo trucks on the move" class="img-fluid rounded mb-3" />
+                        <img src="images/g2.jpg" alt="Cargo trucks on the move" class="img-fluid" />
                         <p class="text-secondary mb-3">Our fleet of cargo trucks on the move, dedicated to providing reliable and efficient ground transportation for your goods.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal3" class="pop-overlay animate">
+            </div>            <div id="gal3" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g3.jpg" alt="Fleet of delivery trucks" class="img-fluid rounded mb-3" />
+                        <img src="images/g3.jpg" alt="Fleet of delivery trucks" class="img-fluid" />
                         <p class="text-secondary mb-3">Well-maintained fleet of delivery trucks ready to distribute your products nationwide with precision and care.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal4" class="pop-overlay animate">
+            </div>            <div id="gal4" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g4.jpg" alt="Traditional cargo trucks" class="img-fluid rounded mb-3" />
+                        <img src="images/g4.jpg" alt="Traditional cargo trucks" class="img-fluid" />
                         <p class="text-secondary mb-3">Experienced and dependable transportation services using traditional cargo trucks for all your logistical needs.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal5" class="pop-overlay animate">
+            </div>            <div id="gal5" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g5.jpg" alt="Container truck operations at port" class="img-fluid rounded mb-3" />
+                        <img src="images/g5.jpg" alt="Container truck operations at port" class="img-fluid" />
                         <p class="text-secondary mb-3">Coordinated and high-volume container truck operations at the port, ensuring quick and organized handling of your shipments.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
-            </div>
-            
-            <div id="gal6" class="pop-overlay animate">
+            </div>            <div id="gal6" class="pop-overlay animate">
                 <div class="popup">
                     <div class="p-4">
-                        <img src="images/g6.jpg" alt="Maritime transport solutions" class="img-fluid rounded mb-3" />
+                        <img src="images/g6.jpg" alt="Maritime transport solutions" class="img-fluid" />
                         <p class="text-secondary mb-3">Comprehensive maritime transport solutions, featuring a cargo ship navigating through waterways to deliver your containers globally.</p>
-                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times; Close</a>
+                        <a class="btn btn-sm btn-outline-secondary close" href="#gallery">&times;</a>
                     </div>
                 </div>
             </div>
@@ -518,10 +507,8 @@
     <div class="copyright-section py-3 bg-black text-white">
         <div class="container">
             <?php include "copy.php"; ?>
-        </div>
-    </div>
+        </div>    </div>
     
-    <script src="./js/index.js" type="module"></script>
     <script>
     // MENU BUTTON FUNCTIONALITY
     document.addEventListener('DOMContentLoaded', function() {
@@ -664,10 +651,12 @@
             });
         });
     </script>
-    
-    <!-- Essential JavaScript libraries -->
+      <!-- Essential JavaScript libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Contact form handling script -->
+    <script src="./js/index.js"></script>
     
     <!-- Modal menu script -->
     <script>
@@ -756,6 +745,43 @@
                         toastContainer.removeChild(toast);
                     }, 300);
                 }, 3000);
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Auto-transition carousel every 7 seconds
+            let currentSlide = 1;
+            const totalSlides = 3;
+            const slideInterval = 7000; // 7 seconds
+            function nextSlide() {
+                currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+                const slideInput = document.getElementById('slides_' + currentSlide);
+                if (slideInput) {
+                    slideInput.checked = true;
+                }
+            }
+            let autoSlider = setInterval(nextSlide, slideInterval);
+            // Pause auto-transition when user interacts with navigation
+            const navigationLabels = document.querySelectorAll('.navigation label');
+            navigationLabels.forEach((label, index) => {
+                label.addEventListener('click', function() {
+                    clearInterval(autoSlider);
+                    currentSlide = index + 1;
+                    setTimeout(() => {
+                        autoSlider = setInterval(nextSlide, slideInterval);
+                    }, slideInterval);
+                });
+            });
+            // Pause on hover, resume on mouse leave
+            const carousel = document.getElementById('slider1');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', function() {
+                    clearInterval(autoSlider);
+                });
+                carousel.addEventListener('mouseleave', function() {
+                    autoSlider = setInterval(nextSlide, slideInterval);
+                });
             }
         });
     </script>
