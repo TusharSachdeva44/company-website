@@ -518,10 +518,8 @@
     <div class="copyright-section py-3 bg-black text-white">
         <div class="container">
             <?php include "copy.php"; ?>
-        </div>
-    </div>
+        </div>    </div>
     
-    <script src="./js/index.js" type="module"></script>
     <script>
     // MENU BUTTON FUNCTIONALITY
     document.addEventListener('DOMContentLoaded', function() {
@@ -664,10 +662,12 @@
             });
         });
     </script>
-    
-    <!-- Essential JavaScript libraries -->
+      <!-- Essential JavaScript libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Contact form handling script -->
+    <script src="./js/index.js"></script>
     
     <!-- Modal menu script -->
     <script>
