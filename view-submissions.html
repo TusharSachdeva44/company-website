@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Submissions Viewer</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body { padding: 20px; background: #f8f9fa; }
+        .submission { background: white; margin: 10px 0; padding: 15px; border-radius: 5px; border-left: 4px solid #82CF2B; }
+        .timestamp { color: #6c757d; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form Submissions</h1>
+        <p>View all contact form submissions stored in localStorage.</p>
+        
+        <button onclick="loadSubmissions()" class="btn btn-primary mb-3">Refresh</button>
+        <button onclick="clearSubmissions()" class="btn btn-danger mb-3">Clear All</button>
+        
+        <div id="submissions-container">
+            <!-- Submissions will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        function loadSubmissions() {
+            const container = document.getElementById('submissions-container');
+            const submissions = JSON.parse(localStorage.getItem('contactSubmissions')) || [];
+            
+            if (submissions.length === 0) {
+                container.innerHTML = '<p class="text-muted">No submissions found.</p>';
+                return;
+            }
+            
+            container.innerHTML = submissions.map((submission, index) => `
+                <div class="submission">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5>Submission #${index + 1}</h5>
+                        <span class="timestamp">${new Date(submission.timestamp).toLocaleString()}</span>
+                    </div>
+                    <p><strong>Name:</strong> ${submission.name}</p>
+                    <p><strong>Email:</strong> ${submission.email}</p>
+                    <p><strong>Phone:</strong> ${submission.phone}</p>
+                    <p><strong>Subject:</strong> ${submission.subject}</p>
+                    <p><strong>Message:</strong> ${submission.message}</p>
+                </div>
+            `).reverse().join('');
+        }
+        
+        function clearSubmissions() {
+            if (confirm('Are you sure you want to clear all submissions?')) {
+                localStorage.removeItem('contactSubmissions');
+                loadSubmissions();
+            }
+        }
+        
+        // Load submissions on page load
+        loadSubmissions();
+    </script>
+</body>
+</html>

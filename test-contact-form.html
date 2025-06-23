@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Test</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/pages/home/index-custom.css">
+    <style>
+        body { padding: 20px; background: #f8f9fa; }
+        .test-container { max-width: 600px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Contact Form Test</h1>
+        <p>This is a test page to verify the contact form functionality with toast notifications.</p>
+        
+        <div class="contact-form-card bg-white p-4 rounded shadow" style="border: 2px solid var(--primary-color);">
+            <h3 class="h4 text-center mb-4 font-weight-bold">
+                Send Us a Message
+            </h3>
+            <form id="contactForm" action="sendmail.php" method="post" class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input class="form-control" type="text" id="contact-name" name="name" placeholder="Your name" required maxlength="60">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input class="form-control" type="email" id="contact-email" name="email" placeholder="Your email" required maxlength="80">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input class="form-control" type="text" id="contact-phone" name="phone" placeholder="Your phone number" required maxlength="20">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input class="form-control" type="text" id="contact-subject" name="subject" placeholder="Subject" required maxlength="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="contact-message">Message</label>
+                    <textarea class="form-control" id="contact-message" name="message" placeholder="Your message" rows="5" required maxlength="1000"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success px-5 py-2" type="submit">
+                        <span class="btn-text">Submit Message</span>
+                        <span class="btn-icon">
+                            <i class="fa fa-paper-plane ml-2" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="mt-4">
+            <button onclick="viewStoredSubmissions()" class="btn btn-info">View Stored Submissions</button>
+            <button onclick="showToast('Test toast notification!', 'info')" class="btn btn-secondary">Test Toast</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

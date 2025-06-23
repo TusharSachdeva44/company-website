@@ -1,10 +1,15 @@
 // Contact form handling with toast notifications and local storage
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Contact form script loaded');
+    
     const contactForm = document.getElementById('contactForm');
     
     if (contactForm) {
+        console.log('Contact form found');
+        
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent default form submission
+            console.log('Form submitted');
             
             // Get form data
             const formData = new FormData(contactForm);
@@ -15,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Add timestamp
             formObject.timestamp = new Date().toISOString();
+            
+            console.log('Form data:', formObject);
             
             // Validate form
             if (!validateContactForm(formObject)) {
@@ -31,13 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Save to localStorage
             saveContactSubmission(formObject);
             
-            // Submit to server (optional)
+            // Submit to server (optional - for backend processing)
             fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             })
             .then(response => response.json())
             .then(data => {
+                console.log('Server response:', data);
                 showToast('Thank you! Your message has been sent successfully.', 'success');
                 contactForm.reset();
             })
@@ -53,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 submitButton.disabled = false;
             });
         });
+    } else {
+        console.error('Contact form not found');
     }
 });
 
@@ -62,6 +72,7 @@ function validateContactForm(formData) {
     
     for (let field of required) {
         if (!formData[field] || formData[field].trim().length === 0) {
+            console.log('Validation failed for field:', field);
             return false;
         }
     }
@@ -69,15 +80,18 @@ function validateContactForm(formData) {
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
+        console.log('Email validation failed');
         return false;
     }
     
-    // Phone validation
-    const phoneRegex = /[0-9+\-() ]{7,20}/;
+    // Phone validation - make it more lenient
+    const phoneRegex = /[\d+\-() ]{7,20}/;
     if (!phoneRegex.test(formData.phone)) {
+        console.log('Phone validation failed');
         return false;
     }
     
+    console.log('Validation passed');
     return true;
 }
 
@@ -93,6 +107,7 @@ function saveContactSubmission(formData) {
         }
         
         localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
+        console.log('Saved to localStorage. Total submissions:', submissions.length);
     } catch (error) {
         console.error('Error saving to localStorage:', error);
     }
@@ -100,6 +115,8 @@ function saveContactSubmission(formData) {
 
 // Toast notification system
 function showToast(message, type = 'info') {
+    console.log('Showing toast:', message, type);
+    
     // Remove existing toasts
     const existingToasts = document.querySelectorAll('.toast-notification');
     existingToasts.forEach(toast => toast.remove());
@@ -131,3 +148,13 @@ function showToast(message, type = 'info') {
         }
     }, 5000);
 }
+
+// Debug function to check stored submissions
+function viewStoredSubmissions() {
+    const submissions = JSON.parse(localStorage.getItem('contactSubmissions')) || [];
+    console.table(submissions);
+    return submissions;
+}
+
+// Make debug function available globally
+window.viewStoredSubmissions = viewStoredSubmissions;
