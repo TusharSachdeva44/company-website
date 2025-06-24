@@ -597,9 +597,16 @@
         // Form validation enhancement
         document.addEventListener('DOMContentLoaded', function() {
             var forms = document.querySelectorAll('.needs-validation');
-            
-            Array.prototype.slice.call(forms).forEach(function(form) {
+              Array.prototype.slice.call(forms).forEach(function(form) {
                 form.addEventListener('submit', function(event) {
+                    // For contact form, always prevent default - let js/index.js handle it
+                    if (form.id === 'contactForm') {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        return;
+                    }
+                    
+                    // For other forms, only prevent if invalid
                     if (!form.checkValidity()) {
                         event.preventDefault();
                         event.stopPropagation();
