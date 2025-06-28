@@ -21,15 +21,6 @@ return [
         'address' => 'Your Business Address Here'
     ],
     
-    'mail' => [
-        'smtp_host' => '',
-        'smtp_port' => 587,
-        'smtp_username' => '',
-        'smtp_password' => '',
-        'from_email' => 'noreply@gramscs.com',
-        'from_name' => 'GRAM SCS Website'
-    ],
-    
     'database' => [
         // Add database configuration when needed
         'host' => 'localhost',
