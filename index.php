@@ -692,9 +692,7 @@
     </script>
     
     <!-- Toast notification container -->
-    <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 1060;"></div>
-
-    <!-- Newsletter JS -->
+    <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 1060;"></div>    <!-- Newsletter JS -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Newsletter form submission
@@ -703,14 +701,47 @@
                 newsletterForm.addEventListener('submit', function(e) {
                     e.preventDefault();
                     
-                    const email = this.querySelector('input[type="email"]').value;
+                    const emailInput = this.querySelector('input[type="email"]');
+                    const email = emailInput.value.trim();
+                    const submitBtn = this.querySelector('button[type="submit"]');
                     
-                    // You would typically send this to your server
-                    // For demo purposes, we'll just show a success toast
-                    if (email) {
-                        showToast('Success! You\'ve been subscribed to our newsletter.', 'success');
-                        this.reset();
+                    // Validate email
+                    if (!email) {
+                        showToast('Please enter your email address, yaar!', 'error');
+                        return;
                     }
+                    
+                    // Show loading state
+                    const originalText = submitBtn.textContent;
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Subscribing...';
+                    
+                    // Send to backend
+                    fetch('subscribe-newsletter.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: 'email=' + encodeURIComponent(email)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            showToast(data.message, 'success');
+                            this.reset();
+                        } else {
+                            showToast(data.message, 'error');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Newsletter subscription error:', error);
+                        showToast('Sorry, there was a technical issue. Please try again!', 'error');
+                    })
+                    .finally(() => {
+                        // Reset button state
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = originalText;
+                    });
                 });
             }
             

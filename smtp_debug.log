@@ -1,0 +1,193 @@
+[2025-06-28 09:15:52][SMTP DEBUG][2] SERVER -> CLIENT: 220-linux.datanethostingsolutions.com ESMTP Exim 4.95 #2 Sat, 28 Jun 2025 14:45:52 +0530 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+[2025-06-28 09:15:52][SMTP DEBUG][1] CLIENT -> SERVER: EHLO localhost
+
+[2025-06-28 09:15:52][SMTP DEBUG][2] SERVER -> CLIENT: 250-linux.datanethostingsolutions.com Hello localhost [13.71.3.101]
+250-SIZE 104857600
+250-8BITMIME
+250-PIPELINING
+250-PIPE_CONNECT
+250-AUTH PLAIN LOGIN
+250-STARTTLS
+250 HELP
+
+[2025-06-28 09:15:52][SMTP DEBUG][1] CLIENT -> SERVER: STARTTLS
+
+[2025-06-28 09:15:52][SMTP DEBUG][2] SERVER -> CLIENT: 220 TLS go ahead
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: EHLO localhost
+
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 250-linux.datanethostingsolutions.com Hello localhost [13.71.3.101]
+250-SIZE 104857600
+250-8BITMIME
+250-PIPELINING
+250-PIPE_CONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: AUTH LOGIN
+
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: [credentials hidden]
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: [credentials hidden]
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 235 Authentication succeeded
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: MAIL FROM:<tushar@gramscs.com>
+
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 250 OK
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: RCPT TO:<chillingtushar@gmail.com>
+
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 250 Accepted
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: DATA
+
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 354 Enter message, ending with "." on a line by itself
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Date: Sat, 28 Jun 2025 09:15:52 +0000
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: To: chillingtushar@gmail.com
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: From: GRAM SCS Website <tushar@gramscs.com>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Reply-To: contact@gramscs.com
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Subject: Welcome to GRAM SCS Newsletter!
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Message-ID: <HaHKX47npAJVS6kCpDuOB49RHbNyIMiQy8AnPjyeY@localhost>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: MIME-Version: 1.0
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Content-Type: text/html; charset=UTF-8
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: 
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: 
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:     <!DOCTYPE html>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:     <html>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:     <head>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:         <meta charset='UTF-8'>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:         <title>GRAM SCS Newsletter</title>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:         <style>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:             body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:             h1 { color: #82CF2B; }
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:             h2 { color: #666; }
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:             .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 12px; color: #999; }
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:         </style>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:     </head>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:     <body>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:         <h1>Welcome to GRAM SCS Newsletter! 🚛</h1><br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <h2>Namaste and Welcome Aboard!</h2><br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Thank you for joining the <strong>GRAM Supply Chain Solutions</strong> family! We're excited to have you as part of our community.<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <h3>What You Can Expect from Us:</h3><br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: * <strong>Latest Logistics Innovations</strong> - Stay updated with cutting-edge technology in supply chain<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: * <strong>Industry Insights</strong> - Expert analysis of logistics trends in India and globally  <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: * <strong>Company Updates</strong> - News about our services, achievements, and new partnerships<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: * <strong>Technology Focus</strong> - How we're revolutionizing logistics with IT integration<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <h3>Why GRAM SCS?</h3><br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: We are India's leading <strong>technology-driven logistics solution provider</strong> with:<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: - <strong>7+ Years</strong> of excellence since 2017<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: - <strong>920+ Cross-border deliveries</strong> successfully completed  <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: - <strong>70+ Japanese manufacturers</strong> trust us with their logistics<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: - <strong>Advanced IT integration</strong> for seamless operations<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <h2>Stay Connected</h2><br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Visit our website: <a href="http://www.gramscs.com">www.gramscs.com</a>  <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Email us: <a href="mailto:contact@gramscs.com">contact@gramscs.com</a>  <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: Call us: +011-40199854<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: ---<br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <strong>Thank you for choosing GRAM SCS!</strong><br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <em>Team GRAM Supply Chain Solutions</em>  <br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: <em>Millennium Business Center, Malviya Nagar, New Delhi</em><br />
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: 
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:         <div class='footer'>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:             <p>You are receiving this email because you subscribed to GRAM SCS newsletter.</p>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:             <p>GRAM Supply Chain Solutions Pvt. Ltd. | Millennium Business Center, Malviya Nagar, New Delhi</p>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:         </div>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:     </body>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER:     </html>
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: 
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: .
+
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 250 OK id=1uVRfA-00F0Sa-Gq
+
+[2025-06-28 09:15:53][SMTP DEBUG][1] CLIENT -> SERVER: QUIT
+
+[2025-06-28 09:15:53][SMTP DEBUG][2] SERVER -> CLIENT: 221 linux.datanethostingsolutions.com closing connection
+
