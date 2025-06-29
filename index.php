@@ -488,11 +488,12 @@
             <hr class="footer-divider my-4 bg-light opacity-25">
             
             <!-- Bottom Footer -->
-            <div class="d-flex justify-content-between align-items-center flex-wrap">                <div class="newsletter-subscribe mb-4 mb-md-0">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="newsletter-subscribe mb-4 mb-md-0">
                     <h5 class="text-uppercase mb-3 footer-heading">Subscribe to Our Newsletter</h5>
-                    <form id="newsletterForm" class="d-flex footer-subscribe">
-                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter" required>
-                        <button class="btn btn-primary ml-2" type="submit">Subscribe</button>
+                    <form class="d-flex footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter">
+                        <button class="btn btn-primary ml-2" type="button">Subscribe</button>
                     </form>
                 </div>
                 
@@ -691,93 +692,7 @@
         });
     </script>
     
-    <!-- Toast notification container -->
-    <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 1060;"></div>    <!-- Newsletter JS -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Newsletter form submission
-            const newsletterForm = document.getElementById('newsletterForm');
-            if (newsletterForm) {
-                newsletterForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    const emailInput = this.querySelector('input[type="email"]');
-                    const email = emailInput.value.trim();
-                    const submitBtn = this.querySelector('button[type="submit"]');
-                    
-                    // Validate email
-                    if (!email) {
-                        showToast('Please enter your email address, yaar!', 'error');
-                        return;
-                    }
-                    
-                    // Show loading state
-                    const originalText = submitBtn.textContent;
-                    submitBtn.disabled = true;
-                    submitBtn.textContent = 'Subscribing...';
-                    
-                    // Send to backend
-                    fetch('subscribe-newsletter.php', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded',
-                        },
-                        body: 'email=' + encodeURIComponent(email)
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.success) {
-                            showToast(data.message, 'success');
-                            this.reset();
-                        } else {
-                            showToast(data.message, 'error');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Newsletter subscription error:', error);
-                        showToast('Sorry, there was a technical issue. Please try again!', 'error');
-                    })
-                    .finally(() => {
-                        // Reset button state
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = originalText;
-                    });
-                });
-            }
-            
-            // Toast notification function
-            window.showToast = function(message, type = 'success') {
-                const toastContainer = document.getElementById('toast-container');
-                
-                // Create toast element
-                const toast = document.createElement('div');
-                toast.className = `toast toast-${type}`;
-                toast.style.minWidth = '250px';
-                toast.style.backgroundColor = type === 'success' ? '#82CF2B' : '#dc3545';
-                toast.style.color = 'white';
-                toast.style.padding = '15px 20px';
-                toast.style.marginBottom = '10px';
-                toast.style.borderRadius = '4px';
-                toast.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-                toast.style.opacity = '0';
-                toast.style.transition = 'opacity 0.3s ease-in-out';
-                toast.innerHTML = `
-                    <div class="d-flex align-items-center">
-                        <span class="fa fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'} mr-2"></span>
-                        <div>${message}</div>
-                    </div>
-                `;
-                
-                // Add to container
-                toastContainer.appendChild(toast);
-                
-                // Trigger animation
-                setTimeout(() => {
-                    toast.style.opacity = '1';
-                }, 10);
-                
-                // Auto-dismiss after 3 seconds
-                setTimeout(() => {
+    <!-- Newsletter form disabled -->
                     toast.style.opacity = '0';
                     setTimeout(() => {
                         toastContainer.removeChild(toast);

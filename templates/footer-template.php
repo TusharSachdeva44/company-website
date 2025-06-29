@@ -11,9 +11,9 @@
             <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <div class="newsletter-subscribe mb-4 mb-md-0">
                     <h5 class="text-uppercase mb-3 footer-heading">Subscribe to Our Newsletter</h5>
-                    <form id="newsletterForm" class="d-flex footer-subscribe">
-                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter" required>
-                        <button class="btn btn-primary ml-2" type="submit">Subscribe</button>
+                    <form class="d-flex footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Subscribe to newsletter">
+                        <button class="btn btn-primary ml-2" type="button">Subscribe</button>
                     </form>
                 </div>
                 
